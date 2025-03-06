@@ -1,0 +1,188 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 666,
+  "name": "Vivillon",
+  "primaryType": "bug",
+  "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 170,
+  "pokedex": [
+    "cobblemon.species.vivillon.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [],
+  "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "h:friendguard"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 80,
+    "attack": 52,
+    "defence": 50,
+    "special_attack": 90,
+    "special_defence": 50,
+    "speed": 89
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 206,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.4,
+    "height": 1.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "swim": {
+        "canWalkOnWater": true
+      },
+      "fly": {
+        "canFly": true
+      },
+      "walk": {
+        "walkSpeed": 0.4
+      }
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:bright_powder",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:powder",
+    "1:sleeppowder",
+    "1:poisonpowder",
+    "1:stunspore",
+    "1:gust",
+    "1:strugglebug",
+    "1:aromatherapy",
+    "1:tackle",
+    "1:harden",
+    "12:lightscreen",
+    "17:psybeam",
+    "21:supersonic",
+    "25:drainingkiss",
+    "31:safeguard",
+    "35:bugbuzz",
+    "45:quiverdance",
+    "50:hurricane",
+    "egg:poisonpowder",
+    "egg:ragepowder",
+    "egg:stunspore",
+    "tm:acrobatics",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:bugbite",
+    "tm:bugbuzz",
+    "tm:confuseray",
+    "tm:defog",
+    "tm:drainingkiss",
+    "tm:dreameater",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:hurricane",
+    "tm:hyperbeam",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:laserfocus",
+    "tm:lightscreen",
+    "tm:pollenpuff",
+    "tm:pounce",
+    "tm:protect",
+    "tm:psybeam",
+    "tm:psychic",
+    "tm:raindance",
+    "tm:rest",
+    "tm:roost",
+    "tm:safeguard",
+    "tm:signalbeam",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:tailwind",
+    "tm:terablast",
+    "tm:thief",
+    "tm:uturn",
+    "tm:weatherball",
+    "tutor:aircutter",
+    "tutor:bugbite",
+    "tutor:defog",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:irondefense",
+    "tutor:laserfocus",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:roost",
+    "tutor:signalbeam",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:tailwind"
+  ],
+  "preEvolution": "spewpa",
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Pokeball",
+      "primaryType": "bug",
+      "secondaryType": "flying",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 170,
+      "pokedex": [
+        "cobblemon.species.vivillon-pokeball.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "vivillon-wings-poke-ball"
+      ],
+      "preEvolution": "spewpa",
+      "evolutions": [],
+      "battleOnly": false
+    }
+  ]
+}

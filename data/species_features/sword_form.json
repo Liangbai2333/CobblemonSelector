@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "sword_form"
+  ],
+  "default": "random",
+  "choices": [
+    "ordinary",
+    "resolute"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-form"
+}

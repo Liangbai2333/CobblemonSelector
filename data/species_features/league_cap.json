@@ -1,0 +1,19 @@
+{
+  "type": "choice",
+  "keys": [
+    "league_cap"
+  ],
+  "default": "none",
+  "choices": [
+    "original",
+    "hoenn",
+    "sinnoh",
+    "unova",
+    "kalos",
+    "alola",
+    "partner",
+    "world"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-cap"
+}

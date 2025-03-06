@@ -1,0 +1,15 @@
+{
+  "condition": {
+	"structures": [
+	  "minecraft:jungle_pyramid"
+    ],
+	"minY": 62,
+	"neededBaseBlocks": [
+      "minecraft:cobblestone",
+	  "#minecraft:mossy_cobblestone"
+    ],
+	"neededNearbyBlocks": [
+      "#cobblemon:jungle_pyramid_blocks"
+	]
+  }
+}

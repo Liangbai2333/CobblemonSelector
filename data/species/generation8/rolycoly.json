@@ -1,0 +1,157 @@
+{
+  "nationalPokedexNumber": 837,
+  "name": "Rolycoly",
+  "primaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 120,
+  "pokedex": [
+    "cobblemon.species.rolycoly.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
+  "abilities": [
+    "steamengine",
+    "heatproof",
+    "h:flashfire"
+  ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 30,
+    "attack": 40,
+    "defence": 50,
+    "special_attack": 40,
+    "special_defence": 50,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 48,
+  "experienceGroup": "medium_slow",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:coal",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:black_augurite",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:passho_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:smokescreen",
+    "5:rapidspin",
+    "10:smackdown",
+    "15:rockpolish",
+    "20:ancientpower",
+    "25:incinerate",
+    "30:stealthrock",
+    "35:heatcrash",
+    "40:rockblast",
+    "egg:block",
+    "egg:explosion",
+    "egg:mudslap",
+    "tm:ancientpower",
+    "tm:block",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:curse",
+    "tm:dig",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:gyroball",
+    "tm:heatcrash",
+    "tm:incinerate",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:meteorbeam",
+    "tm:mudslap",
+    "tm:powergem",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:rockblast",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:sandstorm",
+    "tm:sandtomb",
+    "tm:selfdestruct",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:spikes",
+    "tm:stealthrock",
+    "tm:stoneedge",
+    "tm:substitute",
+    "tm:takedown",
+    "tm:temperflare",
+    "tm:terablast",
+    "tm:willowisp",
+    "tutor:ancientpower",
+    "tutor:block",
+    "tutor:bulldoze",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:meteorbeam",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:sleeptalk",
+    "tutor:spikes",
+    "tutor:stealthrock",
+    "tutor:stoneedge"
+  ],
+  "evolutions": [
+    {
+      "id": "rolycoly_carkol",
+      "variant": "level_up",
+      "result": "carkol",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "flamecharge"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 18
+        }
+      ]
+    }
+  ]
+}

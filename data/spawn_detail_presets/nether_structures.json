@@ -1,0 +1,19 @@
+{
+  "condition": {
+	"structures": [
+	  "minecraft:bastion_remnant",
+	  "minecraft:fortress"
+    ],
+	"neededBaseBlocks": [
+      "minecraft:chiseled_polished_blackstone",
+	  "minecraft:cracked_polished_blackstone_bricks",
+	  "minecraft:gilded_blackstone",
+	  "minecraft:nether_bricks",
+	  "minecraft:polished_basalt",
+	  "minecraft:polished_blackstone_bricks"
+    ],
+	"neededNearbyBlocks": [
+      "#cobblemon:nether_structure_blocks"
+	]
+  }
+}

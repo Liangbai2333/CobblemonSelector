@@ -1,0 +1,329 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 145,
+  "name": "Zapdos",
+  "primaryType": "electric",
+  "secondaryType": "flying",
+  "maleRatio": -1,
+  "height": 16,
+  "weight": 526,
+  "pokedex": [
+    "cobblemon.species.zapdos.desc"
+  ],
+  "labels": [
+    "gen1",
+    "legendary",
+    "kantonian_form"
+  ],
+  "aspects": [],
+  "abilities": [
+    "pressure",
+    "h:static"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 90,
+    "attack": 90,
+    "defence": 85,
+    "special_attack": 125,
+    "special_defence": 90,
+    "speed": 100
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 290,
+  "experienceGroup": "slow",
+  "catchRate": 3,
+  "eggCycles": 80,
+  "baseFriendship": 35,
+  "features": [
+    "galarian"
+  ],
+  "baseScale": 1.5,
+  "hitbox": {
+    "width": 1.2,
+    "height": 1.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "drops": {
+    "amount": 6,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "2-4"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:magnet"
+      }
+    ]
+  },
+  "moves": [
+    "1:peck",
+    "1:thunderwave",
+    "5:thundershock",
+    "10:lightscreen",
+    "15:pluck",
+    "20:agility",
+    "25:ancientpower",
+    "30:charge",
+    "35:drillpeck",
+    "40:roost",
+    "45:discharge",
+    "50:raindance",
+    "55:thunder",
+    "60:detect",
+    "65:magneticflux",
+    "70:zapcannon",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:ancientpower",
+    "tm:batonpass",
+    "tm:bravebird",
+    "tm:charge",
+    "tm:defog",
+    "tm:dualwingbeat",
+    "tm:eerieimpulse",
+    "tm:electricterrain",
+    "tm:electroball",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:fly",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:hurricane",
+    "tm:hyperbeam",
+    "tm:laserfocus",
+    "tm:lightscreen",
+    "tm:metalsound",
+    "tm:ominouswind",
+    "tm:pluck",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:risingvoltage",
+    "tm:rocksmash",
+    "tm:roost",
+    "tm:sandstorm",
+    "tm:shockwave",
+    "tm:signalbeam",
+    "tm:skyattack",
+    "tm:skydrop",
+    "tm:sleeptalk",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:supercellslam",
+    "tm:swift",
+    "tm:tailwind",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:twister",
+    "tm:uturn",
+    "tm:voltswitch",
+    "tm:weatherball",
+    "tm:wildcharge",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:ancientpower",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:gigaimpact",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:laserfocus",
+    "tutor:ominouswind",
+    "tutor:rest",
+    "tutor:risingvoltage",
+    "tutor:rocksmash",
+    "tutor:roost",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:tailwind",
+    "tutor:thunderbolt",
+    "tutor:twister",
+    "tutor:wildcharge"
+  ],
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Galar",
+      "primaryType": "fighting",
+      "secondaryType": "flying",
+      "maleRatio": -1,
+      "height": 16,
+      "weight": 582,
+      "pokedex": [
+        "cobblemon.species.zapdos-galar.desc"
+      ],
+      "labels": [
+        "gen8",
+        "legendary",
+        "galarian_form"
+      ],
+      "aspects": [
+        "galarian"
+      ],
+      "abilities": [
+        "defiant",
+        "h:defiant"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 125,
+        "defence": 90,
+        "special_attack": 85,
+        "special_defence": 90,
+        "speed": 100
+      },
+      "evYield": {
+        "hp": 0,
+        "attack": 3,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "eggCycles": 120,
+      "drops": {
+        "amount": 6,
+        "entries": [
+          {
+            "item": "minecraft:feather",
+            "quantityRange": "2-4"
+          },
+          {
+            "item": "minecraft:chicken"
+          },
+          {
+            "item": "cobblemon:razor_claw"
+          }
+        ]
+      },
+      "moves": [
+        "1:peck",
+        "1:focusenergy",
+        "5:rocksmash",
+        "10:lightscreen",
+        "15:pluck",
+        "20:agility",
+        "25:ancientpower",
+        "30:brickbreak",
+        "35:drillpeck",
+        "40:quickguard",
+        "45:thunderouskick",
+        "50:bulkup",
+        "55:counter",
+        "60:detect",
+        "65:closecombat",
+        "70:reversal",
+        "tm:acrobatics",
+        "tm:aerialace",
+        "tm:agility",
+        "tm:ancientpower",
+        "tm:assurance",
+        "tm:blazekick",
+        "tm:bounce",
+        "tm:bravebird",
+        "tm:brickbreak",
+        "tm:bulkup",
+        "tm:closecombat",
+        "tm:coaching",
+        "tm:doubleedge",
+        "tm:dualwingbeat",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:facade",
+        "tm:fly",
+        "tm:focusenergy",
+        "tm:gigaimpact",
+        "tm:helpinghand",
+        "tm:hurricane",
+        "tm:hyperbeam",
+        "tm:knockoff",
+        "tm:lightscreen",
+        "tm:lowkick",
+        "tm:lowsweep",
+        "tm:megakick",
+        "tm:payback",
+        "tm:pluck",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:revenge",
+        "tm:reversal",
+        "tm:rocksmash",
+        "tm:sandstorm",
+        "tm:scaryface",
+        "tm:screech",
+        "tm:sleeptalk",
+        "tm:steelwing",
+        "tm:stompingtantrum",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:superpower",
+        "tm:swift",
+        "tm:tailwind",
+        "tm:takedown",
+        "tm:taunt",
+        "tm:terablast",
+        "tm:throatchop",
+        "tm:trailblaze",
+        "tm:uturn",
+        "tutor:aerialace",
+        "tutor:ancientpower",
+        "tutor:bounce",
+        "tutor:bulkup",
+        "tutor:coaching",
+        "tutor:dualwingbeat",
+        "tutor:endeavor",
+        "tutor:focusenergy",
+        "tutor:gigaimpact",
+        "tutor:helpinghand",
+        "tutor:hyperbeam",
+        "tutor:knockoff",
+        "tutor:lowkick",
+        "tutor:rest",
+        "tutor:rocksmash",
+        "tutor:sleeptalk",
+        "tutor:stompingtantrum",
+        "tutor:superpower",
+        "tutor:swift",
+        "tutor:tailwind",
+        "tutor:throatchop"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    }
+  ]
+}

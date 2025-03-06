@@ -1,0 +1,155 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 441,
+  "name": "Chatot",
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 19,
+  "pokedex": [
+    "cobblemon.species.chatot.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
+  "abilities": [
+    "keeneye",
+    "tangledfeet",
+    "h:bigpecks"
+  ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 76,
+    "attack": 65,
+    "defence": 45,
+    "special_attack": 92,
+    "special_defence": 42,
+    "speed": 91
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 144,
+  "experienceGroup": "medium_slow",
+  "catchRate": 30,
+  "eggCycles": 20,
+  "baseFriendship": 35,
+  "shoulderMountable": true,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:persim_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:chatter",
+    "1:taunt",
+    "1:hypervoice",
+    "1:confide",
+    "5:peck",
+    "9:mirrormove",
+    "13:sing",
+    "17:furyattack",
+    "29:round",
+    "33:mimic",
+    "37:echoedvoice",
+    "41:roost",
+    "45:uproar",
+    "49:synchronoise",
+    "50:featherdance",
+    "egg:boomburst",
+    "egg:supersonic",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:confide",
+    "tm:defog",
+    "tm:dualwingbeat",
+    "tm:echoedvoice",
+    "tm:encore",
+    "tm:endure",
+    "tm:facade",
+    "tm:featherdance",
+    "tm:fly",
+    "tm:growl",
+    "tm:heatwave",
+    "tm:hypervoice",
+    "tm:mudslap",
+    "tm:nastyplot",
+    "tm:nightshade",
+    "tm:ominouswind",
+    "tm:partingshot",
+    "tm:pluck",
+    "tm:powershift",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:roleplay",
+    "tm:roost",
+    "tm:round",
+    "tm:skyattack",
+    "tm:sleeptalk",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:tailwind",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:torment",
+    "tm:twister",
+    "tm:uproar",
+    "tm:uturn",
+    "tm:workup",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:heatwave",
+    "tutor:hypervoice",
+    "tutor:mudslap",
+    "tutor:ominouswind",
+    "tutor:powershift",
+    "tutor:rest",
+    "tutor:roleplay",
+    "tutor:roost",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:tailwind",
+    "tutor:twister",
+    "tutor:uproar"
+  ],
+  "evolutions": []
+}

@@ -1,0 +1,10 @@
+{
+  "condition": {
+	"structures": [
+	  "#minecraft:ruined_portal"
+    ],
+	"neededNearbyBlocks": [
+      "ruined_portal_blocks"
+	]
+  }
+}

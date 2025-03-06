@@ -1,0 +1,15 @@
+{
+  "type": "choice",
+  "keys": [
+    "season"
+  ],
+  "default": "random",
+  "choices": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "penguin_head"
+  ],
+  "default": "ice_face",
+  "choices": [
+    "ice_face",
+    "noice_face"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}"
+}

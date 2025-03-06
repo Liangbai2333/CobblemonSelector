@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "song_forme"
+  ],
+  "default": "aria",
+  "choices": [
+    "aria",
+    "pirouette"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-forme"
+}

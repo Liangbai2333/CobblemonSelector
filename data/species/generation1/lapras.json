@@ -1,0 +1,291 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 131,
+  "name": "Lapras",
+  "primaryType": "water",
+  "secondaryType": "ice",
+  "maleRatio": 0.5,
+  "height": 25,
+  "weight": 2200,
+  "pokedex": [
+    "cobblemon.species.lapras.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "waterabsorb",
+    "shellarmor",
+    "h:hydration"
+  ],
+  "eggGroups": [
+    "monster",
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 130,
+    "attack": 85,
+    "defence": 80,
+    "special_attack": 85,
+    "special_defence": 95,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 187,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 50,
+  "baseScale": 1.1,
+  "hitbox": {
+    "width": 2.4,
+    "height": 2.8,
+    "fixed": false
+  },
+  "riding": {
+    "controller": {
+      "key": "cobblemon:swim/generic",
+      "speed": "Math.clamp(q.entity.velocity.horizontal_magnitude + 0.07, 0, 0.08)",
+      "jumpVector": [0, "0.3*q.jump_strength/50", "-1 * 0.5*q.jump_strength/50"]
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.4,
+          "z": 0.0
+        },
+        "poseAnimations": [
+          {
+            "animations": [
+              {
+                "fileName": "trainer_generic",
+                "animationName": "animation.trainer_generic.idle"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.7,
+          "z": -1.0
+        }
+      }
+    ]
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "canWalkOnWater": true,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": false
+      },
+      "walk": {
+        "walkSpeed": 0.15
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "cobblemon:mystic_water",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:never_melt_ice",
+        "percentage": 5.0
+      },
+      {
+        "item": "minecraft:heart_of_the_sea",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:aspear_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:growl",
+    "1:watergun",
+    "5:sing",
+    "10:mist",
+    "15:lifedew",
+    "20:iceshard",
+    "25:confuseray",
+    "30:waterpulse",
+    "35:brine",
+    "40:bodyslam",
+    "45:icebeam",
+    "50:raindance",
+    "55:hydropump",
+    "60:perishsong",
+    "65:sheercold",
+    "egg:ancientpower",
+    "egg:curse",
+    "egg:fissure",
+    "egg:foresight",
+    "egg:freezedry",
+    "egg:horndrill",
+    "egg:refresh",
+    "egg:sparklingaria",
+    "egg:tickle",
+    "tm:alluringvoice",
+    "tm:ancientpower",
+    "tm:aquatail",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:block",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:brine",
+    "tm:bulldoze",
+    "tm:charm",
+    "tm:chillingwater",
+    "tm:confuseray",
+    "tm:curse",
+    "tm:disarmingvoice",
+    "tm:dive",
+    "tm:doubleedge",
+    "tm:dragoncheer",
+    "tm:dragondance",
+    "tm:dragonpulse",
+    "tm:dreameater",
+    "tm:drillrun",
+    "tm:earthquake",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:frostbreath",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:haze",
+    "tm:headbutt",
+    "tm:healbell",
+    "tm:helpinghand",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:hypervoice",
+    "tm:icebeam",
+    "tm:iciclespear",
+    "tm:icywind",
+    "tm:ironhead",
+    "tm:irontail",
+    "tm:liquidation",
+    "tm:megahorn",
+    "tm:muddywater",
+    "tm:outrage",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychicnoise",
+    "tm:raindance",
+    "tm:reflect",
+    "tm:rest",
+    "tm:rocksmash",
+    "tm:safeguard",
+    "tm:shockwave",
+    "tm:signalbeam",
+    "tm:sleeptalk",
+    "tm:smartstrike",
+    "tm:snowscape",
+    "tm:strength",
+    "tm:substitute",
+    "tm:surf",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:weatherball",
+    "tm:whirlpool",
+    "tm:zenheadbutt",
+    "tutor:ancientpower",
+    "tutor:aquatail",
+    "tutor:block",
+    "tutor:bulldoze",
+    "tutor:dive",
+    "tutor:dragonpulse",
+    "tutor:drillrun",
+    "tutor:gigaimpact",
+    "tutor:healbell",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:ironhead",
+    "tutor:irontail",
+    "tutor:liquidation",
+    "tutor:megahorn",
+    "tutor:outrage",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:thunderbolt",
+    "tutor:waterpulse",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Gmax",
+      "primaryType": "water",
+      "secondaryType": "ice",
+      "maleRatio": 0.5,
+      "height": 240,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.lapras-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "dynamaxBlocked": true,
+      "behaviour": {
+        "moving": {
+          "swim": {
+            "canBreatheUnderwater": true,
+            "canWalkOnWater": true,
+            "swimSpeed": "0.2",
+            "canSwimInWater": true,
+            "canSwimInLava": false
+          },
+          "walk": {
+            "walkSpeed": 0.15
+          }
+        },
+        "resting": {
+          "canSleep": true,
+          "light": "0-4"
+        }
+      },
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ]
+}

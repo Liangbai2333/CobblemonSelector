@@ -1,0 +1,152 @@
+{
+  "implemented": true,
+  "name": "Karrablast",
+  "nationalPokedexNumber": 588,
+  "primaryType": "bug",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 59,
+  "pokedex": [
+    "cobblemon.species.karrablast.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
+  "abilities": [
+    "swarm",
+    "shedskin",
+    "h:noguard"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 75,
+    "defence": 45,
+    "special_attack": 40,
+    "special_defence": 45,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 63,
+  "experienceGroup": "medium_fast",
+  "catchRate": 200,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:occa_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:peck",
+    "1:leer",
+    "4:furycutter",
+    "8:endure",
+    "12:falseswipe",
+    "16:furyattack",
+    "20:headbutt",
+    "24:flail",
+    "28:scaryface",
+    "32:slash",
+    "36:swordsdance",
+    "40:takedown",
+    "44:bugbuzz",
+    "48:doubleedge",
+    "egg:bugbite",
+    "egg:counter",
+    "egg:feintattack",
+    "egg:hornattack",
+    "egg:knockoff",
+    "egg:nightslash",
+    "egg:pursuit",
+    "egg:slash",
+    "tm:acidspray",
+    "tm:aerialace",
+    "tm:bugbite",
+    "tm:bugbuzz",
+    "tm:cut",
+    "tm:doubleedge",
+    "tm:drillrun",
+    "tm:encore",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:furycutter",
+    "tm:gigadrain",
+    "tm:headbutt",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:knockoff",
+    "tm:megahorn",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:scaryface",
+    "tm:screech",
+    "tm:signalbeam",
+    "tm:sleeptalk",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:xscissor",
+    "tutor:aerialace",
+    "tutor:bugbite",
+    "tutor:drillrun",
+    "tutor:energyball",
+    "tutor:falseswipe",
+    "tutor:furycutter",
+    "tutor:gigadrain",
+    "tutor:irondefense",
+    "tutor:knockoff",
+    "tutor:megahorn",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:xscissor"
+  ],
+  "evolutions": [
+    {
+      "id": "karrablast_escavalier",
+      "variant": "trade",
+      "result": "escavalier",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [],
+      "requiredContext": "shelmet"
+    },
+    {
+      "id": "karrablast_escavalier_item",
+      "variant": "item_interact",
+      "result": "escavalier",
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [],
+      "requiredContext": "cobblemon:shell_helmet"
+    }
+  ]
+}

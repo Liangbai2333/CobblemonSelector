@@ -1,0 +1,160 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 975,
+  "name": "Cetitan",
+  "primaryType": "ice",
+  "maleRatio": 0.5,
+  "height": 45,
+  "weight": 7000,
+  "pokedex": [
+    "cobblemon.species.cetitan.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
+  "abilities": [
+    "thickfat",
+    "slushrush",
+    "h:sheerforce"
+  ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 170,
+    "attack": 113,
+    "defence": 65,
+    "special_attack": 45,
+    "special_defence": 55,
+    "speed": 73
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 182,
+  "experienceGroup": "medium_slow",
+  "catchRate": 50,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 2.8,
+    "height": 2.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:bone_block",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:aspear_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:powdersnow",
+    "6:growl",
+    "9:echoedvoice",
+    "12:iceshard",
+    "15:rest",
+    "19:takedown",
+    "25:flail",
+    "27:avalanche",
+    "31:bounce",
+    "36:bodyslam",
+    "40:amnesia",
+    "44:icespinner",
+    "49:doubleedge",
+    "53:blizzard",
+    "egg:bellydrum",
+    "egg:entrainment",
+    "egg:iciclecrash",
+    "egg:superpower",
+    "egg:yawn",
+    "tm:amnesia",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:bounce",
+    "tm:bulldoze",
+    "tm:charm",
+    "tm:chillingwater",
+    "tm:curse",
+    "tm:doubleedge",
+    "tm:earthquake",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:gigaimpact",
+    "tm:hardpress",
+    "tm:heavyslam",
+    "tm:helpinghand",
+    "tm:highhorsepower",
+    "tm:hyperbeam",
+    "tm:hypervoice",
+    "tm:icebeam",
+    "tm:icefang",
+    "tm:icepunch",
+    "tm:icespinner",
+    "tm:iciclespear",
+    "tm:icywind",
+    "tm:knockoff",
+    "tm:liquidation",
+    "tm:playrough",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:sleeptalk",
+    "tm:snowscape",
+    "tm:stompingtantrum",
+    "tm:substitute",
+    "tm:superpower",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:waterpulse",
+    "tutor:bounce",
+    "tutor:bulldoze",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:icebeam",
+    "tutor:icefang",
+    "tutor:icepunch",
+    "tutor:icywind",
+    "tutor:knockoff",
+    "tutor:liquidation",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:stompingtantrum",
+    "tutor:superpower",
+    "tutor:waterpulse"
+  ],
+  "preEvolution": "cetoddle",
+  "evolutions": []
+}

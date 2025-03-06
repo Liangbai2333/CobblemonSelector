@@ -1,0 +1,320 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 146,
+  "name": "Moltres",
+  "primaryType": "fire",
+  "secondaryType": "flying",
+  "maleRatio": -1,
+  "height": 20,
+  "weight": 600,
+  "pokedex": [
+    "cobblemon.species.moltres.desc"
+  ],
+  "labels": [
+    "gen1",
+    "legendary",
+    "kantonian_form"
+  ],
+  "aspects": [],
+  "abilities": [
+    "pressure",
+    "h:flamebody"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 90,
+    "attack": 100,
+    "defence": 90,
+    "special_attack": 125,
+    "special_defence": 85,
+    "speed": 90
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 290,
+  "experienceGroup": "slow",
+  "catchRate": 3,
+  "eggCycles": 80,
+  "baseFriendship": 35,
+  "features": [
+    "galarian"
+  ],
+  "baseScale": 1.6,
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "drops": {
+    "amount": 6,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "2-4"
+      },
+      {
+        "item": "minecraft:cooked_chicken"
+      },
+      {
+        "item": "cobblemon:charcoal_stick"
+      }
+    ]
+  },
+  "moves": [
+    "1:gust",
+    "1:leer",
+    "5:ember",
+    "10:safeguard",
+    "15:wingattack",
+    "20:agility",
+    "25:ancientpower",
+    "30:incinerate",
+    "35:airslash",
+    "40:roost",
+    "45:heatwave",
+    "50:sunnyday",
+    "55:hurricane",
+    "60:endure",
+    "65:burnup",
+    "70:skyattack",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:ancientpower",
+    "tm:bravebird",
+    "tm:burningjealousy",
+    "tm:defog",
+    "tm:doubleedge",
+    "tm:dualwingbeat",
+    "tm:endure",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:firespin",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flareblitz",
+    "tm:fly",
+    "tm:gigaimpact",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:hurricane",
+    "tm:hyperbeam",
+    "tm:incinerate",
+    "tm:laserfocus",
+    "tm:mysticalfire",
+    "tm:ominouswind",
+    "tm:overheat",
+    "tm:pluck",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:roar",
+    "tm:rocksmash",
+    "tm:roost",
+    "tm:safeguard",
+    "tm:sandstorm",
+    "tm:scorchingsands",
+    "tm:skyattack",
+    "tm:skydrop",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:tailwind",
+    "tm:takedown",
+    "tm:temperflare",
+    "tm:terablast",
+    "tm:twister",
+    "tm:uturn",
+    "tm:weatherball",
+    "tm:willowisp",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:ancientpower",
+    "tutor:burningjealousy",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:flamethrower",
+    "tutor:gigaimpact",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:laserfocus",
+    "tutor:mysticalfire",
+    "tutor:ominouswind",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:roost",
+    "tutor:scorchingsands",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:tailwind",
+    "tutor:twister"
+  ],
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Galar",
+      "primaryType": "dark",
+      "secondaryType": "flying",
+      "maleRatio": -1,
+      "height": 20,
+      "weight": 660,
+      "pokedex": [
+        "cobblemon.species.moltres-galar.desc"
+      ],
+      "labels": [
+        "gen8",
+        "legendary",
+        "galarian_form"
+      ],
+      "aspects": [
+        "galarian"
+      ],
+      "abilities": [
+        "berserk",
+        "h:berserk"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 85,
+        "defence": 90,
+        "special_attack": 100,
+        "special_defence": 125,
+        "speed": 90
+      },
+      "evYield": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 3,
+        "speed": 0
+      },
+      "eggCycles": 120,
+      "drops": {
+        "amount": 6,
+        "entries": [
+          {
+            "item": "minecraft:feather",
+            "quantityRange": "2-4"
+          },
+          {
+            "item": "minecraft:cooked_chicken"
+          },
+          {
+            "item": "cobblemon:sharp_beak"
+          }
+        ]
+      },
+      "moves": [
+        "1:gust",
+        "1:leer",
+        "5:payback",
+        "10:safeguard",
+        "15:wingattack",
+        "20:agility",
+        "25:ancientpower",
+        "30:suckerpunch",
+        "35:airslash",
+        "40:afteryou",
+        "45:fierywrath",
+        "50:nastyplot",
+        "55:hurricane",
+        "60:endure",
+        "65:memento",
+        "70:skyattack",
+        "tm:acrobatics",
+        "tm:aerialace",
+        "tm:afteryou",
+        "tm:agility",
+        "tm:airslash",
+        "tm:ancientpower",
+        "tm:assurance",
+        "tm:bravebird",
+        "tm:darkpulse",
+        "tm:dualwingbeat",
+        "tm:endure",
+        "tm:facade",
+        "tm:fly",
+        "tm:foulplay",
+        "tm:gigaimpact",
+        "tm:helpinghand",
+        "tm:hex",
+        "tm:hurricane",
+        "tm:hyperbeam",
+        "tm:hypervoice",
+        "tm:imprison",
+        "tm:lashout",
+        "tm:nastyplot",
+        "tm:painsplit",
+        "tm:payback",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:safeguard",
+        "tm:sandstorm",
+        "tm:scaryface",
+        "tm:shadowball",
+        "tm:skyattack",
+        "tm:sleeptalk",
+        "tm:snarl",
+        "tm:spite",
+        "tm:steelwing",
+        "tm:substitute",
+        "tm:suckerpunch",
+        "tm:sunnyday",
+        "tm:swift",
+        "tm:tailwind",
+        "tm:takedown",
+        "tm:taunt",
+        "tm:terablast",
+        "tm:thief",
+        "tm:uturn",
+        "tutor:aerialace",
+        "tutor:afteryou",
+        "tutor:ancientpower",
+        "tutor:darkpulse",
+        "tutor:dualwingbeat",
+        "tutor:foulplay",
+        "tutor:gigaimpact",
+        "tutor:helpinghand",
+        "tutor:hyperbeam",
+        "tutor:hypervoice",
+        "tutor:lashout",
+        "tutor:painsplit",
+        "tutor:rest",
+        "tutor:shadowball",
+        "tutor:skyattack",
+        "tutor:sleeptalk",
+        "tutor:snarl",
+        "tutor:spite",
+        "tutor:suckerpunch",
+        "tutor:swift",
+        "tutor:tailwind"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    }
+  ]
+}

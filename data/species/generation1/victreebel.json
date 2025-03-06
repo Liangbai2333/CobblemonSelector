@@ -1,0 +1,182 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 71,
+  "name": "Victreebel",
+  "primaryType": "grass",
+  "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 17,
+  "weight": 155,
+  "pokedex": [
+    "cobblemon.species.victreebel.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "chlorophyll",
+    "h:gluttony"
+  ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 80,
+    "attack": 105,
+    "defence": 65,
+    "special_attack": 100,
+    "special_defence": 70,
+    "speed": 70
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 3,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 245,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.95,
+  "hitbox": {
+    "width": 1.15,
+    "height": 2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.185
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:big_root",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:pinap_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "moves": [
+    "1:stockpile",
+    "1:swallow",
+    "1:spitup",
+    "1:vinewhip",
+    "1:sleeppowder",
+    "1:sweetscent",
+    "1:razorleaf",
+    "1:leafstorm",
+    "1:knockoff",
+    "1:gastroacid",
+    "1:leaftornado",
+    "1:powerwhip",
+    "1:poisonjab",
+    "1:growth",
+    "1:wrap",
+    "1:poisonpowder",
+    "1:stunspore",
+    "1:acid",
+    "1:slam",
+    "1:wringout",
+    "44:leafblade",
+    "egg:belch",
+    "egg:clearsmog",
+    "egg:ingrain",
+    "egg:naturalgift",
+    "egg:strengthsap",
+    "egg:suckerpunch",
+    "egg:synthesis",
+    "egg:tickle",
+    "egg:worryseed",
+    "egg:wringout",
+    "tm:acidspray",
+    "tm:bind",
+    "tm:bodyslam",
+    "tm:bugbite",
+    "tm:bulletseed",
+    "tm:cut",
+    "tm:encore",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:gastroacid",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:hyperbeam",
+    "tm:infestation",
+    "tm:knockoff",
+    "tm:leafblade",
+    "tm:leafstorm",
+    "tm:leechlife",
+    "tm:lunge",
+    "tm:magicalleaf",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:poisonjab",
+    "tm:pounce",
+    "tm:powerwhip",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:scaryface",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:suckerpunch",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:synthesis",
+    "tm:terablast",
+    "tm:thief",
+    "tm:toxic",
+    "tm:trailblaze",
+    "tm:venoshock",
+    "tm:weatherball",
+    "tm:worryseed",
+    "tutor:bind",
+    "tutor:bugbite",
+    "tutor:energyball",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:grassyglide",
+    "tutor:hyperbeam",
+    "tutor:knockoff",
+    "tutor:leechlife",
+    "tutor:magicalleaf",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "tutor:synthesis",
+    "tutor:worryseed"
+  ],
+  "preEvolution": "weepinbell",
+  "evolutions": []
+}

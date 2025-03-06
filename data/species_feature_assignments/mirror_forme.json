@@ -1,0 +1,11 @@
+{
+  "pokemon": [
+    "tornadus",
+    "thundurus",
+    "landorus",
+    "enamorus"
+  ],
+  "features": [
+    "mirror_forme"
+  ]
+}

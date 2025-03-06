@@ -1,0 +1,236 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 704,
+  "name": "Goomy",
+  "primaryType": "dragon",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 28,
+  "pokedex": [
+    "cobblemon.species.goomy.desc"
+  ],
+  "labels": [
+    "gen6",
+    "kalosian_form"
+  ],
+  "aspects": [],
+  "abilities": [
+    "sapsipper",
+    "hydration",
+    "h:gooey"
+  ],
+  "eggGroups": [
+    "dragon"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 50,
+    "defence": 35,
+    "special_attack": 55,
+    "special_defence": 75,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 60,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 35,
+  "features": [
+    "region_bias"
+  ],
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.83,
+    "height": 0.7,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:slime_ball",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:haban_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:bubble",
+    "1:absorb",
+    "1:bide",
+    "5:watergun",
+    "10:dragonbreath",
+    "15:protect",
+    "20:flail",
+    "25:waterpulse",
+    "30:raindance",
+    "35:dragonpulse",
+    "41:curse",
+    "45:bodyslam",
+    "50:muddywater",
+    "egg:counter",
+    "egg:lifedew",
+    "tm:acidarmor",
+    "tm:bodyslam",
+    "tm:charm",
+    "tm:chillingwater",
+    "tm:curse",
+    "tm:dracometeor",
+    "tm:dragonpulse",
+    "tm:endure",
+    "tm:facade",
+    "tm:infestation",
+    "tm:irontail",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:outrage",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:shockwave",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunderbolt",
+    "tm:waterpulse",
+    "tutor:dracometeor",
+    "tutor:dragonpulse",
+    "tutor:irontail",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:shockwave",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:thunderbolt",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [
+    {
+      "id": "goomy_sliggoo",
+      "variant": "level_up",
+      "result": "sliggoo",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "acidspray"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 40
+        },
+        {
+          "variant": "biome",
+          "biomeAnticondition": "#cobblemon:evolution/regional/goomy_hisuibiome"
+        }
+      ]
+    },
+    {
+      "id": "goomy_sliggoohisui",
+      "variant": "level_up",
+      "result": "sliggoo hisuian",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "shelter"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 40
+        },
+        {
+          "variant": "biome",
+          "biomeCondition": "#cobblemon:evolution/regional/goomy_hisuibiome"
+        },
+        {
+          "variant": "biome",
+          "biomeAnticondition": "#cobblemon:evolution/regional/goomy_kalosbiome"
+        }
+      ]
+    }
+  ],
+  "forms": [
+    {
+      "name": "Hisui-Bias",
+      "primaryType": "dragon",
+      "maleRatio": 0.5,
+      "height": 3,
+      "weight": 28,
+      "pokedex": [
+        "cobblemon.species.goomy-hisuibias.desc"
+      ],
+      "labels": [
+        "gen8a",
+        "customized_official",
+        "hisuian_form"
+      ],
+      "aspects": [
+        "region-bias-hisui"
+      ],
+      "dynamaxBlocked": false,
+      "evolutions": [
+        {
+          "id": "goomy_sliggoo",
+          "variant": "level_up",
+          "result": "sliggoo",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "acidspray"
+          ],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 40
+            },
+            {
+              "variant": "biome",
+              "biomeAnticondition": "#cobblemon:evolution/regional/goomy_hisuibiome"
+            },
+            {
+              "variant": "biome",
+              "biomeCondition": "#cobblemon:evolution/regional/goomy_kalosbiome"
+            }
+          ]
+        },
+        {
+          "id": "goomy_sliggoohisui",
+          "variant": "level_up",
+          "result": "sliggoo hisuian",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "shelter"
+          ],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 40
+            },
+            {
+              "variant": "biome",
+              "biomeAnticondition": "#cobblemon:evolution/regional/goomy_kalosbiome"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

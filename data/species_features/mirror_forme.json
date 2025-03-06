@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "mirror_forme"
+  ],
+  "default": "incarnate",
+  "choices": [
+    "incarnate",
+    "therian"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-forme"
+}

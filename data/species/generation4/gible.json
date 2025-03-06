@@ -1,0 +1,185 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 443,
+  "name": "Gible",
+  "primaryType": "dragon",
+  "secondaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 205,
+  "pokedex": [
+    "cobblemon.species.gible.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
+  "abilities": [
+    "sandveil",
+    "h:roughskin"
+  ],
+  "eggGroups": [
+    "monster",
+    "dragon"
+  ],
+  "baseStats": {
+    "hp": 58,
+    "attack": 70,
+    "defence": 45,
+    "special_attack": 40,
+    "special_defence": 45,
+    "speed": 42
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 60,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.93,
+    "height": 0.93,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canSwimInLava": true
+      }
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:dragon_fang",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:haban_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:dragonrage",
+    "1:sandtomb",
+    "6:sandattack",
+    "12:dragonbreath",
+    "18:bulldoze",
+    "25:bite",
+    "30:slash",
+    "36:dragonclaw",
+    "42:dig",
+    "48:sandstorm",
+    "54:takedown",
+    "60:dragonrush",
+    "egg:doubleedge",
+    "egg:metalclaw",
+    "egg:thrash",
+    "egg:twister",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:cut",
+    "tm:dig",
+    "tm:doubleedge",
+    "tm:dracometeor",
+    "tm:dragoncheer",
+    "tm:dragonclaw",
+    "tm:dragonpulse",
+    "tm:dragontail",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:fireblast",
+    "tm:firefang",
+    "tm:flamethrower",
+    "tm:furycutter",
+    "tm:headbutt",
+    "tm:helpinghand",
+    "tm:honeclaws",
+    "tm:incinerate",
+    "tm:ironhead",
+    "tm:irontail",
+    "tm:metalclaw",
+    "tm:mudshot",
+    "tm:outrage",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rockclimb",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:sandstorm",
+    "tm:sandtomb",
+    "tm:scaleshot",
+    "tm:scaryface",
+    "tm:scorchingsands",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:stealthrock",
+    "tm:stoneedge",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunderfang",
+    "tm:twister",
+    "tutor:bulldoze",
+    "tutor:dracometeor",
+    "tutor:dragonpulse",
+    "tutor:earthpower",
+    "tutor:falseswipe",
+    "tutor:firefang",
+    "tutor:flamethrower",
+    "tutor:furycutter",
+    "tutor:helpinghand",
+    "tutor:ironhead",
+    "tutor:irontail",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:scaleshot",
+    "tutor:scorchingsands",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
+    "tutor:stoneedge",
+    "tutor:swift",
+    "tutor:thunderfang",
+    "tutor:twister"
+  ],
+  "evolutions": [
+    {
+      "id": "gible_gabite",
+      "variant": "level_up",
+      "result": "gabite",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "dualchop"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 24
+        }
+      ]
+    }
+  ]
+}

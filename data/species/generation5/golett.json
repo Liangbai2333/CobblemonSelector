@@ -1,0 +1,222 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 622,
+  "name": "Golett",
+  "primaryType": "ground",
+  "secondaryType": "ghost",
+  "maleRatio": -1,
+  "height": 10,
+  "weight": 920,
+  "pokedex": [
+    "cobblemon.species.golett.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
+  "abilities": [
+    "ironfist",
+    "klutz",
+    "h:noguard"
+  ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 59,
+    "attack": 74,
+    "defence": 50,
+    "special_attack": 35,
+    "special_defence": 50,
+    "speed": 35
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.3,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:clay_ball",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:light_clay",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:colbur_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:astonish",
+    "1:mudslap",
+    "4:defensecurl",
+    "8:pound",
+    "12:shadowpunch",
+    "16:curse",
+    "20:nightshade",
+    "24:stompingtantrum",
+    "28:irondefense",
+    "32:megapunch",
+    "36:shadowball",
+    "40:heavyslam",
+    "44:phantomforce",
+    "48:hammerarm",
+    "52:earthquake",
+    "56:dynamicpunch",
+    "egg:magnitude",
+    "tm:allyswitch",
+    "tm:block",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:bulldoze",
+    "tm:confuseray",
+    "tm:curse",
+    "tm:dig",
+    "tm:doubleedge",
+    "tm:drainpunch",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:firepunch",
+    "tm:flash",
+    "tm:fling",
+    "tm:focusblast",
+    "tm:focuspunch",
+    "tm:grassknot",
+    "tm:gravity",
+    "tm:gyroball",
+    "tm:heavyslam",
+    "tm:helpinghand",
+    "tm:hex",
+    "tm:icebeam",
+    "tm:icepunch",
+    "tm:icywind",
+    "tm:imprison",
+    "tm:irondefense",
+    "tm:knockoff",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:magiccoat",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:mudslap",
+    "tm:nightshade",
+    "tm:phantomforce",
+    "tm:poltergeist",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychup",
+    "tm:raindance",
+    "tm:reflect",
+    "tm:rest",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:rollout",
+    "tm:safeguard",
+    "tm:sandstorm",
+    "tm:scorchingsands",
+    "tm:selfdestruct",
+    "tm:shadowball",
+    "tm:shockwave",
+    "tm:signalbeam",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:stealthrock",
+    "tm:stompingtantrum",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:superpower",
+    "tm:takedown",
+    "tm:telekinesis",
+    "tm:terablast",
+    "tm:thief",
+    "tm:thunderpunch",
+    "tutor:allyswitch",
+    "tutor:block",
+    "tutor:bulldoze",
+    "tutor:drainpunch",
+    "tutor:earthpower",
+    "tutor:firepunch",
+    "tutor:focuspunch",
+    "tutor:gravity",
+    "tutor:helpinghand",
+    "tutor:icebeam",
+    "tutor:icepunch",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:knockoff",
+    "tutor:lowkick",
+    "tutor:magiccoat",
+    "tutor:mudslap",
+    "tutor:poltergeist",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rollout",
+    "tutor:scorchingsands",
+    "tutor:shadowball",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
+    "tutor:stompingtantrum",
+    "tutor:superpower",
+    "tutor:telekinesis",
+    "tutor:thunderpunch"
+  ],
+  "evolutions": [
+    {
+      "id": "golett_golurk",
+      "variant": "level_up",
+      "result": "golurk",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "heavyslam"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 43
+        }
+      ]
+    }
+  ]
+}

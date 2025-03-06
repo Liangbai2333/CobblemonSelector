@@ -1,0 +1,20 @@
+{
+  "type": "choice",
+  "keys": [
+    "cream"
+  ],
+  "default": "random",
+  "choices": [
+    "vanilla",
+    "ruby",
+    "matcha",
+    "mint",
+    "lemon",
+    "salted",
+    "ruby_swirl",
+    "caramel_swirl",
+    "rainbow_swirl"
+  ],
+  "isAspect": true,
+  "aspectFormat": "cream-{{choice}}"
+}

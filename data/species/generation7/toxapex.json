@@ -1,0 +1,176 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 748,
+  "name": "Toxapex",
+  "primaryType": "poison",
+  "secondaryType": "water",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 145,
+  "pokedex": [
+    "cobblemon.species.toxapex.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
+  "abilities": [
+    "merciless",
+    "limber",
+    "h:regenerator"
+  ],
+  "eggGroups": [
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 63,
+    "defence": 152,
+    "special_attack": 53,
+    "special_defence": 142,
+    "speed": 35
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 173,
+  "experienceGroup": "medium_fast",
+  "catchRate": 75,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 2,
+    "height": 1.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "swimSpeed": 0.2,
+        "canSwimInWater": true,
+        "canBreatheUnderwater": true,
+        "canSwimInLava": false
+      }
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:slime_ball",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:banefulbunker",
+    "1:poisonsting",
+    "1:peck",
+    "1:bite",
+    "1:wideguard",
+    "1:spikecannon",
+    "15:venoshock",
+    "20:recover",
+    "25:pinmissile",
+    "30:toxicspikes",
+    "35:liquidation",
+    "42:acidspray",
+    "49:poisonjab",
+    "56:toxic",
+    "egg:haze",
+    "egg:infestation",
+    "egg:spikecannon",
+    "egg:spitup",
+    "egg:stockpile",
+    "egg:swallow",
+    "tm:acidspray",
+    "tm:afteryou",
+    "tm:blizzard",
+    "tm:block",
+    "tm:bodyslam",
+    "tm:brine",
+    "tm:chillingwater",
+    "tm:covet",
+    "tm:crosspoison",
+    "tm:endure",
+    "tm:facade",
+    "tm:frostbreath",
+    "tm:gastroacid",
+    "tm:gigaimpact",
+    "tm:gunkshot",
+    "tm:hail",
+    "tm:haze",
+    "tm:hex",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icespinner",
+    "tm:icywind",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:liquidation",
+    "tm:lunge",
+    "tm:magiccoat",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:painsplit",
+    "tm:payback",
+    "tm:pinmissile",
+    "tm:poisonjab",
+    "tm:pounce",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:safeguard",
+    "tm:scaryface",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:smackdown",
+    "tm:snatch",
+    "tm:substitute",
+    "tm:surf",
+    "tm:terablast",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:venomdrench",
+    "tm:venoshock",
+    "tm:waterpulse",
+    "tutor:afteryou",
+    "tutor:block",
+    "tutor:covet",
+    "tutor:gastroacid",
+    "tutor:gigaimpact",
+    "tutor:gunkshot",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:liquidation",
+    "tutor:magiccoat",
+    "tutor:painsplit",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:snatch",
+    "tutor:spikes",
+    "tutor:waterpulse"
+  ],
+  "preEvolution": "mareanie",
+  "evolutions": []
+}

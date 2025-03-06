@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "stance_forme"
+  ],
+  "default": "shield",
+  "choices": [
+    "shield",
+    "blade"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-forme"
+}

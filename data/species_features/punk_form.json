@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "punk_form"
+  ],
+  "default": "random",
+  "choices": [
+    "amped",
+    "low_key"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-form"
+}

@@ -1,0 +1,322 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 144,
+  "name": "Articuno",
+  "primaryType": "ice",
+  "secondaryType": "flying",
+  "maleRatio": -1,
+  "height": 17,
+  "weight": 554,
+  "pokedex": [
+    "cobblemon.species.articuno.desc"
+  ],
+  "labels": [
+    "gen1",
+    "legendary",
+    "kantonian_form"
+  ],
+  "aspects": [],
+  "abilities": [
+    "pressure",
+    "h:snowcloak"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 90,
+    "attack": 85,
+    "defence": 100,
+    "special_attack": 95,
+    "special_defence": 125,
+    "speed": 85
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 3,
+    "speed": 0
+  },
+  "baseExperienceYield": 290,
+  "experienceGroup": "slow",
+  "catchRate": 3,
+  "eggCycles": 80,
+  "baseFriendship": 35,
+  "features": [
+    "galarian"
+  ],
+  "baseScale": 1.5,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "drops": {
+    "amount": 6,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "2-4"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:never_melt_ice"
+      }
+    ]
+  },
+  "moves": [
+    "1:gust",
+    "1:mist",
+    "5:powdersnow",
+    "10:reflect",
+    "15:iceshard",
+    "20:agility",
+    "25:ancientpower",
+    "30:tailwind",
+    "35:freezedry",
+    "40:roost",
+    "45:icebeam",
+    "50:snowscape",
+    "55:hurricane",
+    "60:mindreader",
+    "65:blizzard",
+    "70:sheercold",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:ancientpower",
+    "tm:auroraveil",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:bravebird",
+    "tm:defog",
+    "tm:doubleedge",
+    "tm:dualwingbeat",
+    "tm:endure",
+    "tm:facade",
+    "tm:featherdance",
+    "tm:fly",
+    "tm:frostbreath",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:haze",
+    "tm:helpinghand",
+    "tm:hurricane",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icespinner",
+    "tm:iciclespear",
+    "tm:icywind",
+    "tm:laserfocus",
+    "tm:lightscreen",
+    "tm:ominouswind",
+    "tm:pluck",
+    "tm:protect",
+    "tm:raindance",
+    "tm:reflect",
+    "tm:rest",
+    "tm:roar",
+    "tm:rocksmash",
+    "tm:roost",
+    "tm:sandstorm",
+    "tm:signalbeam",
+    "tm:skyattack",
+    "tm:skydrop",
+    "tm:sleeptalk",
+    "tm:snowscape",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:tailwind",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:tripleaxel",
+    "tm:twister",
+    "tm:uturn",
+    "tm:waterpulse",
+    "tm:weatherball",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:ancientpower",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:laserfocus",
+    "tutor:ominouswind",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:roost",
+    "tutor:signalbeam",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:tailwind",
+    "tutor:tripleaxel",
+    "tutor:twister",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Galar",
+      "primaryType": "psychic",
+      "secondaryType": "flying",
+      "maleRatio": -1,
+      "height": 17,
+      "weight": 509,
+      "pokedex": [
+        "cobblemon.species.articuno-galar.desc"
+      ],
+      "labels": [
+        "gen8",
+        "legendary",
+        "galarian_form"
+      ],
+      "aspects": [
+        "galarian"
+      ],
+      "abilities": [
+        "competitive",
+        "h:competitive"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 85,
+        "defence": 85,
+        "special_attack": 125,
+        "special_defence": 100,
+        "speed": 95
+      },
+      "evYield": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 3,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "eggCycles": 120,
+      "drops": {
+        "amount": 6,
+        "entries": [
+          {
+            "item": "minecraft:feather",
+            "quantityRange": "2-4"
+          },
+          {
+            "item": "minecraft:chicken"
+          },
+          {
+            "item": "cobblemon:twisted_spoon"
+          }
+        ]
+      },
+      "moves": [
+        "1:gust",
+        "1:psychoshift",
+        "1:mindreader",
+        "5:confusion",
+        "10:reflect",
+        "15:hypnosis",
+        "20:agility",
+        "25:ancientpower",
+        "30:tailwind",
+        "35:psychocut",
+        "40:recover",
+        "45:freezingglare",
+        "50:dreameater",
+        "55:hurricane",
+        "60:doubleteam",
+        "65:futuresight",
+        "70:trickroom",
+        "tm:agility",
+        "tm:aircutter",
+        "tm:airslash",
+        "tm:allyswitch",
+        "tm:ancientpower",
+        "tm:bravebird",
+        "tm:calmmind",
+        "tm:doubleteam",
+        "tm:dreameater",
+        "tm:dualwingbeat",
+        "tm:endure",
+        "tm:expandingforce",
+        "tm:facade",
+        "tm:fly",
+        "tm:futuresight",
+        "tm:gigaimpact",
+        "tm:guardswap",
+        "tm:helpinghand",
+        "tm:hurricane",
+        "tm:hyperbeam",
+        "tm:hypervoice",
+        "tm:imprison",
+        "tm:lightscreen",
+        "tm:powerswap",
+        "tm:protect",
+        "tm:psybeam",
+        "tm:psychic",
+        "tm:psychicnoise",
+        "tm:psychocut",
+        "tm:psyshock",
+        "tm:raindance",
+        "tm:reflect",
+        "tm:rest",
+        "tm:scaryface",
+        "tm:shadowball",
+        "tm:skillswap",
+        "tm:sleeptalk",
+        "tm:snowscape",
+        "tm:steelwing",
+        "tm:storedpower",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:swift",
+        "tm:tailwind",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:trick",
+        "tm:trickroom",
+        "tm:uturn",
+        "tutor:aircutter",
+        "tutor:allyswitch",
+        "tutor:ancientpower",
+        "tutor:calmmind",
+        "tutor:dualwingbeat",
+        "tutor:expandingforce",
+        "tutor:gigaimpact",
+        "tutor:helpinghand",
+        "tutor:hyperbeam",
+        "tutor:hypervoice",
+        "tutor:psychic",
+        "tutor:psychocut",
+        "tutor:rest",
+        "tutor:shadowball",
+        "tutor:skillswap",
+        "tutor:sleeptalk",
+        "tutor:swift",
+        "tutor:tailwind",
+        "tutor:trick"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    }
+  ]
+}

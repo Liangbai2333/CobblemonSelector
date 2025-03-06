@@ -1,0 +1,165 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 43,
+  "name": "Oddish",
+  "primaryType": "grass",
+  "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 54,
+  "pokedex": [
+    "cobblemon.species.oddish.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "chlorophyll",
+    "h:runaway"
+  ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 50,
+    "defence": 55,
+    "special_attack": 75,
+    "special_defence": 65,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 64,
+  "experienceGroup": "medium_slow",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "features": [
+    "valencian"
+  ],
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:absorb_bulb",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:absorb",
+    "1:growth",
+    "4:acid",
+    "8:sweetscent",
+    "12:megadrain",
+    "14:poisonpowder",
+    "16:stunspore",
+    "18:sleeppowder",
+    "20:gigadrain",
+    "24:toxic",
+    "28:moonblast",
+    "32:grassyterrain",
+    "36:moonlight",
+    "40:petaldance",
+    "egg:afteryou",
+    "egg:flail",
+    "egg:ingrain",
+    "egg:leechseed",
+    "egg:luckychant",
+    "egg:naturalgift",
+    "egg:razorleaf",
+    "egg:secretpower",
+    "egg:strengthsap",
+    "egg:synthesis",
+    "egg:teeterdance",
+    "egg:tickle",
+    "tm:acidspray",
+    "tm:afteryou",
+    "tm:bulletseed",
+    "tm:charm",
+    "tm:cut",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:gastroacid",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:infestation",
+    "tm:leafstorm",
+    "tm:magicalleaf",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:rest",
+    "tm:secretpower",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swordsdance",
+    "tm:synthesis",
+    "tm:terablast",
+    "tm:toxic",
+    "tm:trailblaze",
+    "tm:venoshock",
+    "tm:worryseed",
+    "tutor:afteryou",
+    "tutor:energyball",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:synthesis",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "oddish_gloom",
+      "variant": "level_up",
+      "result": "gloom",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 21
+        }
+      ]
+    }
+  ]
+}

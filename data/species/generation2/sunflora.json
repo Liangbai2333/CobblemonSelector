@@ -1,0 +1,170 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 192,
+  "name": "Sunflora",
+  "primaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 85,
+  "pokedex": [
+    "cobblemon.species.sunflora.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
+  "abilities": [
+    "chlorophyll",
+    "solarpower",
+    "h:earlybird"
+  ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 75,
+    "attack": 75,
+    "defence": 55,
+    "special_attack": 105,
+    "special_defence": 85,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 149,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.75,
+    "height": 1.38,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.145
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:sunflower"
+      },
+      {
+        "item": "cobblemon:coba_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:pound",
+    "1:growth",
+    "1:grasswhistle",
+    "1:flowershield",
+    "1:naturalgift",
+    "1:tackle",
+    "4:ingrain",
+    "7:absorb",
+    "10:megadrain",
+    "13:leechseed",
+    "16:razorleaf",
+    "19:worryseed",
+    "22:gigadrain",
+    "25:bulletseed",
+    "28:petaldance",
+    "31:solarbeam",
+    "34:doubleedge",
+    "39:sunnyday",
+    "43:leafstorm",
+    "50:petalblizzard",
+    "egg:bide",
+    "egg:curse",
+    "egg:encore",
+    "egg:grasswhistle",
+    "egg:grassyterrain",
+    "egg:ingrain",
+    "egg:leechseed",
+    "egg:morningsun",
+    "egg:naturalgift",
+    "egg:sweetscent",
+    "tm:afteryou",
+    "tm:bulletseed",
+    "tm:curse",
+    "tm:cut",
+    "tm:dazzlinggleam",
+    "tm:doubleedge",
+    "tm:earthpower",
+    "tm:encore",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:leafblade",
+    "tm:leafstorm",
+    "tm:lightscreen",
+    "tm:magicalleaf",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:petalblizzard",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:safeguard",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swordsdance",
+    "tm:synthesis",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:trailblaze",
+    "tm:weatherball",
+    "tm:worryseed",
+    "tutor:afteryou",
+    "tutor:dazzlinggleam",
+    "tutor:earthpower",
+    "tutor:endeavor",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:synthesis",
+    "tutor:worryseed"
+  ],
+  "preEvolution": "sunkern",
+  "evolutions": []
+}

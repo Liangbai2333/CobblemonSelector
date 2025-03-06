@@ -1,0 +1,164 @@
+{
+  "nationalPokedexNumber": 603,
+  "name": "Eelektrik",
+  "primaryType": "electric",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 220,
+  "pokedex": [
+    "cobblemon.species.eelektrik.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
+  "abilities": [
+    "levitate",
+    "h:levitate"
+  ],
+  "eggGroups": [
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 65,
+    "attack": 85,
+    "defence": 70,
+    "special_attack": 75,
+    "special_defence": 70,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 142,
+  "experienceGroup": "slow",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canSwimInWater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:slime_ball",
+        "quantityRange": "0-2"
+      }
+    ]
+  },
+  "moves": [
+    "1:headbutt",
+    "1:thunderwave",
+    "1:spark",
+    "1:chargebeam",
+    "1:crunch",
+    "1:tackle",
+    "9:bind",
+    "19:acid",
+    "29:discharge",
+    "44:thunderbolt",
+    "49:acidspray",
+    "54:coil",
+    "59:wildcharge",
+    "64:gastroacid",
+    "69:zapcannon",
+    "74:thrash",
+    "tm:acidspray",
+    "tm:acrobatics",
+    "tm:aquatail",
+    "tm:bind",
+    "tm:bodyslam",
+    "tm:bounce",
+    "tm:charge",
+    "tm:chargebeam",
+    "tm:crunch",
+    "tm:eerieimpulse",
+    "tm:electricterrain",
+    "tm:electroball",
+    "tm:electroweb",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:flashcannon",
+    "tm:gastroacid",
+    "tm:gigadrain",
+    "tm:headbutt",
+    "tm:irontail",
+    "tm:knockoff",
+    "tm:lightscreen",
+    "tm:lunge",
+    "tm:magnetrise",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:risingvoltage",
+    "tm:scaryface",
+    "tm:shockwave",
+    "tm:signalbeam",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:superfang",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:throatchop",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderfang",
+    "tm:thunderwave",
+    "tm:uturn",
+    "tm:voltswitch",
+    "tm:wildcharge",
+    "tutor:aquatail",
+    "tutor:bind",
+    "tutor:bounce",
+    "tutor:chargebeam",
+    "tutor:electroweb",
+    "tutor:flashcannon",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:irontail",
+    "tutor:knockoff",
+    "tutor:magnetrise",
+    "tutor:rest",
+    "tutor:risingvoltage",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:superfang",
+    "tutor:throatchop",
+    "tutor:thunderbolt",
+    "tutor:thunderfang",
+    "tutor:wildcharge"
+  ],
+  "preEvolution": "tynamo",
+  "evolutions": [
+    {
+      "id": "eelektrik_eelektross",
+      "variant": "item_interact",
+      "result": "eelektross",
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [],
+      "requiredContext": "cobblemon:thunder_stone"
+    }
+  ]
+}

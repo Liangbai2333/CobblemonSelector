@@ -1,0 +1,169 @@
+{
+  "nationalPokedexNumber": 540,
+  "name": "Sewaddle",
+  "primaryType": "bug",
+  "secondaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 25,
+  "pokedex": [
+    "cobblemon.species.sewaddle.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
+  "abilities": [
+    "swarm",
+    "chlorophyll",
+    "h:overcoat"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 53,
+    "defence": 70,
+    "special_attack": 40,
+    "special_defence": 60,
+    "speed": 42
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 62,
+  "experienceGroup": "medium_slow",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:mental_herb",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:revival_herb",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:coba_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:stringshot",
+    "8:bugbite",
+    "15:razorleaf",
+    "22:strugglebug",
+    "29:endure",
+    "31:stickyweb",
+    "36:bugbuzz",
+    "43:flail",
+    "egg:camouflage",
+    "egg:mefirst",
+    "egg:mindreader",
+    "egg:razorwind",
+    "egg:screech",
+    "egg:snore",
+    "egg:switcheroo",
+    "egg:synthesis",
+    "egg:worryseed",
+    "tm:batonpass",
+    "tm:bugbite",
+    "tm:bugbuzz",
+    "tm:charm",
+    "tm:cut",
+    "tm:dreameater",
+    "tm:electroweb",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:irondefense",
+    "tm:lunge",
+    "tm:magicalleaf",
+    "tm:magiccoat",
+    "tm:naturepower",
+    "tm:payback",
+    "tm:pounce",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:safeguard",
+    "tm:screech",
+    "tm:seedbomb",
+    "tm:signalbeam",
+    "tm:silverwind",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:stringshot",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:synthesis",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:trailblaze",
+    "tm:worryseed",
+    "tutor:bugbite",
+    "tutor:electroweb",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:irondefense",
+    "tutor:magicalleaf",
+    "tutor:magiccoat",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:signalbeam",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stringshot",
+    "tutor:synthesis",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "sewaddle_swadloon",
+      "variant": "level_up",
+      "result": "swadloon",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "protect"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 20
+        }
+      ]
+    }
+  ]
+}

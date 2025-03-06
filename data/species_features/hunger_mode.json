@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "hunger_mode"
+  ],
+  "default": "full_belly",
+  "choices": [
+    "full_belly",
+    "hangry"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-mode"
+}

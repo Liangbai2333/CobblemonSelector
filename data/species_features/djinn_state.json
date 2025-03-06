@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "djinn_state"
+  ],
+  "default": "confined",
+  "choices": [
+    "confined",
+    "unbound"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}"
+}

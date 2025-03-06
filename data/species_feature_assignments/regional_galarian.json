@@ -1,0 +1,32 @@
+{
+  "pokemon": [
+    "meowth",
+    "ponyta",
+    "rapidash",
+    "slowpoke",
+    "slowbro",
+    "farfetchd",
+    "weezing",
+    "mrmime",
+    "articuno",
+    "zapdos",
+    "moltres",
+    "slowking",
+    "corsola",
+    "zigzagoon",
+    "linoone",
+    "darumaka",
+    "darmanitan",
+    "yamask",
+    "stunfisk",
+    "obstagoon",
+    "perrserker",
+    "cursola",
+    "sirfetchd",
+    "mrrime",
+    "runerigus"
+  ],
+  "features": [
+    "galarian"
+  ]
+}

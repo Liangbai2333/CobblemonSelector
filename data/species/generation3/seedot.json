@@ -1,0 +1,170 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 273,
+  "name": "Seedot",
+  "primaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 40,
+  "pokedex": [
+    "cobblemon.species.seedot.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
+  "abilities": [
+    "chlorophyll",
+    "earlybird",
+    "h:pickpocket"
+  ],
+  "eggGroups": [
+    "field",
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 40,
+    "defence": 50,
+    "special_attack": 30,
+    "special_defence": 30,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 44,
+  "experienceGroup": "medium_slow",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.65,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:dark_oak_sapling",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:tanga_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:bide",
+    "1:harden",
+    "1:tackle",
+    "3:absorb",
+    "6:astonish",
+    "9:growth",
+    "12:rollout",
+    "15:megadrain",
+    "18:payback",
+    "21:headbutt",
+    "24:sunnyday",
+    "27:synthesis",
+    "30:suckerpunch",
+    "33:explosion",
+    "egg:defog",
+    "egg:leechseed",
+    "egg:nightslash",
+    "egg:quickattack",
+    "egg:razorwind",
+    "egg:takedown",
+    "egg:worryseed",
+    "tm:amnesia",
+    "tm:beatup",
+    "tm:bodyslam",
+    "tm:bulletseed",
+    "tm:curse",
+    "tm:defog",
+    "tm:dig",
+    "tm:doubleedge",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:energyball",
+    "tm:explosion",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:flash",
+    "tm:foulplay",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:headbutt",
+    "tm:leafstorm",
+    "tm:magicalleaf",
+    "tm:nastyplot",
+    "tm:naturepower",
+    "tm:payback",
+    "tm:powerswap",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:rocksmash",
+    "tm:rollout",
+    "tm:seedbomb",
+    "tm:selfdestruct",
+    "tm:shadowball",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:spite",
+    "tm:substitute",
+    "tm:suckerpunch",
+    "tm:sunnyday",
+    "tm:synthesis",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:trailblaze",
+    "tm:worryseed",
+    "tutor:defog",
+    "tutor:endeavor",
+    "tutor:energyball",
+    "tutor:falseswipe",
+    "tutor:foulplay",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:rollout",
+    "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "tutor:suckerpunch",
+    "tutor:synthesis",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "seedot_nuzleaf",
+      "variant": "level_up",
+      "result": "nuzleaf",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "razorleaf"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 14
+        }
+      ]
+    }
+  ]
+}

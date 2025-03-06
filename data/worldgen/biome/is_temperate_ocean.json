@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:ocean",
+	"minecraft:deep_ocean",
+	{
+      "id": "clifftree:stone_ocean",
+      "required": false 
+    }
+  ]
+}

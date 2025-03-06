@@ -1,0 +1,15 @@
+{
+  "condition": {
+	"structures": [
+	  "minecraft:end_city"
+    ],
+	"neededBaseBlocks": [
+      "minecraft:end_stone_bricks",
+	  "minecraft:purpur_block",
+	  "minecraft:purpur_pillar"
+    ],
+	"neededNearbyBlocks": [
+      "#cobblemon:end_city_blocks"
+	]
+  }
+}

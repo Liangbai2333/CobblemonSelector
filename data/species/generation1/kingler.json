@@ -1,0 +1,218 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 99,
+  "name": "Kingler",
+  "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 13,
+  "weight": 600,
+  "pokedex": [
+    "cobblemon.species.kingler.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "hypercutter",
+    "shellarmor",
+    "h:sheerforce"
+  ],
+  "eggGroups": [
+    "water_3"
+  ],
+  "baseStats": {
+    "hp": 55,
+    "attack": 130,
+    "defence": 115,
+    "special_attack": 50,
+    "special_defence": 50,
+    "speed": 75
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 166,
+  "experienceGroup": "medium_fast",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.85,
+  "hitbox": {
+    "width": 1.8,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.41
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canSwimInWater": true,
+        "canBreatheUnderwater": true,
+        "canSwimInLava": false
+      }
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:kings_rock",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:pinap_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:mudsport",
+    "1:bubble",
+    "1:visegrip",
+    "1:leer",
+    "1:harden",
+    "1:metalclaw",
+    "1:wideguard",
+    "1:hammerarm",
+    "1:watergun",
+    "12:mudshot",
+    "16:protect",
+    "20:bubblebeam",
+    "24:stomp",
+    "31:flail",
+    "36:razorshell",
+    "42:slam",
+    "48:swordsdance",
+    "54:crabhammer",
+    "60:guillotine",
+    "egg:ancientpower",
+    "egg:bide",
+    "egg:chipaway",
+    "egg:hammerarm",
+    "egg:knockoff",
+    "egg:nightslash",
+    "egg:slash",
+    "egg:tickle",
+    "tm:agility",
+    "tm:allyswitch",
+    "tm:amnesia",
+    "tm:ancientpower",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:brine",
+    "tm:brutalswing",
+    "tm:cut",
+    "tm:dig",
+    "tm:dive",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:fling",
+    "tm:furycutter",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:haze",
+    "tm:highhorsepower",
+    "tm:honeclaws",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:irondefense",
+    "tm:knockoff",
+    "tm:liquidation",
+    "tm:metalclaw",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:protect",
+    "tm:quash",
+    "tm:raindance",
+    "tm:razorshell",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:scald",
+    "tm:sleeptalk",
+    "tm:stompingtantrum",
+    "tm:strength",
+    "tm:substitute",
+    "tm:superpower",
+    "tm:surf",
+    "tm:swordsdance",
+    "tm:terablast",
+    "tm:thief",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tm:xscissor",
+    "tutor:allyswitch",
+    "tutor:ancientpower",
+    "tutor:dive",
+    "tutor:falseswipe",
+    "tutor:furycutter",
+    "tutor:gigaimpact",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:knockoff",
+    "tutor:liquidation",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:sleeptalk",
+    "tutor:stompingtantrum",
+    "tutor:superpower",
+    "tutor:waterpulse",
+    "tutor:xscissor"
+  ],
+  "preEvolution": "krabby",
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Gmax",
+      "primaryType": "water",
+      "maleRatio": 0.5,
+      "height": 190,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.kingler-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "dynamaxBlocked": true,
+      "behaviour": {
+        "moving": {
+          "walk": {
+            "walkSpeed": 0.41
+          },
+          "swim": {
+            "swimSpeed": "0.2",
+            "canSwimInWater": true,
+            "canBreatheUnderwater": true,
+            "canSwimInLava": false
+          }
+        }
+      },
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ]
+}

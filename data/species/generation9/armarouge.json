@@ -1,0 +1,179 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 936,
+  "name": "Armarouge",
+  "primaryType": "fire",
+  "secondaryType": "psychic",
+  "maleRatio": 0.5,
+  "height": 15,
+  "weight": 850,
+  "pokedex": [
+    "cobblemon.species.armarouge.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
+  "abilities": [
+    "flashfire",
+    "h:weakarmor"
+  ],
+  "eggGroups": [
+    "human_like"
+  ],
+  "baseStats": {
+    "hp": 85,
+    "attack": 60,
+    "defence": 100,
+    "special_attack": 125,
+    "special_defence": 80,
+    "speed": 75
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 263,
+  "experienceGroup": "slow",
+  "catchRate": 25,
+  "eggCycles": 35,
+  "baseFriendship": 20,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1.2,
+    "height": 2.75,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.23
+      }
+    }
+  },
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:charcoal",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:charcoal_stick",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:auspicious_armor",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:rawst_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:psyshock",
+    "1:leer",
+    "1:ember",
+    "1:mysticalfire",
+    "1:astonish",
+    "1:wideguard",
+    "8:clearsmog",
+    "12:firespin",
+    "16:willowisp",
+    "20:nightshade",
+    "24:flamecharge",
+    "28:incinerate",
+    "32:lavaplume",
+    "37:calmmind",
+    "42:allyswitch",
+    "48:flamethrower",
+    "56:expandingforce",
+    "62:armorcannon",
+    "egg:destinybond",
+    "egg:disable",
+    "egg:spite",
+    "tm:acidspray",
+    "tm:allyswitch",
+    "tm:aurasphere",
+    "tm:calmmind",
+    "tm:confuseray",
+    "tm:darkpulse",
+    "tm:dragonpulse",
+    "tm:endure",
+    "tm:energyball",
+    "tm:expandingforce",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:firespin",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flareblitz",
+    "tm:flashcannon",
+    "tm:fling",
+    "tm:focusblast",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:incinerate",
+    "tm:irondefense",
+    "tm:lightscreen",
+    "tm:meteorbeam",
+    "tm:mysticalfire",
+    "tm:nightshade",
+    "tm:overheat",
+    "tm:protect",
+    "tm:psybeam",
+    "tm:psychic",
+    "tm:psychicterrain",
+    "tm:psychup",
+    "tm:psyshock",
+    "tm:reflect",
+    "tm:rest",
+    "tm:scorchingsands",
+    "tm:shadowball",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:spite",
+    "tm:storedpower",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:weatherball",
+    "tm:willowisp",
+    "tutor:allyswitch",
+    "tutor:calmmind",
+    "tutor:darkpulse",
+    "tutor:dragonpulse",
+    "tutor:energyball",
+    "tutor:expandingforce",
+    "tutor:flamethrower",
+    "tutor:flashcannon",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:irondefense",
+    "tutor:meteorbeam",
+    "tutor:mysticalfire",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:scorchingsands",
+    "tutor:shadowball",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "tutor:trick"
+  ],
+  "preEvolution": "charcadet",
+  "evolutions": []
+}

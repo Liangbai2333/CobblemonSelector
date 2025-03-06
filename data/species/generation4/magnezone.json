@@ -1,0 +1,202 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 462,
+  "name": "Magnezone",
+  "primaryType": "electric",
+  "secondaryType": "steel",
+  "maleRatio": -1,
+  "height": 12,
+  "weight": 1800,
+  "pokedex": [
+    "cobblemon.species.magnezone.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
+  "abilities": [
+    "magnetpull",
+    "sturdy",
+    "h:analytic"
+  ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 70,
+    "attack": 70,
+    "defence": 115,
+    "special_attack": 130,
+    "special_defence": 90,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 268,
+  "experienceGroup": "medium_fast",
+  "catchRate": 30,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1.5,
+    "height": 1.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "walk": {
+        "canWalk": false
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 6,
+    "entries": [
+      {
+        "item": "minecraft:raw_iron",
+        "quantityRange": "0-3"
+      },
+      {
+        "item": "cobblemon:magnet",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:metal_coat",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:shuca_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "moves": [
+    "1:mirrorcoat",
+    "1:barrier",
+    "1:tackle",
+    "1:thundershock",
+    "1:supersonic",
+    "1:sonicboom",
+    "1:thunderwave",
+    "1:magnetbomb",
+    "1:mirrorshot",
+    "1:magneticflux",
+    "1:electricterrain",
+    "1:triattack",
+    "12:electroball",
+    "16:gyroball",
+    "20:spark",
+    "24:screech",
+    "28:magnetrise",
+    "34:flashcannon",
+    "40:discharge",
+    "46:metalsound",
+    "52:lightscreen",
+    "58:lockon",
+    "64:zapcannon",
+    "egg:electroweb",
+    "egg:explosion",
+    "egg:mirrorshot",
+    "egg:sonicboom",
+    "tm:allyswitch",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:charge",
+    "tm:chargebeam",
+    "tm:confuseray",
+    "tm:doubleedge",
+    "tm:eerieimpulse",
+    "tm:electricterrain",
+    "tm:electroball",
+    "tm:electroweb",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:flash",
+    "tm:flashcannon",
+    "tm:gigaimpact",
+    "tm:gravity",
+    "tm:gyroball",
+    "tm:hardpress",
+    "tm:heavyslam",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:lightscreen",
+    "tm:magiccoat",
+    "tm:magnetrise",
+    "tm:metalsound",
+    "tm:protect",
+    "tm:raindance",
+    "tm:recycle",
+    "tm:reflect",
+    "tm:rest",
+    "tm:risingvoltage",
+    "tm:rollout",
+    "tm:sandstorm",
+    "tm:screech",
+    "tm:selfdestruct",
+    "tm:shockwave",
+    "tm:signalbeam",
+    "tm:sleeptalk",
+    "tm:steelbeam",
+    "tm:steelroller",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:supercellslam",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:triattack",
+    "tm:voltswitch",
+    "tm:wildcharge",
+    "tutor:allyswitch",
+    "tutor:chargebeam",
+    "tutor:electroweb",
+    "tutor:flashcannon",
+    "tutor:gigaimpact",
+    "tutor:gravity",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:magiccoat",
+    "tutor:magnetrise",
+    "tutor:recycle",
+    "tutor:rest",
+    "tutor:risingvoltage",
+    "tutor:rollout",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:steelbeam",
+    "tutor:steelroller",
+    "tutor:swift",
+    "tutor:thunderbolt",
+    "tutor:wildcharge"
+  ],
+  "preEvolution": "magneton",
+  "evolutions": []
+}

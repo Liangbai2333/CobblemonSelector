@@ -1,0 +1,10 @@
+{
+  "pokemon": [
+    "wurmple",
+    "silcoon",
+    "cascoon"
+  ],
+  "features": [
+    "cocoon_species"
+  ]
+}

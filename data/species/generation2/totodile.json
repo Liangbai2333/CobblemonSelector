@@ -1,0 +1,210 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 158,
+  "name": "Totodile",
+  "primaryType": "water",
+  "maleRatio": 0.875,
+  "height": 6,
+  "weight": 95,
+  "pokedex": [
+    "cobblemon.species.totodile.desc"
+  ],
+  "labels": [
+    "gen2",
+    "starter"
+  ],
+  "aspects": [],
+  "abilities": [
+    "torrent",
+    "h:sheerforce"
+  ],
+  "eggGroups": [
+    "monster",
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 65,
+    "defence": 64,
+    "special_attack": 44,
+    "special_defence": 48,
+    "speed": 43
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 63,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 0.85,
+    "height": 1.4,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "canWalkOnWater": true,
+        "canSwimInWater": true,
+        "canSwimInLava": false,
+        "swimSpeed": "0.2"
+      },
+      "walk": {
+        "walkSpeed": 0.25
+      }
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:mystic_water",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:scratch",
+    "1:leer",
+    "1:rage",
+    "6:watergun",
+    "9:bite",
+    "13:scaryface",
+    "19:icefang",
+    "22:flail",
+    "27:crunch",
+    "30:slash",
+    "33:screech",
+    "37:thrash",
+    "41:aquatail",
+    "45:superpower",
+    "50:hydropump",
+    "egg:ancientpower",
+    "egg:aquajet",
+    "egg:block",
+    "egg:chipaway",
+    "egg:counter",
+    "egg:flatter",
+    "egg:mudsport",
+    "egg:watersport",
+    "tm:aerialace",
+    "tm:ancientpower",
+    "tm:aquatail",
+    "tm:blizzard",
+    "tm:block",
+    "tm:breakingswipe",
+    "tm:brickbreak",
+    "tm:chillingwater",
+    "tm:crunch",
+    "tm:curse",
+    "tm:cut",
+    "tm:dig",
+    "tm:dive",
+    "tm:doubleedge",
+    "tm:dragonclaw",
+    "tm:dragondance",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:faketears",
+    "tm:fling",
+    "tm:flipturn",
+    "tm:focuspunch",
+    "tm:hail",
+    "tm:headbutt",
+    "tm:honeclaws",
+    "tm:hydropump",
+    "tm:icebeam",
+    "tm:icefang",
+    "tm:icepunch",
+    "tm:icywind",
+    "tm:irontail",
+    "tm:liquidation",
+    "tm:lowkick",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:metalclaw",
+    "tm:muddywater",
+    "tm:mudslap",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:scaryface",
+    "tm:screech",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:spite",
+    "tm:substitute",
+    "tm:superpower",
+    "tm:surf",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:trailblaze",
+    "tm:uproar",
+    "tm:waterfall",
+    "tm:waterpledge",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tm:workup",
+    "tutor:aerialace",
+    "tutor:ancientpower",
+    "tutor:aquatail",
+    "tutor:block",
+    "tutor:dive",
+    "tutor:endeavor",
+    "tutor:flipturn",
+    "tutor:focuspunch",
+    "tutor:icebeam",
+    "tutor:icefang",
+    "tutor:icepunch",
+    "tutor:icywind",
+    "tutor:irontail",
+    "tutor:liquidation",
+    "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "tutor:superpower",
+    "tutor:uproar",
+    "tutor:waterpledge",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [
+    {
+      "id": "totodile_croconaw",
+      "variant": "level_up",
+      "result": "croconaw",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 18
+        }
+      ]
+    }
+  ]
+}

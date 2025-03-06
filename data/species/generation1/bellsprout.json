@@ -1,0 +1,177 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 69,
+  "name": "Bellsprout",
+  "primaryType": "grass",
+  "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 40,
+  "pokedex": [
+    "cobblemon.species.bellsprout.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "chlorophyll",
+    "h:gluttony"
+  ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 75,
+    "defence": 35,
+    "special_attack": 70,
+    "special_defence": 30,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 60,
+  "experienceGroup": "medium_slow",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.21
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:big_root",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:pinap_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:vinewhip",
+    "7:growth",
+    "11:wrap",
+    "13:sleeppowder",
+    "15:poisonpowder",
+    "17:stunspore",
+    "23:acid",
+    "27:knockoff",
+    "29:sweetscent",
+    "35:gastroacid",
+    "39:razorleaf",
+    "41:poisonjab",
+    "47:slam",
+    "52:powerwhip",
+    "egg:belch",
+    "egg:clearsmog",
+    "egg:ingrain",
+    "egg:naturalgift",
+    "egg:strengthsap",
+    "egg:suckerpunch",
+    "egg:synthesis",
+    "egg:tickle",
+    "egg:worryseed",
+    "egg:wringout",
+    "tm:acidspray",
+    "tm:bind",
+    "tm:bulletseed",
+    "tm:cut",
+    "tm:encore",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:gastroacid",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:infestation",
+    "tm:knockoff",
+    "tm:leafstorm",
+    "tm:leechlife",
+    "tm:lunge",
+    "tm:magicalleaf",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:poisonjab",
+    "tm:pounce",
+    "tm:powerwhip",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:suckerpunch",
+    "tm:sunnyday",
+    "tm:swordsdance",
+    "tm:synthesis",
+    "tm:terablast",
+    "tm:thief",
+    "tm:toxic",
+    "tm:trailblaze",
+    "tm:venoshock",
+    "tm:weatherball",
+    "tm:worryseed",
+    "tutor:bind",
+    "tutor:energyball",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:knockoff",
+    "tutor:leechlife",
+    "tutor:magicalleaf",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:suckerpunch",
+    "tutor:synthesis",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "bellsprout_weepinbell",
+      "variant": "level_up",
+      "result": "weepinbell",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 21
+        }
+      ]
+    }
+  ]
+}

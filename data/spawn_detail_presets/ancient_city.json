@@ -1,0 +1,11 @@
+{
+  "condition": {
+	"structures": [
+	  "minecraft:ancient_city"
+    ],
+	"maxY": 62,
+	"neededNearbyBlocks": [
+      "#cobblemon:ancient_city_blocks"
+	]
+  }
+}

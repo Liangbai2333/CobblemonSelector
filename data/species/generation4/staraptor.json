@@ -1,0 +1,170 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 398,
+  "name": "Staraptor",
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 249,
+  "pokedex": [
+    "cobblemon.species.staraptor.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
+  "abilities": [
+    "intimidate",
+    "h:reckless"
+  ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 85,
+    "attack": 120,
+    "defence": 70,
+    "special_attack": 50,
+    "special_defence": 60,
+    "speed": 100
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 3,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 243,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "drops": {
+    "amount": 6,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-3"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:sharp_beak",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:yache_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:growl",
+    "1:quickattack",
+    "1:wingattack",
+    "1:closecombat",
+    "13:doubleteam",
+    "18:endeavor",
+    "23:whirlwind",
+    "28:aerialace",
+    "33:takedown",
+    "41:agility",
+    "49:bravebird",
+    "57:finalgambit",
+    "egg:astonish",
+    "egg:detect",
+    "egg:doubleedge",
+    "egg:featherdance",
+    "egg:foresight",
+    "egg:furyattack",
+    "egg:mirrormove",
+    "egg:pursuit",
+    "egg:sandattack",
+    "egg:uproar",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:bravebird",
+    "tm:closecombat",
+    "tm:defog",
+    "tm:doubleedge",
+    "tm:doubleteam",
+    "tm:dualwingbeat",
+    "tm:echoedvoice",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:featherdance",
+    "tm:fly",
+    "tm:gigaimpact",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:hurricane",
+    "tm:hyperbeam",
+    "tm:laserfocus",
+    "tm:ominouswind",
+    "tm:pluck",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:revenge",
+    "tm:roost",
+    "tm:skyattack",
+    "tm:sleeptalk",
+    "tm:steelwing",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:tailwind",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:twister",
+    "tm:uproar",
+    "tm:uturn",
+    "tm:workup",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:endeavor",
+    "tutor:gigaimpact",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:laserfocus",
+    "tutor:ominouswind",
+    "tutor:rest",
+    "tutor:roost",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:tailwind",
+    "tutor:twister",
+    "tutor:uproar"
+  ],
+  "preEvolution": "staravia",
+  "evolutions": []
+}

@@ -1,0 +1,198 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 258,
+  "name": "Mudkip",
+  "primaryType": "water",
+  "maleRatio": 0.875,
+  "height": 4,
+  "weight": 76,
+  "pokedex": [
+    "cobblemon.species.mudkip.desc"
+  ],
+  "labels": [
+    "gen3",
+    "starter"
+  ],
+  "aspects": [],
+  "abilities": [
+    "torrent",
+    "h:damp"
+  ],
+  "eggGroups": [
+    "monster",
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 70,
+    "defence": 50,
+    "special_attack": 50,
+    "special_defence": 50,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 62,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.9,
+    "height": 0.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "canSwimInWater": true,
+        "canSwimInLava": false,
+        "swimSpeed": "0.2"
+      }
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:clay_ball",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:mystic_water",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:growl",
+    "1:foresight",
+    "3:watergun",
+    "6:rocksmash",
+    "9:rockthrow",
+    "12:protect",
+    "15:supersonic",
+    "18:waterpulse",
+    "21:rockslide",
+    "24:takedown",
+    "27:amnesia",
+    "30:surf",
+    "33:screech",
+    "36:endeavor",
+    "39:hydropump",
+    "egg:ancientpower",
+    "egg:barrier",
+    "egg:bide",
+    "egg:bite",
+    "egg:counter",
+    "egg:curse",
+    "egg:doubleedge",
+    "egg:mirrorcoat",
+    "egg:mudbomb",
+    "egg:mudslap",
+    "egg:mudsport",
+    "egg:refresh",
+    "egg:sludge",
+    "egg:stomp",
+    "egg:wideguard",
+    "egg:yawn",
+    "tm:amnesia",
+    "tm:ancientpower",
+    "tm:aquatail",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:chillingwater",
+    "tm:curse",
+    "tm:dig",
+    "tm:dive",
+    "tm:doubleedge",
+    "tm:earthpower",
+    "tm:echoedvoice",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:hail",
+    "tm:headbutt",
+    "tm:hydropump",
+    "tm:iceball",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:irontail",
+    "tm:liquidation",
+    "tm:lowkick",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:roar",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:rollout",
+    "tm:screech",
+    "tm:sleeptalk",
+    "tm:sludgewave",
+    "tm:strength",
+    "tm:substitute",
+    "tm:superpower",
+    "tm:surf",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:uproar",
+    "tm:waterfall",
+    "tm:waterpledge",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tm:workup",
+    "tutor:ancientpower",
+    "tutor:aquatail",
+    "tutor:dive",
+    "tutor:earthpower",
+    "tutor:endeavor",
+    "tutor:iceball",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:irontail",
+    "tutor:liquidation",
+    "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rollout",
+    "tutor:sleeptalk",
+    "tutor:superpower",
+    "tutor:uproar",
+    "tutor:waterpledge",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [
+    {
+      "id": "mudkip_marshtomp",
+      "variant": "level_up",
+      "result": "marshtomp",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "mudshot"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 16
+        }
+      ]
+    }
+  ]
+}

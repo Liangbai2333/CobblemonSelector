@@ -1,0 +1,163 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 692,
+  "name": "Clauncher",
+  "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 83,
+  "pokedex": [
+    "cobblemon.species.clauncher.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [],
+  "abilities": [
+    "megalauncher",
+    "h:megalauncher"
+  ],
+  "eggGroups": [
+    "water_1",
+    "water_3"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 53,
+    "defence": 62,
+    "special_attack": 58,
+    "special_defence": 63,
+    "speed": 44
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 66,
+  "experienceGroup": "slow",
+  "catchRate": 225,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.8,
+    "height": 0.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "walkSpeed": 0.25
+      },
+      "swim": {
+        "swimSpeed": 0.3,
+        "canBreatheUnderwater": true,
+        "canSwimInWater": true,
+        "canSwimInLava": false
+      }
+    }
+  },
+  "moves": [
+    "1:splash",
+    "1:watergun",
+    "1:watersport",
+    "1:bubble",
+    "5:visegrip",
+    "10:flail",
+    "15:aquajet",
+    "20:bubblebeam",
+    "25:honeclaws",
+    "30:waterpulse",
+    "35:swordsdance",
+    "40:aurasphere",
+    "45:bounce",
+    "50:muddywater",
+    "55:crabhammer",
+    "egg:aquatail",
+    "egg:bubblebeam",
+    "egg:entrainment",
+    "tm:aquatail",
+    "tm:aurasphere",
+    "tm:blizzard",
+    "tm:bounce",
+    "tm:chillingwater",
+    "tm:cut",
+    "tm:darkpulse",
+    "tm:dive",
+    "tm:dragonpulse",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:flipturn",
+    "tm:helpinghand",
+    "tm:honeclaws",
+    "tm:hydropump",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:irontail",
+    "tm:liquidation",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:pounce",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:sleeptalk",
+    "tm:sludgewave",
+    "tm:smackdown",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:terrainpulse",
+    "tm:thief",
+    "tm:uturn",
+    "tm:venoshock",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:weatherball",
+    "tutor:aquatail",
+    "tutor:bounce",
+    "tutor:darkpulse",
+    "tutor:dive",
+    "tutor:dragonpulse",
+    "tutor:flashcannon",
+    "tutor:flipturn",
+    "tutor:helpinghand",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:irontail",
+    "tutor:liquidation",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:sleeptalk",
+    "tutor:terrainpulse",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [
+    {
+      "id": "clauncher_clawitzer",
+      "variant": "level_up",
+      "result": "clawitzer",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "aurasphere"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 37
+        }
+      ]
+    }
+  ]
+}

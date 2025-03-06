@@ -1,0 +1,179 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 46,
+  "name": "Paras",
+  "primaryType": "bug",
+  "secondaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 54,
+  "pokedex": [
+    "cobblemon.species.paras.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "effectspore",
+    "dryskin",
+    "h:damp"
+  ],
+  "eggGroups": [
+    "bug",
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 35,
+    "attack": 70,
+    "defence": 55,
+    "special_attack": 45,
+    "special_defence": 55,
+    "speed": 25
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 57,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1,
+    "height": 0.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:red_mushroom",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:coba_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:scratch",
+    "6:stunspore",
+    "6:poisonpowder",
+    "11:absorb",
+    "17:furycutter",
+    "22:spore",
+    "27:slash",
+    "33:growth",
+    "38:gigadrain",
+    "43:aromatherapy",
+    "49:ragepowder",
+    "54:xscissor",
+    "egg:counter",
+    "egg:fellstinger",
+    "egg:flail",
+    "egg:leechseed",
+    "egg:naturalgift",
+    "egg:pursuit",
+    "egg:rototiller",
+    "egg:sweetscent",
+    "egg:wideguard",
+    "tm:aerialace",
+    "tm:afteryou",
+    "tm:agility",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:bugbite",
+    "tm:bulletseed",
+    "tm:crosspoison",
+    "tm:cut",
+    "tm:dig",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:flash",
+    "tm:furycutter",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:honeclaws",
+    "tm:knockoff",
+    "tm:leechlife",
+    "tm:lightscreen",
+    "tm:metalclaw",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:psybeam",
+    "tm:rest",
+    "tm:rocksmash",
+    "tm:screech",
+    "tm:seedbomb",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:solarbeam",
+    "tm:stringshot",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swordsdance",
+    "tm:synthesis",
+    "tm:terablast",
+    "tm:thief",
+    "tm:venoshock",
+    "tm:worryseed",
+    "tm:xscissor",
+    "tutor:aerialace",
+    "tutor:afteryou",
+    "tutor:bugbite",
+    "tutor:falseswipe",
+    "tutor:furycutter",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:knockoff",
+    "tutor:leechlife",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:seedbomb",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:stringshot",
+    "tutor:synthesis",
+    "tutor:worryseed",
+    "tutor:xscissor"
+  ],
+  "evolutions": [
+    {
+      "id": "paras_parasect",
+      "variant": "level_up",
+      "result": "parasect",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 24
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 44,
+  "name": "Gloom",
+  "primaryType": "grass",
+  "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 86,
+  "pokedex": [
+    "cobblemon.species.gloom.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "chlorophyll",
+    "h:stench"
+  ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 65,
+    "defence": 70,
+    "special_attack": 85,
+    "special_defence": 75,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 138,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "features": [
+    "valencian"
+  ],
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:absorb_bulb",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:absorb",
+    "1:sweetscent",
+    "1:acid",
+    "1:luckychant",
+    "1:growth",
+    "1:naturalgift",
+    "12:megadrain",
+    "14:poisonpowder",
+    "16:stunspore",
+    "18:sleeppowder",
+    "20:gigadrain",
+    "26:toxic",
+    "32:moonblast",
+    "38:grassyterrain",
+    "44:moonlight",
+    "50:petaldance",
+    "egg:afteryou",
+    "egg:flail",
+    "egg:ingrain",
+    "egg:leechseed",
+    "egg:luckychant",
+    "egg:naturalgift",
+    "egg:razorleaf",
+    "egg:secretpower",
+    "egg:strengthsap",
+    "egg:synthesis",
+    "egg:teeterdance",
+    "egg:tickle",
+    "tm:acidspray",
+    "tm:afteryou",
+    "tm:bulletseed",
+    "tm:charm",
+    "tm:cut",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:gastroacid",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:infestation",
+    "tm:leafstorm",
+    "tm:magicalleaf",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:petalblizzard",
+    "tm:pollenpuff",
+    "tm:protect",
+    "tm:rest",
+    "tm:secretpower",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swordsdance",
+    "tm:synthesis",
+    "tm:terablast",
+    "tm:toxic",
+    "tm:trailblaze",
+    "tm:venoshock",
+    "tm:worryseed",
+    "tutor:afteryou",
+    "tutor:energyball",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:synthesis",
+    "tutor:worryseed"
+  ],
+  "preEvolution": "oddish",
+  "evolutions": [
+    {
+      "id": "gloom_vileplume",
+      "variant": "item_interact",
+      "result": "vileplume",
+      "consumeHeldItem": true,
+      "learnableMoves": [
+        "petalblizzard"
+      ],
+      "requirements": [],
+      "requiredContext": "cobblemon:leaf_stone"
+    },
+    {
+      "id": "gloom_bellossom",
+      "variant": "item_interact",
+      "result": "bellossom",
+      "consumeHeldItem": true,
+      "learnableMoves": [
+        "magicalleaf",
+        "petalblizzard"
+      ],
+      "requirements": [],
+      "requiredContext": "cobblemon:sun_stone"
+    }
+  ]
+}

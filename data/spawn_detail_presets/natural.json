@@ -1,0 +1,12 @@
+{
+  "condition": {
+    "neededBaseBlocks": [
+      "#cobblemon:natural"
+    ]
+  },
+  "anticondition": {
+	  "neededBaseBlocks": [
+      	"minecraft:farmland"
+	  ]
+  }
+}

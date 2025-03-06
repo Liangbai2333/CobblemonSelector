@@ -1,0 +1,25 @@
+{
+  "pokemon": [
+    "growlithe",
+    "arcanine",
+    "voltorb",
+    "electrode",
+    "typhlosion",
+    "qwilfish",
+    "sneasel",
+    "samurott",
+    "lilligant",
+    "zorua",
+    "zoroark",
+    "braviary",
+    "sliggoo",
+    "goodra",
+    "avalugg",
+    "decidueye",
+    "sneasler",
+    "overqwil"
+  ],
+  "features": [
+    "hisuian"
+  ]
+}

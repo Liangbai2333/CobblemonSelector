@@ -1,0 +1,11 @@
+{
+  "type": "choice",
+  "keys": ["gyarados_eye_color"],
+  "default": "random",
+  "choices": [
+    "red",
+    "purple"
+  ],
+  "isAspect": true,
+  "aspectFormat": "gyarados-eye-color-{{choice}}"
+}

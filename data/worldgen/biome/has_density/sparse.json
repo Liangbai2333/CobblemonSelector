@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "#cobblemon:is_arid",
+    "#cobblemon:is_grassland",
+    "#cobblemon:is_tundra",
+    {
+      "id": "#c:is_sparse_vegetation",
+      "required": false 
+    },
+	{
+      "id": "#c:is_sparse_vegetation/overworld",
+      "required": false 
+    },
+    {
+      "id": "#forge:is_sparse",
+      "required": false 
+    },
+    {
+      "id": "#forge:is_sparse/overworld",
+      "required": false 
+    }
+  ]
+}

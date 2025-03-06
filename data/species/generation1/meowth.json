@@ -1,0 +1,619 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 52,
+  "name": "Meowth",
+  "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 42,
+  "pokedex": [
+    "cobblemon.species.meowth.desc"
+  ],
+  "labels": [
+    "gen1",
+    "kantonian_form"
+  ],
+  "aspects": [],
+  "abilities": [
+    "pickup",
+    "technician",
+    "h:unnerve"
+  ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 45,
+    "defence": 35,
+    "special_attack": 40,
+    "special_defence": 40,
+    "speed": 90
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 58,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "features": [
+    "galarian",
+    "alolan"
+  ],
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:gold_nugget",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:quick_claw",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:pinap_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:growl",
+    "1:fakeout",
+    "4:feint",
+    "8:scratch",
+    "12:payday",
+    "16:bite",
+    "20:taunt",
+    "24:assurance",
+    "29:furyswipes",
+    "32:screech",
+    "36:slash",
+    "40:nastyplot",
+    "44:playrough",
+    "egg:assist",
+    "egg:captivate",
+    "egg:covet",
+    "egg:feintattack",
+    "egg:flail",
+    "egg:hypnosis",
+    "egg:lastresort",
+    "egg:nightslash",
+    "egg:odorsleuth",
+    "egg:punishment",
+    "egg:spite",
+    "egg:tailwhip",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:amnesia",
+    "tm:assurance",
+    "tm:bodyslam",
+    "tm:captivate",
+    "tm:charm",
+    "tm:chillingwater",
+    "tm:covet",
+    "tm:cut",
+    "tm:darkpulse",
+    "tm:dig",
+    "tm:doubleedge",
+    "tm:dreameater",
+    "tm:echoedvoice",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:faketears",
+    "tm:falseswipe",
+    "tm:flash",
+    "tm:foulplay",
+    "tm:gunkshot",
+    "tm:headbutt",
+    "tm:helpinghand",
+    "tm:honeclaws",
+    "tm:hypervoice",
+    "tm:icywind",
+    "tm:irontail",
+    "tm:knockoff",
+    "tm:lashout",
+    "tm:lastresort",
+    "tm:metalclaw",
+    "tm:nastyplot",
+    "tm:painsplit",
+    "tm:payback",
+    "tm:payday",
+    "tm:playrough",
+    "tm:powergem",
+    "tm:protect",
+    "tm:psychup",
+    "tm:raindance",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:screech",
+    "tm:seedbomb",
+    "tm:shadowball",
+    "tm:shadowclaw",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:snarl",
+    "tm:snatch",
+    "tm:spite",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:throatchop",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:torment",
+    "tm:trailblaze",
+    "tm:uturn",
+    "tm:workup",
+    "tutor:aerialace",
+    "tutor:covet",
+    "tutor:darkpulse",
+    "tutor:endeavor",
+    "tutor:falseswipe",
+    "tutor:foulplay",
+    "tutor:gunkshot",
+    "tutor:helpinghand",
+    "tutor:hypervoice",
+    "tutor:icywind",
+    "tutor:irontail",
+    "tutor:knockoff",
+    "tutor:lashout",
+    "tutor:lastresort",
+    "tutor:painsplit",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
+    "tutor:shockwave",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:snatch",
+    "tutor:spite",
+    "tutor:swift",
+    "tutor:throatchop",
+    "tutor:thunderbolt"
+  ],
+  "evolutions": [
+    {
+      "id": "meowth_persian",
+      "variant": "level_up",
+      "result": "persian",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "swift",
+        "powergem"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 28
+        }
+      ]
+    }
+  ],
+  "forms": [
+    {
+      "name": "Alola",
+      "primaryType": "dark",
+      "maleRatio": 0.5,
+      "height": 4,
+      "weight": 42,
+      "pokedex": [
+        "cobblemon.species.meowth-alola.desc"
+      ],
+      "labels": [
+        "gen7",
+        "alolan_form"
+      ],
+      "aspects": [
+        "alolan"
+      ],
+      "abilities": [
+        "pickup",
+        "technician",
+        "h:rattled"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 35,
+        "defence": 35,
+        "special_attack": 50,
+        "special_defence": 40,
+        "speed": 90
+      },
+      "drops": {
+        "amount": 3,
+        "entries": [
+          {
+            "item": "minecraft:gold_nugget",
+            "quantityRange": "0-1"
+          },
+          {
+            "item": "cobblemon:quick_claw",
+            "percentage": 2.5
+          },
+          {
+            "item": "cobblemon:bluk_berry",
+            "percentage": 2.5
+          }
+        ]
+      },
+      "moves": [
+        "1:growl",
+        "1:fakeout",
+        "4:feint",
+        "8:scratch",
+        "12:payday",
+        "16:bite",
+        "20:taunt",
+        "24:assurance",
+        "29:furyswipes",
+        "32:screech",
+        "36:nightslash",
+        "40:nastyplot",
+        "44:playrough",
+        "egg:assist",
+        "egg:captivate",
+        "egg:covet",
+        "egg:feintattack",
+        "egg:flail",
+        "egg:flatter",
+        "egg:hypnosis",
+        "egg:partingshot",
+        "egg:punishment",
+        "egg:slash",
+        "egg:spite",
+        "tm:aerialace",
+        "tm:agility",
+        "tm:amnesia",
+        "tm:assurance",
+        "tm:bodyslam",
+        "tm:captivate",
+        "tm:charm",
+        "tm:chillingwater",
+        "tm:confuseray",
+        "tm:covet",
+        "tm:curse",
+        "tm:darkpulse",
+        "tm:dig",
+        "tm:doubleedge",
+        "tm:dreameater",
+        "tm:echoedvoice",
+        "tm:embargo",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:facade",
+        "tm:faketears",
+        "tm:foulplay",
+        "tm:gunkshot",
+        "tm:helpinghand",
+        "tm:hypervoice",
+        "tm:icywind",
+        "tm:irontail",
+        "tm:knockoff",
+        "tm:lashout",
+        "tm:lastresort",
+        "tm:metalclaw",
+        "tm:nastyplot",
+        "tm:payback",
+        "tm:payday",
+        "tm:playrough",
+        "tm:powergem",
+        "tm:protect",
+        "tm:psychup",
+        "tm:quash",
+        "tm:raindance",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:screech",
+        "tm:seedbomb",
+        "tm:shadowball",
+        "tm:shadowclaw",
+        "tm:shockwave",
+        "tm:sleeptalk",
+        "tm:snarl",
+        "tm:snatch",
+        "tm:spite",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:swift",
+        "tm:takedown",
+        "tm:taunt",
+        "tm:terablast",
+        "tm:thief",
+        "tm:throatchop",
+        "tm:thunder",
+        "tm:thunderbolt",
+        "tm:thunderwave",
+        "tm:torment",
+        "tm:trailblaze",
+        "tm:uturn",
+        "tm:workup",
+        "tutor:aerialace",
+        "tutor:covet",
+        "tutor:darkpulse",
+        "tutor:endeavor",
+        "tutor:foulplay",
+        "tutor:gunkshot",
+        "tutor:helpinghand",
+        "tutor:hypervoice",
+        "tutor:icywind",
+        "tutor:irontail",
+        "tutor:knockoff",
+        "tutor:lashout",
+        "tutor:lastresort",
+        "tutor:playrough",
+        "tutor:rest",
+        "tutor:seedbomb",
+        "tutor:shadowball",
+        "tutor:shadowclaw",
+        "tutor:shockwave",
+        "tutor:sleeptalk",
+        "tutor:snarl",
+        "tutor:snatch",
+        "tutor:spite",
+        "tutor:swift",
+        "tutor:throatchop",
+        "tutor:thunderbolt"
+      ],
+      "evolutions": [
+        {
+          "id": "meowth_persianalola",
+          "variant": "level_up",
+          "result": "persian alolan",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "swift",
+            "powergem"
+          ],
+          "requirements": [
+            {
+              "variant": "friendship",
+              "amount": 160
+            }
+          ]
+        }
+      ],
+      "battleOnly": false
+    },
+    {
+      "name": "Galar",
+      "primaryType": "steel",
+      "maleRatio": 0.5,
+      "height": 4,
+      "weight": 75,
+      "pokedex": [
+        "cobblemon.species.meowth-galar.desc"
+      ],
+      "labels": [
+        "gen8",
+        "galarian_form"
+      ],
+      "aspects": [
+        "galarian"
+      ],
+      "abilities": [
+        "pickup",
+        "toughclaws",
+        "h:unnerve"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 65,
+        "defence": 55,
+        "special_attack": 40,
+        "special_defence": 40,
+        "speed": 40
+      },
+      "evYield": {
+        "hp": 0,
+        "attack": 1,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "behaviour": {
+        "resting": {
+          "canSleep": true,
+          "light": "0-4",
+          "willSleepOnBed": true
+        },
+        "moving": {
+          "walk": {
+            "walkSpeed": 0.2
+          }
+        }
+      },
+      "drops": {
+        "amount": 2,
+        "entries": [
+          {
+            "item": "cobblemon:razor_claw",
+            "percentage": 2.5
+          },
+          {
+            "item": "cobblemon:wepear_berry",
+            "percentage": 2.5
+          }
+        ]
+      },
+      "moves": [
+        "1:fakeout",
+        "1:growl",
+        "4:honeclaws",
+        "8:scratch",
+        "12:payday",
+        "16:metalclaw",
+        "20:taunt",
+        "24:swagger",
+        "29:furyswipes",
+        "32:screech",
+        "36:slash",
+        "40:metalsound",
+        "44:thrash",
+        "egg:covet",
+        "egg:curse",
+        "egg:doubleedge",
+        "egg:flail",
+        "egg:nightslash",
+        "egg:spite",
+        "tm:aerialace",
+        "tm:amnesia",
+        "tm:assurance",
+        "tm:bodyslam",
+        "tm:brickbreak",
+        "tm:charm",
+        "tm:covet",
+        "tm:crunch",
+        "tm:curse",
+        "tm:darkpulse",
+        "tm:dig",
+        "tm:doubleedge",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:facade",
+        "tm:faketears",
+        "tm:falseswipe",
+        "tm:flashcannon",
+        "tm:fling",
+        "tm:foulplay",
+        "tm:gunkshot",
+        "tm:gyroball",
+        "tm:helpinghand",
+        "tm:honeclaws",
+        "tm:hypervoice",
+        "tm:irondefense",
+        "tm:ironhead",
+        "tm:irontail",
+        "tm:knockoff",
+        "tm:lashout",
+        "tm:metalclaw",
+        "tm:metalsound",
+        "tm:metronome",
+        "tm:nastyplot",
+        "tm:payback",
+        "tm:payday",
+        "tm:playrough",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:screech",
+        "tm:seedbomb",
+        "tm:shadowball",
+        "tm:shadowclaw",
+        "tm:sleeptalk",
+        "tm:spite",
+        "tm:stealthrock",
+        "tm:steelbeam",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:swagger",
+        "tm:swordsdance",
+        "tm:takedown",
+        "tm:taunt",
+        "tm:terablast",
+        "tm:thief",
+        "tm:throatchop",
+        "tm:thunder",
+        "tm:thunderbolt",
+        "tm:trailblaze",
+        "tm:uturn",
+        "tm:workup",
+        "tm:xscissor",
+        "tutor:aerialace",
+        "tutor:covet",
+        "tutor:darkpulse",
+        "tutor:endeavor",
+        "tutor:falseswipe",
+        "tutor:flashcannon",
+        "tutor:foulplay",
+        "tutor:gunkshot",
+        "tutor:helpinghand",
+        "tutor:hypervoice",
+        "tutor:irondefense",
+        "tutor:ironhead",
+        "tutor:irontail",
+        "tutor:knockoff",
+        "tutor:lashout",
+        "tutor:playrough",
+        "tutor:rest",
+        "tutor:seedbomb",
+        "tutor:shadowball",
+        "tutor:shadowclaw",
+        "tutor:sleeptalk",
+        "tutor:spite",
+        "tutor:stealthrock",
+        "tutor:steelbeam",
+        "tutor:throatchop",
+        "tutor:thunderbolt",
+        "tutor:xscissor"
+      ],
+      "evolutions": [
+        {
+          "id": "meowth_perrserker",
+          "variant": "level_up",
+          "result": "perrserker",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "ironhead"
+          ],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 28
+            }
+          ]
+        }
+      ],
+      "battleOnly": false
+    },
+    {
+      "name": "Gmax",
+      "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 330,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.meowth-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ]
+}

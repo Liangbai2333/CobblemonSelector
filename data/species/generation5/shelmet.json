@@ -1,0 +1,167 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 616,
+  "name": "Shelmet",
+  "primaryType": "bug",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 77,
+  "pokedex": [
+    "cobblemon.species.shelmet.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
+  "abilities": [
+    "hydration",
+    "shellarmor",
+    "h:overcoat"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 40,
+    "defence": 85,
+    "special_attack": 40,
+    "special_defence": 65,
+    "speed": 25
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "medium_fast",
+  "catchRate": 200,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "minecraft:iron_helmet",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:bide",
+    "1:protect",
+    "1:absorb",
+    "4:acid",
+    "8:curse",
+    "12:megadrain",
+    "16:strugglebug",
+    "20:yawn",
+    "24:acidarmor",
+    "28:gigadrain",
+    "32:guardswap",
+    "36:bodyslam",
+    "40:recover",
+    "44:bugbuzz",
+    "48:finalgambit",
+    "egg:doubleedge",
+    "egg:feint",
+    "egg:guardsplit",
+    "egg:mindreader",
+    "egg:pursuit",
+    "tm:batonpass",
+    "tm:bodyslam",
+    "tm:bugbite",
+    "tm:bugbuzz",
+    "tm:curse",
+    "tm:doubleedge",
+    "tm:encore",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:gastroacid",
+    "tm:gigadrain",
+    "tm:guardswap",
+    "tm:infestation",
+    "tm:leechlife",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:signalbeam",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:spikes",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:terablast",
+    "tm:toxicspikes",
+    "tm:venoshock",
+    "tutor:bugbite",
+    "tutor:energyball",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:leechlife",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:signalbeam",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:spikes"
+  ],
+  "evolutions": [
+    {
+      "id": "shelmet_accelgor",
+      "variant": "trade",
+      "result": "accelgor",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [],
+      "requiredContext": "karrablast"
+    },
+    {
+      "id": "shelmet_accelgor_item",
+      "variant": "item_interact",
+      "result": "accelgor",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "party_member",
+          "target": "karrablast",
+          "contains": true
+        }
+      ],
+      "requiredContext": "cobblemon:link_cable",
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shell_helmet",
+            "percentage": 100.0,
+            "requirements": [
+              {
+                "variant": "party_member",
+                "target": "karrablast",
+                "contains": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

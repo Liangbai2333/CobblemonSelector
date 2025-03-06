@@ -1,0 +1,128 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 415,
+  "name": "Combee",
+  "primaryType": "bug",
+  "secondaryType": "flying",
+  "maleRatio": 0.875,
+  "height": 3,
+  "weight": 55,
+  "pokedex": [
+    "cobblemon.species.combee.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
+  "abilities": [
+    "honeygather",
+    "h:hustle"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 30,
+    "attack": 30,
+    "defence": 42,
+    "special_attack": 30,
+    "special_defence": 42,
+    "speed": 70
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 49,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.6
+      }
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:honey_bottle",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:honeycomb",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:charti_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:sweetscent",
+    "1:gust",
+    "1:bugbite",
+    "1:strugglebug",
+    "tm:bugbite",
+    "tm:bugbuzz",
+    "tm:endeavor",
+    "tm:lunge",
+    "tm:ominouswind",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:stringshot",
+    "tm:strugglebug",
+    "tm:terablast",
+    "tutor:bugbite",
+    "tutor:endeavor",
+    "tutor:ominouswind",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:stringshot"
+  ],
+  "evolutions": [
+    {
+      "id": "combee_vespiquen",
+      "variant": "level_up",
+      "result": "vespiquen",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "slash"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 21
+        },
+        {
+          "variant": "properties",
+          "target": "gender=female"
+        }
+      ]
+    }
+  ]
+}

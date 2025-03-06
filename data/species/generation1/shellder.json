@@ -1,0 +1,164 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 90,
+  "name": "Shellder",
+  "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 40,
+  "pokedex": [
+    "cobblemon.species.shellder.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "shellarmor",
+    "skilllink",
+    "h:overcoat"
+  ],
+  "eggGroups": [
+    "water_3"
+  ],
+  "baseStats": {
+    "hp": 30,
+    "attack": 65,
+    "defence": 100,
+    "special_attack": 45,
+    "special_defence": 25,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "slow",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "swimSpeed": 0.25,
+        "canBreatheUnderwater": true,
+        "canSwimInWater": true,
+        "canSwimInLava": false
+      }
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:aspear_berry",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:shell_bell",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:watergun",
+    "4:withdraw",
+    "8:iceshard",
+    "12:leer",
+    "16:whirlpool",
+    "20:supersonic",
+    "24:aurorabeam",
+    "28:protect",
+    "32:razorshell",
+    "36:irondefense",
+    "40:icebeam",
+    "44:shellsmash",
+    "48:hydropump",
+    "egg:aquaring",
+    "egg:barrier",
+    "egg:bubblebeam",
+    "egg:clamp",
+    "egg:lifedew",
+    "egg:rapidspin",
+    "egg:twineedle",
+    "egg:waterpulse",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:brine",
+    "tm:chillingwater",
+    "tm:dive",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:hail",
+    "tm:helpinghand",
+    "tm:hydropump",
+    "tm:icebeam",
+    "tm:icespinner",
+    "tm:iciclespear",
+    "tm:icywind",
+    "tm:irondefense",
+    "tm:liquidation",
+    "tm:mudshot",
+    "tm:payback",
+    "tm:protect",
+    "tm:raindance",
+    "tm:razorshell",
+    "tm:rest",
+    "tm:rockblast",
+    "tm:screech",
+    "tm:selfdestruct",
+    "tm:sleeptalk",
+    "tm:snowscape",
+    "tm:spikes",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:toxicspikes",
+    "tm:triattack",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:dive",
+    "tutor:helpinghand",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:liquidation",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:spikes",
+    "tutor:swift",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [
+    {
+      "id": "shellder_cloyster",
+      "variant": "item_interact",
+      "result": "cloyster",
+      "consumeHeldItem": true,
+      "learnableMoves": [
+        "iciclespear"
+      ],
+      "requirements": [],
+      "requiredContext": "cobblemon:water_stone"
+    }
+  ]
+}

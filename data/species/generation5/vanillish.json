@@ -1,0 +1,161 @@
+{
+  "nationalPokedexNumber": 583,
+  "name": "Vanillish",
+  "primaryType": "ice",
+  "maleRatio": 0.5,
+  "height": 11,
+  "weight": 410,
+  "pokedex": [
+    "cobblemon.species.vanillish.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
+  "abilities": [
+    "icebody",
+    "snowcloak",
+    "h:weakarmor"
+  ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 51,
+    "attack": 65,
+    "defence": 65,
+    "special_attack": 80,
+    "special_defence": 75,
+    "speed": 59
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 138,
+  "experienceGroup": "slow",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:snowball",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:never_melt_ice",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:aspear_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:harden",
+    "1:astonish",
+    "1:mist",
+    "1:taunt",
+    "1:mirrorshot",
+    "12:icywind",
+    "16:avalanche",
+    "20:hail",
+    "24:iciclespear",
+    "28:uproar",
+    "32:acidarmor",
+    "38:mirrorcoat",
+    "44:icebeam",
+    "50:blizzard",
+    "56:sheercold",
+    "egg:auroraveil",
+    "egg:autotomize",
+    "egg:explosion",
+    "egg:iceshard",
+    "egg:iciclecrash",
+    "egg:magnetrise",
+    "egg:mirrorshot",
+    "egg:naturalgift",
+    "egg:powdersnow",
+    "tm:allyswitch",
+    "tm:auroraveil",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:frostbreath",
+    "tm:hail",
+    "tm:hypervoice",
+    "tm:icebeam",
+    "tm:iciclespear",
+    "tm:icywind",
+    "tm:imprison",
+    "tm:irondefense",
+    "tm:lightscreen",
+    "tm:magiccoat",
+    "tm:magnetrise",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:selfdestruct",
+    "tm:signalbeam",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:uproar",
+    "tm:waterpulse",
+    "tutor:allyswitch",
+    "tutor:flashcannon",
+    "tutor:hypervoice",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:magiccoat",
+    "tutor:magnetrise",
+    "tutor:rest",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:uproar",
+    "tutor:waterpulse"
+  ],
+  "preEvolution": "vanillite",
+  "evolutions": [
+    {
+      "id": "vanillish_vanilluxe",
+      "variant": "level_up",
+      "result": "vanilluxe",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 47
+        }
+      ]
+    }
+  ]
+}

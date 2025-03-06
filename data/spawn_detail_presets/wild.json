@@ -1,0 +1,10 @@
+{
+  "anticondition": {
+	"structures": [
+	  "#minecraft:village"
+	],
+	"neededNearbyBlocks": [
+      "#cobblemon:concrete_blocks"
+    ]
+  }
+}

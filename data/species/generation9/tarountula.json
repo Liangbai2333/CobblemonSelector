@@ -1,0 +1,147 @@
+{
+  "nationalPokedexNumber": 917,
+  "name": "Tarountula",
+  "primaryType": "bug",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 40,
+  "pokedex": [
+    "cobblemon.species.tarountula.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
+  "abilities": [
+    "insomnia",
+    "h:stakeout"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 35,
+    "attack": 41,
+    "defence": 45,
+    "special_attack": 29,
+    "special_defence": 40,
+    "speed": 20
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 42,
+  "experienceGroup": "erratic",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:spider_eye",
+        "quantityRange": "0-1"
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:stringshot",
+    "5:strugglebug",
+    "8:assurance",
+    "11:feint",
+    "14:bugbite",
+    "18:block",
+    "22:counter",
+    "25:headbutt",
+    "29:stickyweb",
+    "33:gastroacid",
+    "36:circlethrow",
+    "40:throatchop",
+    "44:skittersmack",
+    "egg:firstimpression",
+    "egg:lunge",
+    "egg:memento",
+    "egg:suckerpunch",
+    "tm:assurance",
+    "tm:block",
+    "tm:bodyslam",
+    "tm:bugbite",
+    "tm:bugbuzz",
+    "tm:bulletseed",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:gastroacid",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:headbutt",
+    "tm:knockoff",
+    "tm:leechlife",
+    "tm:lunge",
+    "tm:poisonjab",
+    "tm:pounce",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:shadowclaw",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:spikes",
+    "tm:stringshot",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:suckerpunch",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:throatchop",
+    "tm:toxicspikes",
+    "tm:trailblaze",
+    "tm:xscissor",
+    "tutor:block",
+    "tutor:bugbite",
+    "tutor:falseswipe",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:knockoff",
+    "tutor:leechlife",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:shadowclaw",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:spikes",
+    "tutor:stringshot",
+    "tutor:suckerpunch",
+    "tutor:throatchop",
+    "tutor:xscissor"
+  ],
+  "evolutions": [
+    {
+      "id": "tarountula_spidops",
+      "variant": "level_up",
+      "result": "spidops",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "silktrap"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 15
+        }
+      ]
+    }
+  ]
+}

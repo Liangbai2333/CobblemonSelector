@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "CobblemonSelector"
+version = "0.1.0"
+description = "CobblemonSelector"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+nonebot2 = "^2.4.1"
+nonebot-plugin-htmlrender = "^0.6.0"
+pillow = "^11.1.0"
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
+    { name = "Console", module_name = "nonebot.adapters.console" }
+]
+plugins = ["nonebot_plugin_htmlrender"]
+plugin_dirs = [
+    "plugins"
+]
+builtin_plugins = []

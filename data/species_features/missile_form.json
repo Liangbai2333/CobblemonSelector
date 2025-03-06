@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "missile_form"
+  ],
+  "default": "none",
+  "choices": [
+    "gulping",
+    "gorging"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-form"
+}

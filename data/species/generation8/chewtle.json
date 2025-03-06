@@ -1,0 +1,149 @@
+{
+  "nationalPokedexNumber": 833,
+  "name": "Chewtle",
+  "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 85,
+  "pokedex": [
+    "cobblemon.species.chewtle.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
+  "abilities": [
+    "strongjaw",
+    "shellarmor",
+    "h:swiftswim"
+  ],
+  "eggGroups": [
+    "monster",
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 64,
+    "defence": 50,
+    "special_attack": 38,
+    "special_defence": 38,
+    "speed": 44
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 57,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canSwimInWater": true,
+        "canSwimInLava": false,
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      }
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:turtle_scute",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:rindo_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:watergun",
+    "7:bite",
+    "14:protect",
+    "21:headbutt",
+    "28:counter",
+    "35:jawlock",
+    "42:liquidation",
+    "49:bodyslam",
+    "egg:dragontail",
+    "egg:gastroacid",
+    "egg:shellsmash",
+    "egg:skullbash",
+    "tm:assurance",
+    "tm:bodyslam",
+    "tm:chillingwater",
+    "tm:crunch",
+    "tm:dive",
+    "tm:dragontail",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:gastroacid",
+    "tm:headbutt",
+    "tm:hydropump",
+    "tm:icefang",
+    "tm:liquidation",
+    "tm:mudshot",
+    "tm:payback",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:revenge",
+    "tm:scaryface",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:stompingtantrum",
+    "tm:substitute",
+    "tm:surf",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:dive",
+    "tutor:falseswipe",
+    "tutor:gastroacid",
+    "tutor:icefang",
+    "tutor:liquidation",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:stompingtantrum",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [
+    {
+      "id": "chewtle_drednaw",
+      "variant": "level_up",
+      "result": "drednaw",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "rocktomb"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 22
+        }
+      ]
+    }
+  ]
+}

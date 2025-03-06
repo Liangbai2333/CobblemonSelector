@@ -1,0 +1,203 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 5,
+  "name": "Charmeleon",
+  "primaryType": "fire",
+  "maleRatio": 0.875,
+  "height": 11,
+  "weight": 190,
+  "pokedex": [
+    "cobblemon.species.charmeleon.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "blaze",
+    "h:solarpower"
+  ],
+  "eggGroups": [
+    "monster",
+    "dragon"
+  ],
+  "baseStats": {
+    "hp": 58,
+    "attack": 64,
+    "defence": 58,
+    "special_attack": 80,
+    "special_defence": 65,
+    "speed": 80
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 142,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.175
+      },
+      "swim": {
+        "canSwimInLava": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:blaze_powder",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:charcoal_stick",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "moves": [
+    "1:scratch",
+    "1:growl",
+    "1:ember",
+    "1:smokescreen",
+    "1:dragonrage",
+    "1:flameburst",
+    "12:dragonbreath",
+    "19:firefang",
+    "24:slash",
+    "30:flamethrower",
+    "37:scaryface",
+    "48:inferno",
+    "54:flareblitz",
+    "egg:ancientpower",
+    "egg:bellydrum",
+    "egg:bite",
+    "egg:counter",
+    "egg:dragonrage",
+    "egg:dragonrush",
+    "egg:dragontail",
+    "egg:irontail",
+    "egg:metalclaw",
+    "egg:wingattack",
+    "tm:ancientpower",
+    "tm:beatup",
+    "tm:bodyslam",
+    "tm:breakingswipe",
+    "tm:brickbreak",
+    "tm:crunch",
+    "tm:cut",
+    "tm:dig",
+    "tm:dragonclaw",
+    "tm:dragondance",
+    "tm:dragonpulse",
+    "tm:dragontail",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:fireblast",
+    "tm:firefang",
+    "tm:firepledge",
+    "tm:firepunch",
+    "tm:firespin",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flareblitz",
+    "tm:fling",
+    "tm:focusblast",
+    "tm:focuspunch",
+    "tm:furycutter",
+    "tm:headbutt",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:honeclaws",
+    "tm:incinerate",
+    "tm:irontail",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:metalclaw",
+    "tm:outrage",
+    "tm:overheat",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:rest",
+    "tm:roar",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:scaryface",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:temperflare",
+    "tm:terablast",
+    "tm:thunderpunch",
+    "tm:weatherball",
+    "tm:willowisp",
+    "tm:workup",
+    "tutor:ancientpower",
+    "tutor:dragonpulse",
+    "tutor:falseswipe",
+    "tutor:firefang",
+    "tutor:firepledge",
+    "tutor:firepunch",
+    "tutor:flamethrower",
+    "tutor:focuspunch",
+    "tutor:furycutter",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:irontail",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:thunderpunch"
+  ],
+  "preEvolution": "charmander",
+  "evolutions": [
+    {
+      "id": "charmeleon_charizard",
+      "variant": "level_up",
+      "result": "charizard",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "wingattack",
+        "airslash"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 36
+        }
+      ]
+    }
+  ]
+}

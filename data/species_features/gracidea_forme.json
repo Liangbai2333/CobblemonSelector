@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "gracidea_forme"
+  ],
+  "default": "land",
+  "choices": [
+    "land",
+    "sky"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-forme"
+}

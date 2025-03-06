@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "king_steed"
+  ],
+  "default": "none",
+  "choices": [
+    "ice",
+    "shadow"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-rider"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "choice",
+  "keys": ["snake_pattern"],
+  "default": "random",
+  "choices": [
+    "classic",
+    "legacy",
+    "attack",
+    "dark",
+    "elusive",
+    "heart",
+    "speed",
+    "sound"
+  ],
+  "isAspect": true,
+  "aspectFormat": "snake-pattern-{{choice}}"
+}

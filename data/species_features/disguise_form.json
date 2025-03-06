@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "disguise_form"
+  ],
+  "default": "disguised",
+  "choices": [
+    "disguised",
+    "busted"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-form"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "choice",
+  "keys": [
+    "wolf_form"
+  ],
+  "default": "midday",
+  "choices": [
+    "dusk",
+    "midday",
+    "midnight"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-form"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "maushold_family"
+  ],
+  "default": "four",
+  "choices": [
+    "three",
+    "four"
+  ],
+  "isAspect": true,
+  "aspectFormat": "maushold-family-{{choice}}"
+}

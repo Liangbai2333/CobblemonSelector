@@ -1,0 +1,185 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 966,
+  "name": "Revavroom",
+  "primaryType": "steel",
+  "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 18,
+  "weight": 1200,
+  "pokedex": [
+    "cobblemon.species.revavroom.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
+  "abilities": [
+    "overcoat",
+    "h:filter"
+  ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 80,
+    "attack": 119,
+    "defence": 90,
+    "special_attack": 54,
+    "special_defence": 67,
+    "speed": 90
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 175,
+  "experienceGroup": "medium_fast",
+  "catchRate": 75,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "riding": {
+    "controller": {
+      "key": "cobblemon:land/vehicle"
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    ]
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:iron_nugget",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:black_sludge",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:shuca_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:shiftgear",
+    "1:magnetrise",
+    "1:lick",
+    "1:poisongas",
+    "4:smog",
+    "7:taunt",
+    "10:assurance",
+    "13:sludge",
+    "17:gyroball",
+    "21:headbutt",
+    "25:screech",
+    "28:ironhead",
+    "32:swagger",
+    "36:poisonjab",
+    "46:uproar",
+    "52:spinout",
+    "58:gunkshot",
+    "egg:haze",
+    "egg:partingshot",
+    "egg:selfdestruct",
+    "egg:torment",
+    "egg:toxic",
+    "tm:acidspray",
+    "tm:assurance",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:curse",
+    "tm:doubleedge",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:gigaimpact",
+    "tm:gunkshot",
+    "tm:gyroball",
+    "tm:hardpress",
+    "tm:haze",
+    "tm:headbutt",
+    "tm:heavyslam",
+    "tm:highhorsepower",
+    "tm:hyperbeam",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:lashout",
+    "tm:magnetrise",
+    "tm:metalsound",
+    "tm:overheat",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:sandstorm",
+    "tm:scaryface",
+    "tm:screech",
+    "tm:selfdestruct",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:steelbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:temperflare",
+    "tm:terablast",
+    "tm:thief",
+    "tm:torment",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:uproar",
+    "tm:venoshock",
+    "tm:zenheadbutt",
+    "tutor:bulldoze",
+    "tutor:endeavor",
+    "tutor:flashcannon",
+    "tutor:gigaimpact",
+    "tutor:gunkshot",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:lashout",
+    "tutor:magnetrise",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:spikes",
+    "tutor:steelbeam",
+    "tutor:uproar",
+    "tutor:zenheadbutt"
+  ],
+  "preEvolution": "varoom",
+  "evolutions": []
+}

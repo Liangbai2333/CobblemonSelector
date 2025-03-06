@@ -1,0 +1,202 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 73,
+  "name": "Tentacruel",
+  "primaryType": "water",
+  "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 16,
+  "weight": 550,
+  "pokedex": [
+    "cobblemon.species.tentacruel.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "clearbody",
+    "liquidooze",
+    "h:raindish"
+  ],
+  "eggGroups": [
+    "water_3"
+  ],
+  "baseStats": {
+    "hp": 80,
+    "attack": 70,
+    "defence": 65,
+    "special_attack": 80,
+    "special_defence": 120,
+    "speed": 100
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
+  "baseExperienceYield": 180,
+  "experienceGroup": "slow",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 1.2,
+    "height": 2.45,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "swimSpeed": 0.2,
+        "canBreatheUnderwater": true,
+        "canSwimInWater": true,
+        "canSwimInLava": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 9,
+    "entries": [
+      {
+        "item": "minecraft:ink_sac",
+        "quantityRange": "2-4"
+      },
+      {
+        "item": "minecraft:glow_ink_sac",
+        "quantityRange": "2-4",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:poisonsting",
+    "1:constrict",
+    "1:acid",
+    "1:wrap",
+    "1:barrier",
+    "1:wringout",
+    "1:reflecttype",
+    "1:bubble",
+    "1:watergun",
+    "12:supersonic",
+    "16:waterpulse",
+    "20:screech",
+    "24:bubblebeam",
+    "28:hex",
+    "34:acidarmor",
+    "40:poisonjab",
+    "46:surf",
+    "52:sludgewave",
+    "58:hydropump",
+    "egg:acupressure",
+    "egg:aquaring",
+    "egg:aurorabeam",
+    "egg:bubble",
+    "egg:confuseray",
+    "egg:haze",
+    "egg:knockoff",
+    "egg:mirrorcoat",
+    "egg:rapidspin",
+    "egg:tickle",
+    "egg:wringout",
+    "tm:acidspray",
+    "tm:bind",
+    "tm:blizzard",
+    "tm:brine",
+    "tm:brutalswing",
+    "tm:chillingwater",
+    "tm:confuseray",
+    "tm:corrosivegas",
+    "tm:crosspoison",
+    "tm:cut",
+    "tm:dazzlinggleam",
+    "tm:dive",
+    "tm:endure",
+    "tm:facade",
+    "tm:flipturn",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:gunkshot",
+    "tm:hail",
+    "tm:haze",
+    "tm:hex",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:infestation",
+    "tm:knockoff",
+    "tm:liquidation",
+    "tm:magiccoat",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:payback",
+    "tm:poisonjab",
+    "tm:pounce",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:safeguard",
+    "tm:scaryface",
+    "tm:screech",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:terablast",
+    "tm:thief",
+    "tm:throatchop",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:venomdrench",
+    "tm:venoshock",
+    "tm:waterpulse",
+    "tm:weatherball",
+    "tm:whirlpool",
+    "tutor:bind",
+    "tutor:corrosivegas",
+    "tutor:dazzlinggleam",
+    "tutor:dive",
+    "tutor:flipturn",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:gunkshot",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:knockoff",
+    "tutor:liquidation",
+    "tutor:magiccoat",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:spikes",
+    "tutor:swift",
+    "tutor:throatchop",
+    "tutor:waterpulse"
+  ],
+  "preEvolution": "tentacool",
+  "evolutions": []
+}

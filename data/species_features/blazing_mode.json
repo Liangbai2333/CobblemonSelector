@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "blazing_mode"
+  ],
+  "default": "standard",
+  "choices": [
+    "standard",
+    "zen"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-mode"
+}

@@ -1,0 +1,175 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 119,
+  "name": "Seaking",
+  "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 13,
+  "weight": 390,
+  "pokedex": [
+    "cobblemon.species.seaking.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "swiftswim",
+    "waterveil",
+    "h:lightningrod"
+  ],
+  "eggGroups": [
+    "water_2"
+  ],
+  "baseStats": {
+    "hp": 80,
+    "attack": 92,
+    "defence": 65,
+    "special_attack": 65,
+    "special_defence": 80,
+    "speed": 68
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 158,
+  "experienceGroup": "medium_fast",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1.4,
+    "height": 1.3,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "walkSpeed": 0.17,
+        "avoidsLand": true
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canBreatheUnderwater": true,
+        "canSwimInWater": true,
+        "canSwimInLava": false
+      }
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:salmon"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:mystic_water",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:wacan_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:peck",
+    "1:tailwhip",
+    "1:watersport",
+    "1:supersonic",
+    "1:waterpulse",
+    "1:furyattack",
+    "15:hornattack",
+    "20:agility",
+    "25:aquaring",
+    "30:flail",
+    "37:waterfall",
+    "44:soak",
+    "51:megahorn",
+    "58:horndrill",
+    "egg:acupressure",
+    "egg:aquatail",
+    "egg:furyattack",
+    "egg:haze",
+    "egg:mudslap",
+    "egg:mudsport",
+    "egg:psybeam",
+    "egg:skullbash",
+    "tm:agility",
+    "tm:aquatail",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:bounce",
+    "tm:dive",
+    "tm:drillrun",
+    "tm:endure",
+    "tm:facade",
+    "tm:flipturn",
+    "tm:furycutter",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:haze",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:knockoff",
+    "tm:megahorn",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:psybeam",
+    "tm:raindance",
+    "tm:rest",
+    "tm:scald",
+    "tm:scaleshot",
+    "tm:signalbeam",
+    "tm:sleeptalk",
+    "tm:smartstrike",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:terablast",
+    "tm:throatchop",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:aquatail",
+    "tutor:bounce",
+    "tutor:dive",
+    "tutor:drillrun",
+    "tutor:flipturn",
+    "tutor:furycutter",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:knockoff",
+    "tutor:megahorn",
+    "tutor:mudslap",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:scaleshot",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:throatchop",
+    "tutor:waterpulse"
+  ],
+  "preEvolution": "goldeen",
+  "evolutions": []
+}

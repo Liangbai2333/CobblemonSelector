@@ -1,0 +1,11 @@
+{
+  "condition": {
+	"structures": [
+	  "#minecraft:ocean_ruin"
+    ],
+	"maxY": 62,
+	"neededNearbyBlocks": [
+      "#cobblemon:ocean_ruin_blocks"
+	]
+  }
+}

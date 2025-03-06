@@ -1,0 +1,12 @@
+{
+  "type": "choice",
+  "keys": [
+    "rogue_cape"
+  ],
+  "default": "none",
+  "choices": [
+    "dada"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-cape"
+}

@@ -1,0 +1,224 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 875,
+  "name": "Eiscue",
+  "primaryType": "ice",
+  "maleRatio": 0.5,
+  "height": 14,
+  "weight": 890,
+  "baseScale": 0.85,
+  "pokedex": [
+    "cobblemon.species.eiscue.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [
+    "ice_face"
+  ],
+  "abilities": [
+    "iceface",
+    "h:iceface"
+  ],
+  "eggGroups": [
+    "water_1",
+    "field"
+  ],
+  "baseStats": {
+    "hp": 75,
+    "attack": 80,
+    "defence": 110,
+    "special_attack": 65,
+    "special_defence": 90,
+    "speed": 50
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 165,
+  "experienceGroup": "slow",
+  "catchRate": 60,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "hitbox": {
+    "width": 1.1,
+    "height": 1.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.15
+      },
+      "swim": {
+        "canSwimInWater": true,
+        "canSwimInLava": false,
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      }
+    }
+  },
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "minecraft:cod",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:blue_ice"
+      },
+      {
+        "item": "cobblemon:aspear_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:powdersnow",
+    "1:tackle",
+    "6:mist",
+    "12:weatherball",
+    "18:icywind",
+    "24:headbutt",
+    "30:amnesia",
+    "36:freezedry",
+    "42:snowscape",
+    "48:auroraveil",
+    "54:surf",
+    "60:blizzard",
+    "egg:aquaring",
+    "egg:bellydrum",
+    "egg:doubleedge",
+    "egg:headsmash",
+    "egg:iciclecrash",
+    "egg:soak",
+    "tm:agility",
+    "tm:amnesia",
+    "tm:auroraveil",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:brine",
+    "tm:chillingwater",
+    "tm:dive",
+    "tm:doubleedge",
+    "tm:endure",
+    "tm:facade",
+    "tm:featherdance",
+    "tm:flipturn",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:headbutt",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icepunch",
+    "tm:icespinner",
+    "tm:iciclespear",
+    "tm:icywind",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:liquidation",
+    "tm:protect",
+    "tm:raindance",
+    "tm:reflect",
+    "tm:rest",
+    "tm:reversal",
+    "tm:sleeptalk",
+    "tm:snowscape",
+    "tm:substitute",
+    "tm:surf",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:weatherball",
+    "tm:whirlpool",
+    "tm:zenheadbutt",
+    "tutor:dive",
+    "tutor:flipturn",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icepunch",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:liquidation",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:waterpulse",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Noice-Face",
+      "primaryType": "ice",
+      "maleRatio": 0.5,
+      "height": 14,
+      "weight": 890,
+      "pokedex": [
+        "cobblemon.species.eiscue-noiceface.desc"
+      ],
+      "labels": [
+        "gen8"
+      ],
+      "aspects": [
+        "noice_face"
+      ],
+      "hitbox": {
+        "width": 0.65,
+        "height": 1.35,
+        "fixed": false
+      },
+      "baseStats": {
+        "hp": 75,
+        "attack": 80,
+        "defence": 70,
+        "special_attack": 65,
+        "special_defence": 50,
+        "speed": 130
+      },
+      "evolutions": [],
+      "battleOnly": true,
+      "drops": {
+        "amount": 4,
+        "entries": [
+          {
+            "item": "minecraft:feather",
+            "quantityRange": "0-1"
+          },
+          {
+            "item": "minecraft:chicken"
+          },
+          {
+            "item": "minecraft:cod",
+            "quantityRange": "0-1"
+          },
+          {
+            "item": "cobblemon:aspear_berry",
+            "percentage": 5.0
+          }
+        ]
+      }
+    }
+  ]
+}

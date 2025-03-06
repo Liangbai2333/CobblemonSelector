@@ -1,0 +1,153 @@
+{
+  "nationalPokedexNumber": 737,
+  "name": "Charjabug",
+  "primaryType": "bug",
+  "secondaryType": "electric",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 105,
+  "pokedex": [
+    "cobblemon.species.charjabug.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
+  "abilities": [
+    "battery",
+    "h:battery"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 57,
+    "attack": 82,
+    "defence": 95,
+    "special_attack": 55,
+    "special_defence": 75,
+    "speed": 36
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 140,
+  "experienceGroup": "medium_fast",
+  "catchRate": 120,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:wepear_berry",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:cell_battery",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:charge",
+    "1:visegrip",
+    "1:stringshot",
+    "1:mudslap",
+    "1:bugbite",
+    "15:bite",
+    "23:spark",
+    "29:stickyweb",
+    "36:xscissor",
+    "43:crunch",
+    "50:dig",
+    "57:irondefense",
+    "64:discharge",
+    "egg:discharge",
+    "egg:harden",
+    "tm:batonpass",
+    "tm:bugbite",
+    "tm:charge",
+    "tm:chargebeam",
+    "tm:crunch",
+    "tm:dig",
+    "tm:eerieimpulse",
+    "tm:electricterrain",
+    "tm:electroball",
+    "tm:electroweb",
+    "tm:endure",
+    "tm:facade",
+    "tm:irondefense",
+    "tm:lightscreen",
+    "tm:lunge",
+    "tm:magnetrise",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:poisonjab",
+    "tm:pounce",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:risingvoltage",
+    "tm:screech",
+    "tm:shockwave",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:stringshot",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:voltswitch",
+    "tm:wildcharge",
+    "tm:xscissor",
+    "tutor:bugbite",
+    "tutor:chargebeam",
+    "tutor:electroweb",
+    "tutor:irondefense",
+    "tutor:magnetrise",
+    "tutor:mudslap",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:risingvoltage",
+    "tutor:shockwave",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:stringshot",
+    "tutor:thunderbolt",
+    "tutor:wildcharge",
+    "tutor:xscissor"
+  ],
+  "preEvolution": "grubbin",
+  "evolutions": [
+    {
+      "id": "charjabug_vikavolt",
+      "variant": "item_interact",
+      "result": "vikavolt",
+      "consumeHeldItem": true,
+      "learnableMoves": [
+        "thunderbolt"
+      ],
+      "requirements": [],
+      "requiredContext": "cobblemon:thunder_stone"
+    }
+  ]
+}

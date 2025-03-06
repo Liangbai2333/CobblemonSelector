@@ -1,0 +1,202 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 746,
+  "name": "Wishiwashi",
+  "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 2,
+  "weight": 3,
+  "pokedex": [
+    "cobblemon.species.wishiwashi.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [
+    "solo-form"
+  ],
+  "abilities": [
+    "schooling",
+    "h:schooling"
+  ],
+  "eggGroups": [
+    "water_2"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 20,
+    "defence": 20,
+    "special_attack": 25,
+    "special_defence": 25,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "fast",
+  "catchRate": 60,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "features": [
+    "schooling"
+  ],
+  "baseScale": 0.4,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canBreatheUnderwater": true,
+        "canSwimInWater": true,
+        "canSwimInLava": false
+      }
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:cod"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:watergun",
+    "1:growl",
+    "1:feintattack",
+    "4:helpinghand",
+    "8:beatup",
+    "12:brine",
+    "16:tearfullook",
+    "20:dive",
+    "24:soak",
+    "28:uproar",
+    "32:aquatail",
+    "36:aquaring",
+    "40:endeavor",
+    "44:hydropump",
+    "48:doubleedge",
+    "egg:mist",
+    "egg:takedown",
+    "egg:waterpulse",
+    "egg:watersport",
+    "tm:aquatail",
+    "tm:beatup",
+    "tm:brine",
+    "tm:bulldoze",
+    "tm:covet",
+    "tm:dive",
+    "tm:doubleedge",
+    "tm:earthquake",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:flipturn",
+    "tm:hail",
+    "tm:helpinghand",
+    "tm:hydropump",
+    "tm:icebeam",
+    "tm:irontail",
+    "tm:liquidation",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:scald",
+    "tm:scaleshot",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:surf",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:uproar",
+    "tm:uturn",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:aquatail",
+    "tutor:bulldoze",
+    "tutor:covet",
+    "tutor:dive",
+    "tutor:endeavor",
+    "tutor:flipturn",
+    "tutor:helpinghand",
+    "tutor:icebeam",
+    "tutor:irontail",
+    "tutor:liquidation",
+    "tutor:rest",
+    "tutor:scaleshot",
+    "tutor:sleeptalk",
+    "tutor:uproar",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "School",
+      "primaryType": "water",
+      "maleRatio": 0.5,
+      "height": 82,
+      "weight": 786,
+      "pokedex": [
+        "cobblemon.species.wishiwashi-school.desc"
+      ],
+      "labels": [
+        "gen7"
+      ],
+      "aspects": [
+        "school-form"
+      ],
+      "baseStats": {
+        "hp": 45,
+        "attack": 140,
+        "defence": 130,
+        "special_attack": 140,
+        "special_defence": 135,
+        "speed": 30
+      },
+      "baseExperienceYield": 217,
+      "baseScale": 2,
+      "hitbox": {
+        "width": 3,
+        "height": 3,
+        "fixed": false
+      },
+      "behaviour": {
+        "moving": {
+          "canLook": false,
+          "walk": {
+            "avoidsLand": true
+          },
+          "swim": {
+            "swimSpeed": "0.2",
+            "canBreatheUnderwater": true,
+            "canSwimInWater": true,
+            "canSwimInLava": false
+          }
+        }
+      },
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ]
+}

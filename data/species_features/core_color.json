@@ -1,0 +1,18 @@
+{
+  "type": "choice",
+  "keys": [
+    "core_color"
+  ],
+  "default": "red",
+  "choices": [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "indigo",
+    "violet"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-core"
+}

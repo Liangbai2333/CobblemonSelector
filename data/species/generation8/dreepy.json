@@ -1,0 +1,137 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 885,
+  "name": "Dreepy",
+  "primaryType": "dragon",
+  "secondaryType": "ghost",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 20,
+  "pokedex": [
+    "cobblemon.species.dreepy.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
+  "abilities": [
+    "clearbody",
+    "infiltrator",
+    "h:cursedbody"
+  ],
+  "eggGroups": [
+    "amorphous",
+    "dragon"
+  ],
+  "baseStats": {
+    "hp": 28,
+    "attack": 60,
+    "defence": 30,
+    "special_attack": 40,
+    "special_defence": 30,
+    "speed": 82
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 54,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.75,
+    "height": 0.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "swimSpeed": 0.3,
+        "canBreatheUnderwater": true,
+        "canWalkOnWater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:phantom_membrane",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:haban_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:astonish",
+    "1:infestation",
+    "1:quickattack",
+    "1:bite",
+    "egg:confuseray",
+    "egg:curse",
+    "egg:disable",
+    "egg:doubleteam",
+    "egg:dragontail",
+    "egg:grudge",
+    "egg:suckerpunch",
+    "tm:batonpass",
+    "tm:confuseray",
+    "tm:curse",
+    "tm:doubleteam",
+    "tm:dracometeor",
+    "tm:dragontail",
+    "tm:endure",
+    "tm:facade",
+    "tm:helpinghand",
+    "tm:infestation",
+    "tm:protect",
+    "tm:rest",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:suckerpunch",
+    "tm:swift",
+    "tm:terablast",
+    "tm:thunderwave",
+    "tutor:dracometeor",
+    "tutor:helpinghand",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:suckerpunch",
+    "tutor:swift"
+  ],
+  "evolutions": [
+    {
+      "id": "dreepy_drakloak",
+      "variant": "level_up",
+      "result": "drakloak",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "dragonpulse"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 50
+        }
+      ]
+    }
+  ]
+}

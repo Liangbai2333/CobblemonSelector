@@ -1,0 +1,7 @@
+{
+  "condition": {
+    "neededBaseBlocks": [
+      "#cobblemon:trees"
+    ]
+  }
+}

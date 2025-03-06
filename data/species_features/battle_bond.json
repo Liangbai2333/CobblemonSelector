@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "battle_bond"
+  ],
+  "default": "none",
+  "choices": [
+    "bond",
+    "ash"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}"
+}

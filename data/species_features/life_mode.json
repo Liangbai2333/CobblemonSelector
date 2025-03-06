@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "life_mode"
+  ],
+  "default": "neutral",
+  "choices": [
+    "neutral",
+    "active"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-mode"
+}

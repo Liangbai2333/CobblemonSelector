@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "reversion_state"
+  ],
+  "default": "standard",
+  "choices": [
+    "standard",
+    "primal"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}"
+}

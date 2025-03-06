@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "schooling_form"
+  ],
+  "default": "solo",
+  "choices": [
+    "solo",
+    "school"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-form"
+}

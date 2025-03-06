@@ -1,0 +1,160 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 865,
+  "name": "Sirfetch\u00e2\u20ac\u2122d",
+  "primaryType": "fighting",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 1170,
+  "pokedex": [
+    "cobblemon.species.sirfetchd.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [
+    "galarian"
+  ],
+  "abilities": [
+    "steadfast",
+    "h:scrappy"
+  ],
+  "eggGroups": [
+    "flying",
+    "field"
+  ],
+  "baseStats": {
+    "hp": 62,
+    "attack": 135,
+    "defence": 95,
+    "special_attack": 68,
+    "special_defence": 82,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 177,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:medicinal_leek"
+      },
+      {
+        "item": "cobblemon:coba_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:irondefense",
+    "1:firstimpression",
+    "1:peck",
+    "1:sandattack",
+    "1:leer",
+    "1:furycutter",
+    "15:rocksmash",
+    "20:brutalswing",
+    "25:detect",
+    "30:knockoff",
+    "35:defog",
+    "40:brickbreak",
+    "45:swordsdance",
+    "50:slam",
+    "55:leafblade",
+    "60:finalgambit",
+    "65:bravebird",
+    "70:meteorassault",
+    "egg:counter",
+    "egg:covet",
+    "egg:curse",
+    "egg:doubleedge",
+    "egg:feint",
+    "egg:flail",
+    "egg:nightslash",
+    "egg:quickattack",
+    "egg:quickguard",
+    "egg:simplebeam",
+    "egg:skyattack",
+    "tm:assurance",
+    "tm:bodyslam",
+    "tm:bravebird",
+    "tm:brickbreak",
+    "tm:brutalswing",
+    "tm:closecombat",
+    "tm:coaching",
+    "tm:covet",
+    "tm:curse",
+    "tm:defog",
+    "tm:doubleedge",
+    "tm:dualwingbeat",
+    "tm:endure",
+    "tm:facade",
+    "tm:focusenergy",
+    "tm:furycutter",
+    "tm:grassyglide",
+    "tm:helpinghand",
+    "tm:irondefense",
+    "tm:knockoff",
+    "tm:leafblade",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:revenge",
+    "tm:rocksmash",
+    "tm:skyattack",
+    "tm:sleeptalk",
+    "tm:solarblade",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:superpower",
+    "tm:swordsdance",
+    "tm:terablast",
+    "tm:throatchop",
+    "tm:workup",
+    "tutor:coaching",
+    "tutor:covet",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:focusenergy",
+    "tutor:furycutter",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:irondefense",
+    "tutor:knockoff",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:superpower",
+    "tutor:throatchop"
+  ],
+  "preEvolution": "farfetchd galarian",
+  "evolutions": []
+}

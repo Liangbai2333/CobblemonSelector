@@ -1,0 +1,14 @@
+{
+  "condition": {
+    "neededNearbyBlocks": [
+	  "#minecraft:redstone_ores",
+	  "#cobblemon:redstone_blocks",
+	  "#c:redstone_ores"
+    ]
+  },
+  "anticondition": {
+    "neededBaseBlocks": [
+	  "#cobblemon:redstone_blocks"
+	]
+  }
+}

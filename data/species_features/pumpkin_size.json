@@ -1,0 +1,15 @@
+{
+  "type": "choice",
+  "keys": [
+    "pumpkin_size"
+  ],
+  "default": "random",
+  "choices": [
+    "average",
+    "small",
+    "large",
+    "super"
+  ],
+  "isAspect": true,
+  "aspectFormat": "pumpkin-size-{{choice}}"
+}

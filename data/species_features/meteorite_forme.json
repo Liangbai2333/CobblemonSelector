@@ -1,0 +1,15 @@
+{
+  "type": "choice",
+  "keys": [
+    "meteorite_forme"
+  ],
+  "default": "normal",
+  "choices": [
+    "normal",
+    "attack",
+    "defense",
+    "speed"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-forme"
+}

@@ -1,0 +1,164 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 17,
+  "name": "Pidgeotto",
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 11,
+  "weight": 300,
+  "pokedex": [
+    "cobblemon.species.pidgeotto.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "keeneye",
+    "tangledfeet",
+    "h:bigpecks"
+  ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 63,
+    "attack": 60,
+    "defence": 55,
+    "special_attack": 50,
+    "special_defence": 50,
+    "speed": 71
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 122,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1.1,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:sharp_beak",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:chilan_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:sandattack",
+    "1:gust",
+    "13:quickattack",
+    "17:whirlwind",
+    "22:twister",
+    "27:featherdance",
+    "32:agility",
+    "37:wingattack",
+    "42:roost",
+    "47:tailwind",
+    "52:mirrormove",
+    "57:airslash",
+    "62:hurricane",
+    "egg:feintattack",
+    "egg:foresight",
+    "egg:pursuit",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:bravebird",
+    "tm:defog",
+    "tm:dualwingbeat",
+    "tm:endure",
+    "tm:facade",
+    "tm:featherdance",
+    "tm:fly",
+    "tm:heatwave",
+    "tm:hurricane",
+    "tm:mudslap",
+    "tm:ominouswind",
+    "tm:pluck",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:roost",
+    "tm:skyattack",
+    "tm:sleeptalk",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:tailwind",
+    "tm:terablast",
+    "tm:thief",
+    "tm:twister",
+    "tm:uproar",
+    "tm:uturn",
+    "tm:workup",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:heatwave",
+    "tutor:mudslap",
+    "tutor:ominouswind",
+    "tutor:rest",
+    "tutor:roost",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:tailwind",
+    "tutor:twister",
+    "tutor:uproar"
+  ],
+  "preEvolution": "pidgey",
+  "evolutions": [
+    {
+      "id": "pidgeotto_pidgeot",
+      "variant": "level_up",
+      "result": "pidgeot",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 36
+        }
+      ]
+    }
+  ]
+}

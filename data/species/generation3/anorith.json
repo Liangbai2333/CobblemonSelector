@@ -1,0 +1,179 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 347,
+  "name": "Anorith",
+  "primaryType": "rock",
+  "secondaryType": "bug",
+  "maleRatio": 0.875,
+  "height": 7,
+  "weight": 125,
+  "pokedex": [
+    "cobblemon.species.anorith.desc"
+  ],
+  "labels": [
+    "gen3",
+    "fossil"
+  ],
+  "aspects": [],
+  "abilities": [
+    "battlearmor",
+    "h:swiftswim"
+  ],
+  "eggGroups": [
+    "water_3"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 95,
+    "defence": 50,
+    "special_attack": 40,
+    "special_defence": 50,
+    "speed": 75
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 71,
+  "experienceGroup": "erratic",
+  "catchRate": 45,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.9,
+    "height": 0.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.17
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canBreatheUnderwater": true,
+        "canWalkOnWater": true,
+        "canSwimInWater": true,
+        "canSwimInLava": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:quick_claw",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:scratch",
+    "1:harden",
+    "1:mudsport",
+    "1:furycutter",
+    "4:watergun",
+    "8:smackdown",
+    "12:metalclaw",
+    "16:ancientpower",
+    "20:bugbite",
+    "24:brine",
+    "28:slash",
+    "32:crushclaw",
+    "36:rockblast",
+    "41:protect",
+    "44:xscissor",
+    "egg:aquajet",
+    "egg:curse",
+    "egg:knockoff",
+    "egg:rapidspin",
+    "egg:sandattack",
+    "egg:waterpulse",
+    "tm:aerialace",
+    "tm:ancientpower",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:brine",
+    "tm:bugbite",
+    "tm:crosspoison",
+    "tm:curse",
+    "tm:cut",
+    "tm:dig",
+    "tm:earthpower",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:furycutter",
+    "tm:headbutt",
+    "tm:honeclaws",
+    "tm:irondefense",
+    "tm:knockoff",
+    "tm:metalclaw",
+    "tm:meteorbeam",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:protect",
+    "tm:rest",
+    "tm:rockblast",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:sandstorm",
+    "tm:screech",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:stealthrock",
+    "tm:stringshot",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swordsdance",
+    "tm:terablast",
+    "tm:waterpulse",
+    "tm:xscissor",
+    "tutor:aerialace",
+    "tutor:ancientpower",
+    "tutor:bugbite",
+    "tutor:earthpower",
+    "tutor:falseswipe",
+    "tutor:furycutter",
+    "tutor:irondefense",
+    "tutor:knockoff",
+    "tutor:meteorbeam",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
+    "tutor:stringshot",
+    "tutor:waterpulse",
+    "tutor:xscissor"
+  ],
+  "evolutions": [
+    {
+      "id": "anorith_armaldo",
+      "variant": "level_up",
+      "result": "armaldo",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 40
+        }
+      ]
+    }
+  ]
+}

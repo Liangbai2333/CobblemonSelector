@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "dolphin_form"
+  ],
+  "default": "zero",
+  "choices": [
+    "zero",
+    "hero"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-form"
+}

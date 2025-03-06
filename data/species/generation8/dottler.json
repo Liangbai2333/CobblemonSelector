@@ -1,0 +1,140 @@
+{
+  "nationalPokedexNumber": 825,
+  "name": "Dottler",
+  "primaryType": "bug",
+  "secondaryType": "psychic",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 195,
+  "pokedex": [
+    "cobblemon.species.dottler.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
+  "abilities": [
+    "swarm",
+    "compoundeyes",
+    "h:telepathy"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 35,
+    "defence": 80,
+    "special_attack": 50,
+    "special_defence": 90,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
+  "baseExperienceYield": 117,
+  "experienceGroup": "medium_fast",
+  "catchRate": 120,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:razz_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:reflect",
+    "1:lightscreen",
+    "1:confusion",
+    "1:strugglebug",
+    "egg:infestation",
+    "egg:recover",
+    "egg:stickyweb",
+    "egg:supersonic",
+    "tm:allyswitch",
+    "tm:bodypress",
+    "tm:bugbuzz",
+    "tm:calmmind",
+    "tm:endure",
+    "tm:energyball",
+    "tm:expandingforce",
+    "tm:facade",
+    "tm:futuresight",
+    "tm:guardswap",
+    "tm:helpinghand",
+    "tm:imprison",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:leechlife",
+    "tm:lightscreen",
+    "tm:magicroom",
+    "tm:payback",
+    "tm:powerswap",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychicterrain",
+    "tm:psyshock",
+    "tm:reflect",
+    "tm:rest",
+    "tm:safeguard",
+    "tm:shadowball",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:storedpower",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:terablast",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:wonderroom",
+    "tm:zenheadbutt",
+    "tutor:allyswitch",
+    "tutor:calmmind",
+    "tutor:energyball",
+    "tutor:expandingforce",
+    "tutor:helpinghand",
+    "tutor:irondefense",
+    "tutor:leechlife",
+    "tutor:magicroom",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:shadowball",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:trick",
+    "tutor:wonderroom",
+    "tutor:zenheadbutt"
+  ],
+  "preEvolution": "blipbug",
+  "evolutions": [
+    {
+      "id": "dottler_orbeetle",
+      "variant": "level_up",
+      "result": "orbeetle",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 30
+        }
+      ]
+    }
+  ]
+}

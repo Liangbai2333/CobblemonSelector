@@ -1,0 +1,13 @@
+{
+  "condition": {
+	"neededNearbyBlocks": [
+      "#cobblemon:concrete_blocks"
+    ]
+  },
+  "anticondition": {
+    "structures": [
+	  "#minecraft:village",
+	  "minecraft:trail_ruins"
+	]
+  }
+}

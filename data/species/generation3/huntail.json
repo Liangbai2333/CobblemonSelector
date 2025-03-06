@@ -1,0 +1,165 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 367,
+  "name": "Huntail",
+  "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 17,
+  "weight": 270,
+  "pokedex": [
+    "cobblemon.species.huntail.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
+  "abilities": [
+    "swiftswim",
+    "h:waterveil"
+  ],
+  "eggGroups": [
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 55,
+    "attack": 104,
+    "defence": 105,
+    "special_attack": 94,
+    "special_defence": 75,
+    "speed": 52
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 170,
+  "experienceGroup": "erratic",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1.15,
+  "hitbox": {
+    "width": 1.3,
+    "height": 0.45,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "canBreatheUnderwater": true,
+        "canSwimInWater": true,
+        "canSwimInLava": false,
+        "swimSpeed": "0.2"
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:deep_sea_tooth",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:whirlpool",
+    "1:bite",
+    "1:irondefense",
+    "1:watergun",
+    "1:shellsmash",
+    "1:clamp",
+    "5:screech",
+    "9:scaryface",
+    "11:feintattack",
+    "14:waterpulse",
+    "16:icefang",
+    "19:brine",
+    "23:suckerpunch",
+    "26:dive",
+    "29:batonpass",
+    "34:crunch",
+    "39:aquatail",
+    "45:coil",
+    "50:hydropump",
+    "egg:aquaring",
+    "egg:barrier",
+    "egg:mudsport",
+    "egg:refresh",
+    "egg:supersonic",
+    "tm:aquatail",
+    "tm:batonpass",
+    "tm:bind",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:bounce",
+    "tm:brine",
+    "tm:confuseray",
+    "tm:crunch",
+    "tm:dive",
+    "tm:endure",
+    "tm:facade",
+    "tm:flipturn",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icefang",
+    "tm:icywind",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:muddywater",
+    "tm:mudslap",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rocktomb",
+    "tm:scald",
+    "tm:scaleshot",
+    "tm:scaryface",
+    "tm:screech",
+    "tm:sleeptalk",
+    "tm:snatch",
+    "tm:substitute",
+    "tm:suckerpunch",
+    "tm:superfang",
+    "tm:surf",
+    "tm:terablast",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:aquatail",
+    "tutor:bind",
+    "tutor:bounce",
+    "tutor:dive",
+    "tutor:flipturn",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icefang",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:scaleshot",
+    "tutor:sleeptalk",
+    "tutor:snatch",
+    "tutor:suckerpunch",
+    "tutor:superfang",
+    "tutor:waterpulse"
+  ],
+  "preEvolution": "clamperl",
+  "evolutions": []
+}

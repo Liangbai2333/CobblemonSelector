@@ -1,0 +1,251 @@
+{
+  "nationalPokedexNumber": 649,
+  "name": "Genesect",
+  "primaryType": "bug",
+  "secondaryType": "steel",
+  "maleRatio": -1,
+  "height": 15,
+  "weight": 825,
+  "pokedex": [
+    "cobblemon.species.genesect.desc"
+  ],
+  "labels": [
+    "gen5",
+    "mythical"
+  ],
+  "aspects": [],
+  "abilities": [
+    "download",
+    "h:download"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 71,
+    "attack": 120,
+    "defence": 95,
+    "special_attack": 120,
+    "special_defence": 95,
+    "speed": 99
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 300,
+  "experienceGroup": "slow",
+  "catchRate": 3,
+  "eggCycles": 120,
+  "baseFriendship": 0,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "moves": [
+    "1:quickattack",
+    "1:furycutter",
+    "1:magnetbomb",
+    "1:slash",
+    "7:screech",
+    "14:metalclaw",
+    "21:fellstinger",
+    "28:flamecharge",
+    "35:metalsound",
+    "42:xscissor",
+    "49:magnetrise",
+    "56:bugbuzz",
+    "63:simplebeam",
+    "70:zapcannon",
+    "77:lockon",
+    "84:technoblast",
+    "91:selfdestruct",
+    "tm:aerialace",
+    "tm:allyswitch",
+    "tm:assurance",
+    "tm:blazekick",
+    "tm:blizzard",
+    "tm:bugbite",
+    "tm:bugbuzz",
+    "tm:chargebeam",
+    "tm:darkpulse",
+    "tm:electroweb",
+    "tm:endure",
+    "tm:energyball",
+    "tm:explosion",
+    "tm:facade",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flash",
+    "tm:flashcannon",
+    "tm:fly",
+    "tm:furycutter",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:gravity",
+    "tm:gunkshot",
+    "tm:honeclaws",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:lastresort",
+    "tm:leechlife",
+    "tm:lightscreen",
+    "tm:magiccoat",
+    "tm:magnetrise",
+    "tm:metalclaw",
+    "tm:metalsound",
+    "tm:protect",
+    "tm:psychic",
+    "tm:recycle",
+    "tm:reflect",
+    "tm:rest",
+    "tm:rockpolish",
+    "tm:screech",
+    "tm:selfdestruct",
+    "tm:shadowclaw",
+    "tm:shockwave",
+    "tm:signalbeam",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:steelbeam",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:swift",
+    "tm:telekinesis",
+    "tm:terablast",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:triattack",
+    "tm:uturn",
+    "tm:xscissor",
+    "tm:zenheadbutt",
+    "tutor:aerialace",
+    "tutor:allyswitch",
+    "tutor:bugbite",
+    "tutor:chargebeam",
+    "tutor:darkpulse",
+    "tutor:electroweb",
+    "tutor:energyball",
+    "tutor:flamethrower",
+    "tutor:flashcannon",
+    "tutor:furycutter",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:gravity",
+    "tutor:gunkshot",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:lastresort",
+    "tutor:leechlife",
+    "tutor:magiccoat",
+    "tutor:magnetrise",
+    "tutor:psychic",
+    "tutor:recycle",
+    "tutor:rest",
+    "tutor:shadowclaw",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:steelbeam",
+    "tutor:swift",
+    "tutor:telekinesis",
+    "tutor:thunderbolt",
+    "tutor:xscissor",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Water",
+      "primaryType": "bug",
+      "secondaryType": "steel",
+      "maleRatio": -1,
+      "height": 15,
+      "weight": 825,
+      "pokedex": [
+        "cobblemon.species.genesect-water.desc"
+      ],
+      "labels": [
+        "gen5",
+        "mythical"
+      ],
+      "aspects": [
+        "water-drive"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Electric",
+      "primaryType": "bug",
+      "secondaryType": "steel",
+      "maleRatio": -1,
+      "height": 15,
+      "weight": 825,
+      "pokedex": [
+        "cobblemon.species.genesect-electric.desc"
+      ],
+      "labels": [
+        "gen5",
+        "mythical"
+      ],
+      "aspects": [
+        "electric-drive"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Fire",
+      "primaryType": "bug",
+      "secondaryType": "steel",
+      "maleRatio": -1,
+      "height": 15,
+      "weight": 825,
+      "pokedex": [
+        "cobblemon.species.genesect-fire.desc"
+      ],
+      "labels": [
+        "gen5",
+        "mythical"
+      ],
+      "aspects": [
+        "fire-drive"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Ice",
+      "primaryType": "bug",
+      "secondaryType": "steel",
+      "maleRatio": -1,
+      "height": 15,
+      "weight": 825,
+      "pokedex": [
+        "cobblemon.species.genesect-ice.desc"
+      ],
+      "labels": [
+        "gen5",
+        "mythical"
+      ],
+      "aspects": [
+        "ice-drive"
+      ],
+      "evolutions": [],
+      "battleOnly": false
+    }
+  ]
+}

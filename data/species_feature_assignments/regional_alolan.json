@@ -1,0 +1,25 @@
+{
+  "pokemon": [
+    "rattata",
+    "raticate",
+    "raichu",
+    "sandshrew",
+    "sandslash",
+    "vulpix",
+    "ninetales",
+    "diglett",
+    "dugtrio",
+    "meowth",
+    "persian",
+    "geodude",
+    "graveler",
+    "golem",
+    "grimer",
+    "muk",
+    "exeggutor",
+    "marowak"
+  ],
+  "features": [
+    "alolan"
+  ]
+}

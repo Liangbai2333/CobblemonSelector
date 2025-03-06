@@ -1,0 +1,20 @@
+{
+  "condition": {
+	"structures": [
+	  "minecraft:trail_ruins"
+    ],
+	"minY": 32,
+	"neededBaseBlocks": [
+	  "#minecraft:convertable_to_mud",
+	  "#minecraft:sand",
+	  "#minecraft:trail_ruins_replaceable",
+	  "#cobblemon:trail_ruins_blocks",
+	  "minecraft:cobblestone",
+	  "minecraft:stone",
+	  "minecraft:stone_bricks"
+    ],
+	"neededNearbyBlocks": [
+	  "#cobblemon:trail_ruins_blocks"
+	]
+  }
+}

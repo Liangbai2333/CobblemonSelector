@@ -1,0 +1,210 @@
+{
+  "nationalPokedexNumber": 834,
+  "name": "Drednaw",
+  "primaryType": "water",
+  "secondaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 1155,
+  "pokedex": [
+    "cobblemon.species.drednaw.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
+  "abilities": [
+    "strongjaw",
+    "shellarmor",
+    "h:swiftswim"
+  ],
+  "eggGroups": [
+    "monster",
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 90,
+    "attack": 115,
+    "defence": 90,
+    "special_attack": 48,
+    "special_defence": 68,
+    "speed": 74
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 170,
+  "experienceGroup": "medium_fast",
+  "catchRate": 75,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canSwimInWater": true,
+        "canSwimInLava": false,
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      }
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:turtle_scute",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:rindo_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:rocktomb",
+    "1:razorshell",
+    "1:crunch",
+    "1:rockpolish",
+    "1:tackle",
+    "1:watergun",
+    "1:bite",
+    "1:protect",
+    "21:headbutt",
+    "30:counter",
+    "39:jawlock",
+    "48:liquidation",
+    "57:bodyslam",
+    "66:headsmash",
+    "egg:dragontail",
+    "egg:gastroacid",
+    "egg:shellsmash",
+    "egg:skullbash",
+    "tm:assurance",
+    "tm:blizzard",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:chillingwater",
+    "tm:crunch",
+    "tm:dig",
+    "tm:dive",
+    "tm:doubleedge",
+    "tm:dragontail",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:gastroacid",
+    "tm:gigaimpact",
+    "tm:headbutt",
+    "tm:highhorsepower",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icefang",
+    "tm:icespinner",
+    "tm:irondefense",
+    "tm:irontail",
+    "tm:liquidation",
+    "tm:megahorn",
+    "tm:meteorbeam",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:payback",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:razorshell",
+    "tm:rest",
+    "tm:revenge",
+    "tm:rockblast",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:sandstorm",
+    "tm:sandtomb",
+    "tm:scaryface",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:smartstrike",
+    "tm:stealthrock",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:substitute",
+    "tm:superfang",
+    "tm:superpower",
+    "tm:surf",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:throatchop",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:bulldoze",
+    "tutor:dive",
+    "tutor:earthpower",
+    "tutor:falseswipe",
+    "tutor:gastroacid",
+    "tutor:gigaimpact",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icefang",
+    "tutor:irondefense",
+    "tutor:irontail",
+    "tutor:liquidation",
+    "tutor:megahorn",
+    "tutor:meteorbeam",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:superfang",
+    "tutor:superpower",
+    "tutor:throatchop",
+    "tutor:waterpulse"
+  ],
+  "preEvolution": "chewtle",
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Gmax",
+      "primaryType": "water",
+      "secondaryType": "rock",
+      "maleRatio": 0.5,
+      "height": 240,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.drednaw-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ]
+}

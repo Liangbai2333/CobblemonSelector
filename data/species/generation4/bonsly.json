@@ -1,0 +1,186 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 438,
+  "name": "Bonsly",
+  "primaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 150,
+  "pokedex": [
+    "cobblemon.species.bonsly.desc"
+  ],
+  "labels": [
+    "gen4",
+    "baby"
+  ],
+  "aspects": [],
+  "abilities": [
+    "sturdy",
+    "rockhead",
+    "h:rattled"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 80,
+    "defence": 95,
+    "special_attack": 10,
+    "special_defence": 45,
+    "speed": 10
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 58,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.5,
+    "height": 1.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.25
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:hard_stone",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:passho_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:faketears",
+    "1:copycat",
+    "4:flail",
+    "8:rockthrow",
+    "12:block",
+    "16:mimic",
+    "20:rocktomb",
+    "24:tearfullook",
+    "28:suckerpunch",
+    "32:rockslide",
+    "36:lowkick",
+    "40:counter",
+    "44:doubleedge",
+    "egg:curse",
+    "egg:defensecurl",
+    "egg:feintattack",
+    "egg:harden",
+    "egg:headbutt",
+    "egg:rockpolish",
+    "egg:rollout",
+    "egg:slam",
+    "tm:afteryou",
+    "tm:block",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:bulldoze",
+    "tm:calmmind",
+    "tm:covet",
+    "tm:curse",
+    "tm:dig",
+    "tm:doubleedge",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:faketears",
+    "tm:foulplay",
+    "tm:grassknot",
+    "tm:headbutt",
+    "tm:helpinghand",
+    "tm:lowkick",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:naturepower",
+    "tm:powergem",
+    "tm:protect",
+    "tm:psychup",
+    "tm:rest",
+    "tm:rockblast",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:roleplay",
+    "tm:rollout",
+    "tm:sandstorm",
+    "tm:sandtomb",
+    "tm:selfdestruct",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:spikes",
+    "tm:stealthrock",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:substitute",
+    "tm:suckerpunch",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:trailblaze",
+    "tutor:afteryou",
+    "tutor:block",
+    "tutor:bulldoze",
+    "tutor:calmmind",
+    "tutor:covet",
+    "tutor:earthpower",
+    "tutor:foulplay",
+    "tutor:helpinghand",
+    "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:roleplay",
+    "tutor:rollout",
+    "tutor:sleeptalk",
+    "tutor:spikes",
+    "tutor:stealthrock",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:suckerpunch"
+  ],
+  "evolutions": [
+    {
+      "id": "bonsly_sudowoodo",
+      "variant": "level_up",
+      "result": "sudowoodo",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "slam"
+      ],
+      "requirements": [
+        {
+          "variant": "has_move",
+          "move": "mimic"
+        }
+      ]
+    }
+  ]
+}

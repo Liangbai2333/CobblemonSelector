@@ -1,0 +1,161 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 874,
+  "name": "Stonjourner",
+  "primaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 25,
+  "weight": 5200,
+  "pokedex": [
+    "cobblemon.species.stonjourner.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
+  "abilities": [
+    "powerspot",
+    "h:powerspot"
+  ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 100,
+    "attack": 125,
+    "defence": 135,
+    "special_attack": 20,
+    "special_defence": 20,
+    "speed": 70
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 165,
+  "experienceGroup": "slow",
+  "catchRate": 60,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 1.25,
+  "hitbox": {
+    "width": 2.3,
+    "height": 3,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    }
+  },
+  "moves": [
+    "1:rockthrow",
+    "1:block",
+    "6:rockpolish",
+    "12:rocktomb",
+    "18:gravity",
+    "24:stomp",
+    "30:stealthrock",
+    "36:rockslide",
+    "42:bodyslam",
+    "48:wideguard",
+    "54:heavyslam",
+    "60:stoneedge",
+    "66:megakick",
+    "egg:ancientpower",
+    "egg:curse",
+    "tm:ancientpower",
+    "tm:assurance",
+    "tm:block",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:brutalswing",
+    "tm:bulldoze",
+    "tm:curse",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:gigaimpact",
+    "tm:gravity",
+    "tm:hardpress",
+    "tm:heatcrash",
+    "tm:heavyslam",
+    "tm:highhorsepower",
+    "tm:hyperbeam",
+    "tm:imprison",
+    "tm:irondefense",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:megakick",
+    "tm:meteorbeam",
+    "tm:powergem",
+    "tm:protect",
+    "tm:psychup",
+    "tm:rest",
+    "tm:rockblast",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:safeguard",
+    "tm:sandstorm",
+    "tm:sandtomb",
+    "tm:selfdestruct",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:stealthrock",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:superpower",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:wonderroom",
+    "tutor:ancientpower",
+    "tutor:block",
+    "tutor:bulldoze",
+    "tutor:earthpower",
+    "tutor:endeavor",
+    "tutor:gigaimpact",
+    "tutor:gravity",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:irondefense",
+    "tutor:lowkick",
+    "tutor:meteorbeam",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:superpower",
+    "tutor:wonderroom"
+  ],
+  "evolutions": [],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:stone",
+        "quantityRange": "2"
+      }
+    ]
+  }
+}

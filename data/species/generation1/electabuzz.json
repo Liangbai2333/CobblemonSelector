@@ -1,0 +1,210 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 125,
+  "name": "Electabuzz",
+  "primaryType": "electric",
+  "maleRatio": 0.75,
+  "height": 11,
+  "weight": 300,
+  "pokedex": [
+    "cobblemon.species.electabuzz.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "static",
+    "h:vitalspirit"
+  ],
+  "eggGroups": [
+    "human_like"
+  ],
+  "baseStats": {
+    "hp": 65,
+    "attack": 83,
+    "defence": 57,
+    "special_attack": 95,
+    "special_defence": 85,
+    "speed": 105
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 172,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:redstone",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:electirizer",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:quickattack",
+    "1:leer",
+    "1:thundershock",
+    "1:charge",
+    "12:swift",
+    "16:shockwave",
+    "20:thunderwave",
+    "24:screech",
+    "28:thunderpunch",
+    "34:discharge",
+    "40:lowkick",
+    "46:thunderbolt",
+    "52:lightscreen",
+    "58:thunder",
+    "64:gigaimpact",
+    "egg:barrier",
+    "egg:crosschop",
+    "egg:dynamicpunch",
+    "egg:feint",
+    "egg:focuspunch",
+    "egg:followme",
+    "egg:hammerarm",
+    "egg:karatechop",
+    "egg:meditate",
+    "egg:rollingkick",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:bulkup",
+    "tm:charge",
+    "tm:chargebeam",
+    "tm:covet",
+    "tm:doubleedge",
+    "tm:dualchop",
+    "tm:eerieimpulse",
+    "tm:electricterrain",
+    "tm:electroball",
+    "tm:electroweb",
+    "tm:endure",
+    "tm:facade",
+    "tm:firepunch",
+    "tm:flash",
+    "tm:fling",
+    "tm:focusblast",
+    "tm:focuspunch",
+    "tm:gigaimpact",
+    "tm:headbutt",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:icepunch",
+    "tm:irontail",
+    "tm:knockoff",
+    "tm:lightscreen",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:magnetrise",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:metalsound",
+    "tm:metronome",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:psychic",
+    "tm:raindance",
+    "tm:rest",
+    "tm:risingvoltage",
+    "tm:rockclimb",
+    "tm:rocksmash",
+    "tm:screech",
+    "tm:shockwave",
+    "tm:signalbeam",
+    "tm:sleeptalk",
+    "tm:strength",
+    "tm:substitute",
+    "tm:supercellslam",
+    "tm:swift",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderpunch",
+    "tm:thunderwave",
+    "tm:trailblaze",
+    "tm:uproar",
+    "tm:voltswitch",
+    "tm:wildcharge",
+    "tutor:bulkup",
+    "tutor:chargebeam",
+    "tutor:covet",
+    "tutor:dualchop",
+    "tutor:electroweb",
+    "tutor:firepunch",
+    "tutor:focuspunch",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:icepunch",
+    "tutor:irontail",
+    "tutor:knockoff",
+    "tutor:lowkick",
+    "tutor:magnetrise",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:risingvoltage",
+    "tutor:rocksmash",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:thunderbolt",
+    "tutor:thunderpunch",
+    "tutor:uproar",
+    "tutor:wildcharge"
+  ],
+  "preEvolution": "elekid",
+  "evolutions": [
+    {
+      "id": "electabuzz_electivire",
+      "variant": "trade",
+      "result": "electivire",
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "held_item",
+          "itemCondition": "cobblemon:electirizer"
+        }
+      ]
+    }
+  ]
+}

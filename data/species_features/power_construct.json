@@ -1,0 +1,8 @@
+{
+  "keys": [
+    "power_construct"
+  ],
+  "type": "flag",
+  "isAspect": true,
+  "default": false
+}

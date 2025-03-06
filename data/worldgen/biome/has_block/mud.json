@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+	"minecraft:mangrove_swamp",
+	{
+      "id": "clifftree:bog",
+      "required": false 
+    },
+	{
+      "id": "terralith:cave/underground_jungle",
+      "required": false
+    },
+    {
+      "id": "wythers:coastal_mangrove",
+      "required": false
+    },
+    {
+      "id": "wythers:dripleaf_swamp",
+      "required": false
+    }
+  ]
+}

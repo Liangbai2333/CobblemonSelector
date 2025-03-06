@@ -1,0 +1,15 @@
+{
+  "type": "choice",
+  "keys": [
+    "ogre_mask"
+  ],
+  "default": "teal",
+  "choices": [
+    "teal",
+    "wellspring",
+    "hearthflame",
+    "cornerstone"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-mask"
+}

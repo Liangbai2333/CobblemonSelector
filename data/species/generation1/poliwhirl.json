@@ -1,0 +1,208 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 61,
+  "name": "Poliwhirl",
+  "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 200,
+  "pokedex": [
+    "cobblemon.species.poliwhirl.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "waterabsorb",
+    "damp",
+    "h:swiftswim"
+  ],
+  "eggGroups": [
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 65,
+    "attack": 65,
+    "defence": 65,
+    "special_attack": 50,
+    "special_defence": 50,
+    "speed": 90
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 135,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 1,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "canSwimInWater": true,
+        "canSwimInLava": false,
+        "swimSpeed": "0.2"
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:kings_rock",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:chesto_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:watersport",
+    "1:bubble",
+    "1:hypnosis",
+    "1:watergun",
+    "1:doubleslap",
+    "1:mudshot",
+    "1:wakeupslap",
+    "1:mudbomb",
+    "1:pound",
+    "18:bubblebeam",
+    "24:raindance",
+    "32:bodyslam",
+    "40:earthpower",
+    "48:hydropump",
+    "56:bellydrum",
+    "66:doubleedge",
+    "egg:doubleslap",
+    "egg:endeavor",
+    "egg:mindreader",
+    "egg:mist",
+    "egg:mudbomb",
+    "egg:muddywater",
+    "egg:refresh",
+    "egg:splash",
+    "egg:wakeupslap",
+    "egg:waterpulse",
+    "egg:watersport",
+    "tm:amnesia",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:bulldoze",
+    "tm:chillingwater",
+    "tm:dig",
+    "tm:dive",
+    "tm:doubleedge",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:encore",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:fling",
+    "tm:focuspunch",
+    "tm:hail",
+    "tm:haze",
+    "tm:headbutt",
+    "tm:helpinghand",
+    "tm:hydropump",
+    "tm:icebeam",
+    "tm:icepunch",
+    "tm:icywind",
+    "tm:liquidation",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:metronome",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychup",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rocksmash",
+    "tm:sleeptalk",
+    "tm:strength",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:weatherball",
+    "tm:whirlpool",
+    "tutor:bulldoze",
+    "tutor:dive",
+    "tutor:earthpower",
+    "tutor:endeavor",
+    "tutor:focuspunch",
+    "tutor:helpinghand",
+    "tutor:icebeam",
+    "tutor:icepunch",
+    "tutor:icywind",
+    "tutor:liquidation",
+    "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:waterpulse"
+  ],
+  "preEvolution": "poliwag",
+  "evolutions": [
+    {
+      "id": "poliwhirl_poliwrath",
+      "variant": "item_interact",
+      "result": "poliwrath",
+      "consumeHeldItem": true,
+      "learnableMoves": [
+        "submission",
+        "dynamicpunch"
+      ],
+      "requirements": [],
+      "requiredContext": "cobblemon:water_stone"
+    },
+    {
+      "id": "poliwhirl_politoed",
+      "variant": "trade",
+      "result": "politoed",
+      "consumeHeldItem": true,
+      "learnableMoves": [
+        "bounce"
+      ],
+      "requirements": [
+        {
+          "variant": "held_item",
+          "itemCondition": "cobblemon:kings_rock"
+        }
+      ]
+    }
+  ]
+}

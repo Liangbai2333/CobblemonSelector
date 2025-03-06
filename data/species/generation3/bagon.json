@@ -1,0 +1,179 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 371,
+  "name": "Bagon",
+  "primaryType": "dragon",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 421,
+  "pokedex": [
+    "cobblemon.species.bagon.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
+  "abilities": [
+    "rockhead",
+    "h:sheerforce"
+  ],
+  "eggGroups": [
+    "dragon"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 75,
+    "defence": 60,
+    "special_attack": 40,
+    "special_defence": 30,
+    "speed": 50
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 60,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 35,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walking": {
+        "walkSpeed": 0.2
+      }
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "cobblemon:dragon_fang",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:dragon_scale",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:yache_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:rage",
+    "1:leer",
+    "1:ember",
+    "5:bite",
+    "10:dragonbreath",
+    "15:headbutt",
+    "20:scaryface",
+    "25:crunch",
+    "31:dragonclaw",
+    "35:zenheadbutt",
+    "40:focusenergy",
+    "45:flamethrower",
+    "50:outrage",
+    "55:doubleedge",
+    "egg:defensecurl",
+    "egg:dragonrage",
+    "egg:dragonrush",
+    "egg:thrash",
+    "egg:twister",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:crunch",
+    "tm:cut",
+    "tm:doubleedge",
+    "tm:dracometeor",
+    "tm:dragoncheer",
+    "tm:dragonclaw",
+    "tm:dragondance",
+    "tm:dragonpulse",
+    "tm:dragontail",
+    "tm:endure",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:firefang",
+    "tm:firespin",
+    "tm:flamethrower",
+    "tm:focusenergy",
+    "tm:furycutter",
+    "tm:headbutt",
+    "tm:helpinghand",
+    "tm:honeclaws",
+    "tm:hydropump",
+    "tm:hypervoice",
+    "tm:incinerate",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:mudslap",
+    "tm:outrage",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:roar",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:scaryface",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunderfang",
+    "tm:twister",
+    "tm:zenheadbutt",
+    "tutor:dracometeor",
+    "tutor:dragonpulse",
+    "tutor:firefang",
+    "tutor:flamethrower",
+    "tutor:focusenergy",
+    "tutor:furycutter",
+    "tutor:helpinghand",
+    "tutor:hypervoice",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:mudslap",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:thunderfang",
+    "tutor:twister",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "bagon_shelgon",
+      "variant": "level_up",
+      "result": "shelgon",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "protect"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 30
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 935,
+  "name": "Charcadet",
+  "primaryType": "fire",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 105,
+  "pokedex": [
+    "cobblemon.species.charcadet.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
+  "abilities": [
+    "flashfire",
+    "h:flamebody"
+  ],
+  "eggGroups": [
+    "human_like"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 50,
+    "defence": 40,
+    "special_attack": 50,
+    "special_defence": 40,
+    "speed": 35
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 51,
+  "experienceGroup": "slow",
+  "catchRate": 90,
+  "eggCycles": 35,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "standingEyeHeight": 0.67,
+  "baseScale": 0.55,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.3,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.25
+      }
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:charcoal",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:charcoal_stick",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:rawst_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:leer",
+    "1:ember",
+    "1:astonish",
+    "8:clearsmog",
+    "12:firespin",
+    "16:willowisp",
+    "20:nightshade",
+    "24:flamecharge",
+    "28:incinerate",
+    "32:lavaplume",
+    "egg:destinybond",
+    "egg:disable",
+    "egg:spite",
+    "tm:confuseray",
+    "tm:endure",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:firespin",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flareblitz",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:incinerate",
+    "tm:nightshade",
+    "tm:overheat",
+    "tm:protect",
+    "tm:rest",
+    "tm:sleeptalk",
+    "tm:spite",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:willowisp",
+    "tutor:flamethrower",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:spite"
+  ],
+  "evolutions": [
+    {
+      "id": "charcadet_armarouge",
+      "variant": "item_interact",
+      "result": "armarouge",
+      "consumeHeldItem": true,
+      "learnableMoves": [
+        "psyshock"
+      ],
+      "requirements": [],
+      "requiredContext": "cobblemon:auspicious_armor"
+    },
+    {
+      "id": "charcadet_ceruledge",
+      "variant": "item_interact",
+      "result": "ceruledge",
+      "consumeHeldItem": true,
+      "learnableMoves": [
+        "shadowclaw"
+      ],
+      "requirements": [],
+      "requiredContext": "cobblemon:malicious_armor"
+    }
+  ]
+}

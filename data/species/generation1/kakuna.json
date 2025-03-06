@@ -1,0 +1,113 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 14,
+  "name": "Kakuna",
+  "primaryType": "bug",
+  "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 100,
+  "pokedex": [
+    "cobblemon.species.kakuna.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
+  "abilities": [
+    "shedskin",
+    "h:shedskin"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 25,
+    "defence": 50,
+    "special_attack": 25,
+    "special_defence": 25,
+    "speed": 35
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 72,
+  "experienceGroup": "medium_fast",
+  "catchRate": 120,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.9,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "canWalk": false
+      },
+      "swim": {
+        "canSwimInWater": false
+      },
+      "canLook": false
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:pinap_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:harden",
+    "1:poisonsting",
+    "tm:bugbite",
+    "tm:electroweb",
+    "tm:irondefense",
+    "tm:skittersmack",
+    "tm:stringshot",
+    "tm:terablast",
+    "tutor:bugbite",
+    "tutor:electroweb",
+    "tutor:irondefense",
+    "tutor:skittersmack",
+    "tutor:stringshot"
+  ],
+  "preEvolution": "weedle",
+  "evolutions": [
+    {
+      "id": "kakuna_beedrill",
+      "variant": "level_up",
+      "result": "beedrill",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "twineedle",
+        "furyattack"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 10
+        }
+      ]
+    }
+  ]
+}

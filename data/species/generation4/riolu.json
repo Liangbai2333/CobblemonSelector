@@ -1,0 +1,202 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 447,
+  "name": "Riolu",
+  "primaryType": "fighting",
+  "maleRatio": 0.875,
+  "height": 7,
+  "weight": 202,
+  "pokedex": [
+    "cobblemon.species.riolu.desc"
+  ],
+  "labels": [
+    "gen4",
+    "baby"
+  ],
+  "aspects": [],
+  "abilities": [
+    "steadfast",
+    "innerfocus",
+    "h:prankster"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 70,
+    "defence": 40,
+    "special_attack": 35,
+    "special_defence": 40,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 57,
+  "experienceGroup": "medium_slow",
+  "catchRate": 75,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.3,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:chople_berry",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:expert_belt",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:quickattack",
+    "1:foresight",
+    "1:endure",
+    "4:feint",
+    "8:metalclaw",
+    "12:counter",
+    "16:workup",
+    "20:rocksmash",
+    "24:vacuumwave",
+    "28:screech",
+    "32:quickguard",
+    "36:forcepalm",
+    "40:swordsdance",
+    "44:helpinghand",
+    "48:copycat",
+    "52:finalgambit",
+    "56:reversal",
+    "egg:bite",
+    "egg:bulletpunch",
+    "egg:circlethrow",
+    "egg:crosschop",
+    "egg:detect",
+    "egg:followme",
+    "egg:highjumpkick",
+    "egg:howl",
+    "egg:mindreader",
+    "egg:skyuppercut",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:blazekick",
+    "tm:brickbreak",
+    "tm:bulkup",
+    "tm:bulldoze",
+    "tm:closecombat",
+    "tm:coaching",
+    "tm:crunch",
+    "tm:dig",
+    "tm:drainpunch",
+    "tm:dualchop",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:fling",
+    "tm:focusblast",
+    "tm:focuspunch",
+    "tm:furycutter",
+    "tm:headbutt",
+    "tm:helpinghand",
+    "tm:icepunch",
+    "tm:irontail",
+    "tm:laserfocus",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:magnetrise",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:metalclaw",
+    "tm:meteormash",
+    "tm:nastyplot",
+    "tm:payback",
+    "tm:poisonjab",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:psychup",
+    "tm:raindance",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:revenge",
+    "tm:reversal",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:roleplay",
+    "tm:screech",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunderpunch",
+    "tm:trailblaze",
+    "tm:upperhand",
+    "tm:vacuumwave",
+    "tm:workup",
+    "tm:zenheadbutt",
+    "tutor:aerialace",
+    "tutor:bulkup",
+    "tutor:bulldoze",
+    "tutor:coaching",
+    "tutor:drainpunch",
+    "tutor:dualchop",
+    "tutor:focuspunch",
+    "tutor:furycutter",
+    "tutor:helpinghand",
+    "tutor:icepunch",
+    "tutor:irontail",
+    "tutor:laserfocus",
+    "tutor:lowkick",
+    "tutor:magnetrise",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:roleplay",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:thunderpunch",
+    "tutor:vacuumwave",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "riolu_lucario",
+      "variant": "level_up",
+      "result": "lucario",
+      "consumeHeldItem": true,
+      "learnableMoves": [
+        "aurasphere"
+      ],
+      "requirements": [
+        {
+          "variant": "friendship",
+          "amount": 160
+        },
+        {
+          "variant": "time_range",
+          "range": "day"
+        }
+      ]
+    }
+  ]
+}

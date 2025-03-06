@@ -1,0 +1,176 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 937,
+  "name": "Ceruledge",
+  "primaryType": "fire",
+  "secondaryType": "ghost",
+  "maleRatio": 0.5,
+  "height": 16,
+  "weight": 620,
+  "pokedex": [
+    "cobblemon.species.ceruledge.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
+  "abilities": [
+    "flashfire",
+    "h:weakarmor"
+  ],
+  "eggGroups": [
+    "human_like"
+  ],
+  "baseStats": {
+    "hp": 75,
+    "attack": 125,
+    "defence": 80,
+    "special_attack": 60,
+    "special_defence": 100,
+    "speed": 85
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 263,
+  "experienceGroup": "slow",
+  "catchRate": 25,
+  "eggCycles": 35,
+  "baseFriendship": 20,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1.1,
+    "height": 2.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "walking": {
+      "walkSpeed": 0.5
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:charcoal",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:charcoal_stick",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:malicious_armor",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:rawst_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:shadowclaw",
+    "1:leer",
+    "1:ember",
+    "1:astonish",
+    "1:nightslash",
+    "1:shadowsneak",
+    "1:quickguard",
+    "1:solarblade",
+    "8:clearsmog",
+    "12:firespin",
+    "16:willowisp",
+    "20:nightshade",
+    "24:flamecharge",
+    "28:incinerate",
+    "32:lavaplume",
+    "37:swordsdance",
+    "42:allyswitch",
+    "48:bitterblade",
+    "56:psychocut",
+    "62:flareblitz",
+    "egg:destinybond",
+    "egg:disable",
+    "egg:spite",
+    "tm:allyswitch",
+    "tm:brickbreak",
+    "tm:bulkup",
+    "tm:closecombat",
+    "tm:confuseray",
+    "tm:curse",
+    "tm:dragonclaw",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:fireblast",
+    "tm:firespin",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flareblitz",
+    "tm:fling",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:hex",
+    "tm:incinerate",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:lightscreen",
+    "tm:nightshade",
+    "tm:overheat",
+    "tm:phantomforce",
+    "tm:poisonjab",
+    "tm:poltergeist",
+    "tm:protect",
+    "tm:psychocut",
+    "tm:psychup",
+    "tm:reflect",
+    "tm:rest",
+    "tm:shadowball",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:solarblade",
+    "tm:spite",
+    "tm:storedpower",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:throatchop",
+    "tm:vacuumwave",
+    "tm:willowisp",
+    "tm:xscissor",
+    "tutor:allyswitch",
+    "tutor:bulkup",
+    "tutor:falseswipe",
+    "tutor:flamethrower",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:poisonjab",
+    "tutor:poltergeist",
+    "tutor:psychocut",
+    "tutor:rest",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "tutor:throatchop",
+    "tutor:vacuumwave",
+    "tutor:xscissor"
+  ],
+  "preEvolution": "charcadet",
+  "evolutions": []
+}

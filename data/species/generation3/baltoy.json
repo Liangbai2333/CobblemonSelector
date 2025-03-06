@@ -1,0 +1,207 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 343,
+  "name": "Baltoy",
+  "primaryType": "ground",
+  "secondaryType": "psychic",
+  "maleRatio": -1,
+  "height": 5,
+  "weight": 215,
+  "pokedex": [
+    "cobblemon.species.baltoy.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
+  "abilities": [
+    "levitate",
+    "h:levitate"
+  ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 40,
+    "defence": 55,
+    "special_attack": 40,
+    "special_defence": 70,
+    "speed": 55
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 60,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 1,
+    "height": 1.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:clay_ball",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:light_clay",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:colbur_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:harden",
+    "1:mudslap",
+    "1:healblock",
+    "3:rapidspin",
+    "6:confusion",
+    "9:rocktomb",
+    "12:powertrick",
+    "15:psybeam",
+    "18:ancientpower",
+    "21:imprison",
+    "24:cosmicpower",
+    "27:extrasensory",
+    "30:earthpower",
+    "33:selfdestruct",
+    "36:guardsplit",
+    "36:powersplit",
+    "39:sandstorm",
+    "42:explosion",
+    "tm:allyswitch",
+    "tm:ancientpower",
+    "tm:bulldoze",
+    "tm:calmmind",
+    "tm:chargebeam",
+    "tm:cosmicpower",
+    "tm:dazzlinggleam",
+    "tm:dig",
+    "tm:dreameater",
+    "tm:drillrun",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:eerieimpulse",
+    "tm:endure",
+    "tm:expandingforce",
+    "tm:explosion",
+    "tm:facade",
+    "tm:flash",
+    "tm:grassknot",
+    "tm:gravity",
+    "tm:guardswap",
+    "tm:gyroball",
+    "tm:headbutt",
+    "tm:hex",
+    "tm:icebeam",
+    "tm:imprison",
+    "tm:lightscreen",
+    "tm:magiccoat",
+    "tm:mudslap",
+    "tm:powerswap",
+    "tm:protect",
+    "tm:psybeam",
+    "tm:psychic",
+    "tm:psychicterrain",
+    "tm:psychup",
+    "tm:psyshock",
+    "tm:raindance",
+    "tm:recycle",
+    "tm:reflect",
+    "tm:rest",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:safeguard",
+    "tm:sandstorm",
+    "tm:sandtomb",
+    "tm:scorchingsands",
+    "tm:selfdestruct",
+    "tm:shadowball",
+    "tm:signalbeam",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:solarbeam",
+    "tm:stealthrock",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:telekinesis",
+    "tm:terablast",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:wonderroom",
+    "tm:zenheadbutt",
+    "tutor:allyswitch",
+    "tutor:ancientpower",
+    "tutor:block",
+    "tutor:bulldoze",
+    "tutor:calmmind",
+    "tutor:chargebeam",
+    "tutor:dazzlinggleam",
+    "tutor:drillrun",
+    "tutor:earthpower",
+    "tutor:expandingforce",
+    "tutor:gravity",
+    "tutor:icebeam",
+    "tutor:magiccoat",
+    "tutor:mudslap",
+    "tutor:psychic",
+    "tutor:recycle",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:scorchingsands",
+    "tutor:shadowball",
+    "tutor:signalbeam",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
+    "tutor:telekinesis",
+    "tutor:trick",
+    "tutor:wonderroom",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "baltoy_claydol",
+      "variant": "level_up",
+      "result": "claydol",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "hyperbeam"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 36
+        }
+      ]
+    }
+  ]
+}

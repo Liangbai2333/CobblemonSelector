@@ -1,0 +1,15 @@
+{
+  "type": "choice",
+  "keys": [
+    "techno_drive"
+  ],
+  "default": "none",
+  "choices": [
+    "water",
+    "electric",
+    "fire",
+    "ice"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-drive"
+}

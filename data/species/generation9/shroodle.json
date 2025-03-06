@@ -1,0 +1,165 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 944,
+  "name": "Shroodle",
+  "primaryType": "poison",
+  "secondaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 2,
+  "weight": 7,
+  "pokedex": [
+    "cobblemon.species.shroodle.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
+  "abilities": [
+    "unburden",
+    "pickpocket",
+    "h:prankster"
+  ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 65,
+    "defence": 35,
+    "special_attack": 40,
+    "special_defence": 35,
+    "speed": 75
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 58,
+  "experienceGroup": "medium_slow",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:nanab_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:scratch",
+    "1:leer",
+    "5:acidspray",
+    "8:bite",
+    "8:furyswipes",
+    "11:switcheroo",
+    "14:poisonfang",
+    "18:flatter",
+    "21:slash",
+    "25:uturn",
+    "29:poisonjab",
+    "33:taunt",
+    "36:substitute",
+    "40:knockoff",
+    "45:gunkshot",
+    "egg:copycat",
+    "egg:crosspoison",
+    "egg:partingshot",
+    "egg:superfang",
+    "egg:swagger",
+    "egg:toxic",
+    "tm:acidspray",
+    "tm:acrobatics",
+    "tm:batonpass",
+    "tm:crosspoison",
+    "tm:dig",
+    "tm:doubleedge",
+    "tm:encore",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:fling",
+    "tm:foulplay",
+    "tm:gunkshot",
+    "tm:helpinghand",
+    "tm:knockoff",
+    "tm:metronome",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:nastyplot",
+    "tm:poisonjab",
+    "tm:pounce",
+    "tm:protect",
+    "tm:psychup",
+    "tm:raindance",
+    "tm:rest",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:superfang",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:throatchop",
+    "tm:toxic",
+    "tm:trailblaze",
+    "tm:uturn",
+    "tm:venoshock",
+    "tutor:endeavor",
+    "tutor:foulplay",
+    "tutor:gunkshot",
+    "tutor:helpinghand",
+    "tutor:knockoff",
+    "tutor:mudslap",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:superfang",
+    "tutor:throatchop"
+  ],
+  "evolutions": [
+    {
+      "id": "shroodle_grafaiai",
+      "variant": "level_up",
+      "result": "grafaiai",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "doodle"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 28
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "choice",
+  "keys": [
+    "cocoon_species"
+  ],
+  "default": "random",
+  "choices": [
+    "silcoon",
+    "cascoon"
+  ],
+  "isAspect": true,
+  "aspectFormat": "{{choice}}-cocoon"
+}

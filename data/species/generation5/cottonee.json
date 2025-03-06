@@ -1,0 +1,161 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 546,
+  "name": "Cottonee",
+  "primaryType": "grass",
+  "secondaryType": "fairy",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 6,
+  "pokedex": [
+    "cobblemon.species.cottonee.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
+  "abilities": [
+    "prankster",
+    "infiltrator",
+    "h:chlorophyll"
+  ],
+  "eggGroups": [
+    "grass",
+    "fairy"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 27,
+    "defence": 60,
+    "special_attack": 37,
+    "special_defence": 50,
+    "speed": 66
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 56,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.8,
+    "height": 0.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "cobblemon:kebia_berry",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:absorb_bulb",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:absorb",
+    "1:helpinghand",
+    "3:fairywind",
+    "6:stunspore",
+    "12:megadrain",
+    "15:razorleaf",
+    "18:growth",
+    "21:poisonpowder",
+    "24:gigadrain",
+    "27:charm",
+    "30:leechseed",
+    "33:cottonspore",
+    "36:energyball",
+    "39:sunnyday",
+    "42:endeavor",
+    "45:cottonguard",
+    "48:solarbeam",
+    "egg:beatup",
+    "egg:captivate",
+    "egg:grasswhistle",
+    "egg:memento",
+    "egg:naturalgift",
+    "egg:switcheroo",
+    "egg:tickle",
+    "egg:worryseed",
+    "tm:beatup",
+    "tm:captivate",
+    "tm:charm",
+    "tm:covet",
+    "tm:dazzlinggleam",
+    "tm:defog",
+    "tm:dreameater",
+    "tm:encore",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:faketears",
+    "tm:flash",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:mistyterrain",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:rest",
+    "tm:safeguard",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:worryseed",
+    "tutor:covet",
+    "tutor:dazzlinggleam",
+    "tutor:defog",
+    "tutor:endeavor",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "cottonee_whimsicott",
+      "variant": "item_interact",
+      "result": "whimsicott",
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [],
+      "requiredContext": "cobblemon:sun_stone"
+    }
+  ]
+}

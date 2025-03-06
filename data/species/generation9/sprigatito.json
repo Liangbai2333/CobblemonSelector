@@ -1,0 +1,163 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 906,
+  "name": "Sprigatito",
+  "primaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 4,
+  "weight": 41,
+  "pokedex": [
+    "cobblemon.species.sprigatito.desc"
+  ],
+  "labels": [
+    "gen9",
+    "starter"
+  ],
+  "aspects": [],
+  "abilities": [
+    "overgrow",
+    "h:protean"
+  ],
+  "eggGroups": [
+    "field",
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 61,
+    "defence": 54,
+    "special_attack": 45,
+    "special_defence": 45,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 62,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      }
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:scratch",
+    "1:tailwhip",
+    "1:leafage",
+    "7:bite",
+    "10:honeclaws",
+    "13:magicalleaf",
+    "15:quickattack",
+    "17:seedbomb",
+    "21:uturn",
+    "25:worryseed",
+    "28:slash",
+    "32:energyball",
+    "36:playrough",
+    "egg:allyswitch",
+    "egg:copycat",
+    "egg:leechseed",
+    "egg:petalblizzard",
+    "egg:suckerpunch",
+    "tm:acrobatics",
+    "tm:agility",
+    "tm:allyswitch",
+    "tm:bulletseed",
+    "tm:charm",
+    "tm:disarmingvoice",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:faketears",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grasspledge",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:honeclaws",
+    "tm:leafstorm",
+    "tm:magicalleaf",
+    "tm:mudslap",
+    "tm:nastyplot",
+    "tm:petalblizzard",
+    "tm:playrough",
+    "tm:protect",
+    "tm:rest",
+    "tm:seedbomb",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:suckerpunch",
+    "tm:swift",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:trailblaze",
+    "tm:uturn",
+    "tm:worryseed",
+    "tutor:allyswitch",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:magicalleaf",
+    "tutor:mudslap",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "sprigatito_floragato",
+      "variant": "level_up",
+      "result": "floragato",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 16
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 402,
+  "name": "Kricketune",
+  "primaryType": "bug",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 255,
+  "pokedex": [
+    "cobblemon.species.kricketune.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
+  "abilities": [
+    "swarm",
+    "h:technician"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 77,
+    "attack": 85,
+    "defence": 51,
+    "special_attack": 55,
+    "special_defence": 51,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 134,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4"
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:coba_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:growl",
+    "1:bide",
+    "1:furycutter",
+    "1:tackle",
+    "14:absorb",
+    "18:sing",
+    "22:focusenergy",
+    "26:slash",
+    "30:xscissor",
+    "34:screech",
+    "36:fellstinger",
+    "38:taunt",
+    "42:nightslash",
+    "44:stickyweb",
+    "46:bugbuzz",
+    "50:perishsong",
+    "tm:aerialace",
+    "tm:batonpass",
+    "tm:brickbreak",
+    "tm:bugbite",
+    "tm:bugbuzz",
+    "tm:cut",
+    "tm:echoedvoice",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:flash",
+    "tm:focusenergy",
+    "tm:furycutter",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:healbell",
+    "tm:helpinghand",
+    "tm:honeclaws",
+    "tm:hyperbeam",
+    "tm:hypervoice",
+    "tm:infestation",
+    "tm:knockoff",
+    "tm:laserfocus",
+    "tm:leechlife",
+    "tm:lunge",
+    "tm:pounce",
+    "tm:pound",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rocksmash",
+    "tm:screech",
+    "tm:silverwind",
+    "tm:skittersmack",
+    "tm:sleeptalk",
+    "tm:strength",
+    "tm:stringshot",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:throatchop",
+    "tm:trailblaze",
+    "tm:uproar",
+    "tm:xscissor",
+    "tutor:aerialace",
+    "tutor:bugbite",
+    "tutor:endeavor",
+    "tutor:falseswipe",
+    "tutor:focusenergy",
+    "tutor:furycutter",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:healbell",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:knockoff",
+    "tutor:laserfocus",
+    "tutor:leechlife",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:stringshot",
+    "tutor:throatchop",
+    "tutor:uproar",
+    "tutor:xscissor"
+  ],
+  "preEvolution": "kricketot",
+  "evolutions": []
+}
