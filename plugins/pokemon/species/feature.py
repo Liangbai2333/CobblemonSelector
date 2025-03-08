@@ -22,7 +22,12 @@ class Feature(TypedModel):
                 return feature_map[data]
             else:
                 logger.warning(f"Unknown feature {data}")
-                return cls(type="flag", keys=[data])
+                cls.type = "flag"
+                cls.keys = [data]
+                cls.isAspect = False
+                cls.visible = False
+                cls.needsKey = False
+                return cls
         return None
 
 
@@ -35,6 +40,8 @@ class IntFeature(Feature):
     min: int = Field(default=0, description="最小值")
     max: int = Field(default=100, description="最大值")
     display: Optional[DisplayData] = Field(default=None, description="显示数据")
+
+    isAspect: bool = Field(default=False, description="是否为种类方面")
 
 
 class ChoiceFeature(Feature):

@@ -47,15 +47,24 @@ class PokemonContainer(dict[str, PokemonForm]):
                 if isinstance(feature, ChoiceFeature) and feature.isAspect and choice[0] in feature.keys:
                     aspects.append(feature.aspectFormat.replace("{{choice}}", choice[1]))
 
-        if all(aspect in pokemon.aspects for aspect in aspects):
+        for form in pokemon.forms:
+            if all(aspect in aspects for aspect in form.aspects):
+                self[key] = form
+                return form
+
+        if all(aspect in aspects for aspect in pokemon.aspects):
             self[key] = pokemon
             return pokemon
 
+        keys = set()
+        for feature in pokemon.features:
+            if feature.isAspect:
+                for key in feature.keys:
+                    keys.add(key)
 
-        for form in pokemon.forms:
-            if all(aspect in form.aspects for aspect in aspects):
-                self[key] = form
-                return form
+        if all(feature in aspects for feature in keys):
+            self[key] = pokemon
+            return pokemon
 
 
         raise KeyError(f"can't resolve the key: {key}")

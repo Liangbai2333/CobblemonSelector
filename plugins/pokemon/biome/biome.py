@@ -47,14 +47,29 @@ class Biome(BaseModel, Translatable):
         for detail in details:
             detail: SpawnDetail
             bucket = detail.bucket
-            percentage += (detail.weight / self.get_total_weight_for_bucket(bucket)) * (bucket.weight / 100.0)
-            weight += detail.weight * (bucket.weight / 100.0)
+            total = self.get_weight_account_for_bucket(bucket)
+            percentage += (detail.weight / self.get_total_weight_for_bucket(bucket)) * total
+            weight += detail.weight * total
 
         return percentage, weight
 
 
     def get_total_weight_for_bucket(self, bucket: SpawnBucket):
         return sum(map(lambda x: x.weight, filter(lambda x: x.bucket == bucket, self.details)))
+
+    def get_weight_account_for_bucket(self, bucket: SpawnBucket):
+        total = 0
+        buckets = []
+        for detail in self.details:
+            if detail.bucket not in buckets:
+                buckets.append(detail.bucket)
+            if len(buckets) >= 4:
+                break
+
+        for temp in buckets:
+            total += temp.weight
+
+        return bucket.weight / total
 
 
     def get_total_number_for_bucket_name(self, bucket_name: str):
@@ -67,7 +82,7 @@ class Biome(BaseModel, Translatable):
         return len(pokemon_temp)
 
     def get_total_weight(self):
-        return sum(map(lambda x: x.weight * (x.bucket.weight / 100.0), self.details))
+        return sum(map(lambda x: x.weight * self.get_weight_account_for_bucket(x.bucket), self.details))
 
     def get_translation_key(self) -> str:
         return "worldgen.biome"

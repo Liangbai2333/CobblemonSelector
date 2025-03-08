@@ -7,6 +7,7 @@ from nonebot.internal.params import ArgPlainText
 from nonebot.params import CommandArg
 from nonebot_plugin_htmlrender import template_to_pic
 
+from plugins.pokedex.search_biome import search_biome
 from plugins.pokedex.search_pokemon import search_pokemon
 from plugins.pokemon.loader.data import biome_map
 from plugins.pokemon.path import resolve
@@ -27,11 +28,12 @@ async def _(matcher: Matcher, arg: Message = CommandArg()):
 @c.got("biome_name", prompt="请输入要查询的群系")
 async def _(matcher: Matcher, biome_name: str = ArgPlainText()):
     start_time = time.time()
-    biome = biome_map.get(biome_name, None)
+    results = search_biome(biome_name)
     logger.info(f"搜索用时: {time.time() - start_time:.2f}秒")
-    if not biome:
+    if not results:
         await matcher.finish("找不到这个群系")
 
+    biome = results[0][0]
     pic = await template_to_pic(resolve(
         "templates/biome"
     ), "biome_detail.html", {
