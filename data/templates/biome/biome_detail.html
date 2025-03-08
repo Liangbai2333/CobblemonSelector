@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ biome.get_i18n_name() }} - 群系详情</title>
+    <style>
+        :root {
+            --primary-color: #4285F4;
+            --accent-color: #34A853;
+            --light-bg: #f5f8ff;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e6f0;
+            --shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            --container-width: 1000px;
+        }
+
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 12px;
+            color: var(--text-color);
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: center;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: none !important;
+            width: auto !important;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: visible;
+            display: inline-block;
+            min-width: 95%;
+            box-sizing: border-box;
+            margin-right: 5px;
+        }
+
+        /* 头部区域 */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), #5b9aff);
+            color: white;
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            border-radius: 12px 12px 0 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .biome-name {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* 主要内容区域 */
+        .content {
+            padding: 0;
+            overflow: visible;
+            width: 100%;
+        }
+
+        /* 基本信息卡片 */
+        .info-card {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .info-item {
+            background: #f8faff;
+            border-radius: 10px;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border: 1px solid #e8eeff;
+            transition: all 0.2s ease;
+        }
+
+        .info-item:hover {
+            background: #f0f6ff;
+            box-shadow: 0 3px 10px rgba(66, 133, 244, 0.1);
+        }
+
+        .info-label {
+            font-size: 0.8em;
+            color: #666;
+            margin-bottom: 5px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-value {
+            font-size: 1em;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* 子群系列表 */
+        .sub-biomes-section {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 0.95em;
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+
+        .sub-biomes-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .sub-biome-item {
+            background-color: #edf1f8;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .sub-biome-item:hover {
+            background-color: #dce5f5;
+            transform: translateY(-2px);
+        }
+
+        /* 桶权重信息 */
+        .bucket-section {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .bucket-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .bucket-item {
+            background: linear-gradient(to right, #f0f4ff, #e8f0ff);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(66, 133, 244, 0.2);
+            transition: all 0.2s ease;
+        }
+
+        .bucket-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 6px rgba(66, 133, 244, 0.15);
+        }
+
+        .bucket-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #4285F4;
+        }
+
+        .bucket-weight {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .bucket-common { background: linear-gradient(to right, #e8f5e9, #c8e6c9); }
+        .bucket-uncommon { background: linear-gradient(to right, #e3f2fd, #bbdefb); }
+        .bucket-rare { background: linear-gradient(to right, #fff8e1, #ffecb3); }
+        .bucket-ultra-rare { background: linear-gradient(to right, #fce4ec, #f8bbd0); }
+
+        /* 宝可梦生成列表 */
+        .pokemon-section {
+            padding: 15px;
+        }
+
+        .pokemon-list {
+            margin-top: 15px;
+        }
+
+        .pokemon-card {
+            display: flex;
+            align-items: center;
+            background: #f8faff;
+            border-radius: 10px;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border: 1px solid #e8eeff;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .pokemon-card:hover {
+            background: #f0f6ff;
+            box-shadow: 0 3px 10px rgba(66, 133, 244, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .pokemon-info {
+            flex: 1;
+        }
+
+        .pokemon-name {
+            font-weight: 600;
+            font-size: 1.05em;
+            margin-bottom: 6px;
+            color: #4285F4;
+        }
+
+        .pokemon-stats {
+            display: flex;
+            gap: 15px;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.85em;
+        }
+
+        .stat-label {
+            color: #666;
+            margin-right: 5px;
+        }
+
+        .stat-value {
+            font-weight: 500;
+        }
+
+        .bucket-badge {
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            color: white;
+            margin-left: auto;
+            font-weight: 500;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .badge-common { background-color: #78C850; }
+        .badge-uncommon { background-color: #6890F0; }
+        .badge-rare { background-color: #F8D030; }
+        .badge-ultra-rare { background-color: #F85888; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部区域 -->
+        <div class="header">
+            <h1 class="biome-name">{{ biome.get_i18n_name() }}</h1>
+        </div>
+
+        <div class="content">
+            <!-- 基本信息 -->
+            <div class="info-card">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">总权重</span>
+                        <span class="info-value">{{ biome.get_total_weight()|round(2) }}</span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">替换</span>
+                        <span class="info-value">{{ "是" if biome.replace else "否" }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 代表群系列表 -->
+            {% if biome.get_sub_biomes_name() %}
+            <div class="sub-biomes-section">
+                <h2 class="section-title">代表群系</h2>
+                <div class="sub-biomes-list">
+                    {% for sub_biome in biome.get_sub_biomes_name() %}
+                    <span class="sub-biome-item">{{ sub_biome }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- 桶权重信息 -->
+            <div class="bucket-section">
+                <h2 class="section-title">稀有度分布</h2>
+                <div class="bucket-grid">
+                    <div class="bucket-item bucket-common">
+                        <div class="bucket-name">普通</div>
+                        <div class="bucket-weight">{{ biome.get_total_number_for_bucket_name("common")|round(2) }}只</div>
+                    </div>
+                    <div class="bucket-item bucket-uncommon">
+                        <div class="bucket-name">少见</div>
+                        <div class="bucket-weight">{{ biome.get_total_number_for_bucket_name("uncommon")|round(2) }}只</div>
+                    </div>
+                    <div class="bucket-item bucket-rare">
+                        <div class="bucket-name">稀有</div>
+                        <div class="bucket-weight">{{ biome.get_total_number_for_bucket_name("rare")|round(2) }}只</div>
+                    </div>
+                    <div class="bucket-item bucket-ultra-rare">
+                        <div class="bucket-name">极稀有</div>
+                        <div class="bucket-weight">{{ biome.get_total_number_for_bucket_name("ultra-rare")|round(2) }}只</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 宝可梦生成列表 -->
+            <div class="pokemon-section">
+                <h2 class="section-title">生成宝可梦</h2>
+                <div class="pokemon-list">
+                    {% for detail in biome.get_non_repeat_pokemon_details() %}
+                    {% set pokemon = detail.get_pokemon_safely() %}
+                    {% if pokemon is not none %}
+                    {% set percentage, weight = biome.get_pokemon_spawn_percentage_and_weight(pokemon) %}
+                    <div class="pokemon-card">
+                        <div class="pokemon-info">
+                            <div class="pokemon-name">{{ pokemon.get_i18n_name() }}</div>
+                            <div class="pokemon-stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">概率:</span>
+                                    <span class="stat-value">{{ (percentage * 100)|round(2) }}%</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">权重:</span>
+                                    <span class="stat-value">{{ weight|round(2) }}</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">等级:</span>
+                                    <span class="stat-value">{{ detail.level }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="bucket-badge badge-{{ detail.bucket.name }}">
+                            {% if detail.bucket.name == 'common' %}普通
+                            {% elif detail.bucket.name == 'uncommon' %}少见
+                            {% elif detail.bucket.name == 'rare' %}稀有
+                            {% elif detail.bucket.name == 'ultra-rare' %}极稀有
+                            {% else %}{{ detail.bucket.name }}
+                            {% endif %}
+                        </span>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

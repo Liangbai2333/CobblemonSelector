@@ -1,10 +1,9 @@
 from plugins.pokemon import pokemon_container
 from plugins.pokemon.biome.biome import Biome
 from plugins.pokemon.spawn_pool.detail import SpawnDetail
-from plugins.pokemon.species.pokemon import PokemonForm
 
 
-def resolve_biome_to_details(biomes: list[Biome], details: list[SpawnDetail]) -> dict[Biome, list[SpawnDetail]]:
+def resolve_biome_to_details(biomes: list[Biome], details: list[SpawnDetail]):
     """
     将生物群系映射到详细的生成信息。
 
@@ -15,12 +14,7 @@ def resolve_biome_to_details(biomes: list[Biome], details: list[SpawnDetail]) ->
     参数:
     biomes (list[Biome]): 生物群系的列表。
     details (list[SpawnDetail]): 生成详情的列表，每个详情都包含有关在特定生物群系中生成的信息。
-
-    返回:
-    dict[Biome, list[SpawnDetail]]: 一个字典，将每个生物群系映射到相关的生成详情列表。
     """
-    # 初始化一个空字典来存储生物群系和生成详情的映射关系
-    biome_to_details = {}
 
     # 遍历生物群系列表
     for biome in biomes:
@@ -32,34 +26,30 @@ def resolve_biome_to_details(biomes: list[Biome], details: list[SpawnDetail]) ->
             # 如果生成详情适用于当前生物群系
             if detail.condition and biome in detail.condition.biomes:
                 # 将生成详情添加到当前生物群系的详情列表中
-                biome_details.append(detail)
-
+                if detail not in biome_details:
+                    biome_details.append(detail)
         # 将生物群系及其对应的生成详情列表添加到字典中
-        biome_to_details[biome] = biome_details
+        biome.details = biome_details
 
-
-    # 返回生物群系到生成详情的映射字典
-    return biome_to_details
 
 def resolve_reversed_pokemon_to_biomes(biomes: list[Biome], details: list[SpawnDetail]):
     """
     将生物群系映射到详细的生成信息。
     """
 
-    # 遍历生物群系列表
-    for biome in biomes:
-        # 遍历生成详情列表
-        for detail in details:
-            try:
-                pokemon = pokemon_container[detail.pokemon]
-            except KeyError:
-                continue
-            # 如果生成详情适用于当前生物群系
-            if not pokemon.spawn_details:
-                pokemon.spawn_details = [detail]
-            else:
-                if detail not in pokemon.spawn_details:
-                    pokemon.spawn_details.append(detail)
+    for detail in details:
+        try:
+            pokemon = pokemon_container[detail.pokemon]
+        except KeyError:
+            continue
+        # 如果生成详情适用于当前生物群系
+        if not pokemon.spawn_details:
+            pokemon.spawn_details = [detail]
+        else:
+            if detail not in pokemon.spawn_details:
+                pokemon.spawn_details.append(detail)
+
+        for biome in biomes:
             if detail.condition and biome in detail.condition.biomes:
                 # 将生成详情添加到当前生物群系的详情列表中
                 if not pokemon.biomes:

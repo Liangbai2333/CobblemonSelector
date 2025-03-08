@@ -7,7 +7,7 @@ from nonebot.internal.params import ArgPlainText
 from nonebot.params import CommandArg
 from nonebot_plugin_htmlrender import template_to_pic
 
-from plugins.pokedex.search import search_pokemon
+from plugins.pokedex.search_pokemon import search_pokemon
 from plugins.pokemon.path import resolve
 
 c = on_command("图鉴", aliases={"pokedex", "dex"}, block=True)

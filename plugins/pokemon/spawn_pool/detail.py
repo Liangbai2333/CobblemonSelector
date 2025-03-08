@@ -32,6 +32,9 @@ class SpawnDetail(BaseModel):
     def is_regional(self) -> bool:
         return len(self.pokemon.split(" ")) > 1
 
+    def get_pokemon_safely(self):
+        from plugins.pokemon import container
+        return container.get(self.pokemon, None)
 
     def get_pokemon(self):
         from plugins.pokemon import container
