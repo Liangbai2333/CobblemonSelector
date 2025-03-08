@@ -10,11 +10,17 @@ python = "^3.12"
 nonebot2 = "^2.4.1"
 nonebot-plugin-htmlrender = "^0.6.0"
 pillow = "^11.1.0"
+pypinyin = "^0.53.0"
+levenshtein = "^0.27.1"
+
+[tool.poetry.group.dev.dependencies]
+requests = "^2.32.3"
+beautifulsoup4 = "^4.13.3"
+lxml = "^5.3.1"
 
 [tool.nonebot]
 adapters = [
-    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
-    { name = "Console", module_name = "nonebot.adapters.console" }
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" }
 ]
 plugins = ["nonebot_plugin_htmlrender"]
 plugin_dirs = [

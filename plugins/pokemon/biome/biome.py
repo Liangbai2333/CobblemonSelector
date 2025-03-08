@@ -1,8 +1,9 @@
-from typing import Union, Optional, Any
+from typing import Union, Optional, Any, Self
 
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, Field, model_validator, ModelWrapValidatorHandler
 
 from plugins.pokemon.i18n.translatable import Translatable
+from plugins.pokemon.lang import get_lang
 from plugins.pokemon.loader.data import biome_map, feature_map
 
 
@@ -17,19 +18,26 @@ class Biome(BaseModel, Translatable):
     values: list[Union[str, BiomeValueRef]] = Field(description="值")
 
 
-    @model_validator(mode="before")
+    @model_validator(mode="wrap")
     @classmethod
-    def preprocess_data(cls, data: Any) -> dict[str, Any]:
+    def preprocess_data(cls, data: Any, handler: ModelWrapValidatorHandler[Self]) -> Self:
         if isinstance(data, str):
             if data in biome_map:
-                return feature_map[data]
-        return data
+                return biome_map[data]
+        return handler(data)
 
     def get_translation_key(self) -> str:
         return "worldgen.biome"
 
     def get_i18n_name(self) -> str:
-        return self.translate(self.translation_name)
+        name = self.translation_name[1:] if self.translation_name.startswith("#") else self.translation_name
+        if name.startswith("minecraft"):
+            (namespace, key) = name.split(":")
+            return get_lang().get(f"biome.{namespace}.{key}", name)
+        elif name.startswith("cobblemon"):
+            return self.translate(self.translation_name)
+        else:
+            return self.translate(self.translation_name)
 
     def __hash__(self):
         return hash(self.translation_name)

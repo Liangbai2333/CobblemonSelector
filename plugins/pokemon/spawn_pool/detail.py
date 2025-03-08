@@ -33,6 +33,11 @@ class SpawnDetail(BaseModel):
         return len(self.pokemon.split(" ")) > 1
 
 
+    def get_pokemon(self):
+        from plugins.pokemon import container
+        return container[self.pokemon]
+
+
     @field_validator("bucket", mode="before")
     @classmethod
     def validate_bucket(cls, value: str) -> SpawnBucket:

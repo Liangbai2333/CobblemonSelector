@@ -3,6 +3,17 @@ from plugins.pokemon.species.pokemon import PokemonForm
 
 
 class PokemonContainer(dict[str, PokemonForm]):
+
+    def get(self, __key, __default=None):
+        value = super().get(__key)
+        if value:
+            return value
+        try:
+            return self.__missing__(__key)
+        except KeyError:
+            return __default
+
+
     # gender...TODO
     def __missing__(self, key: str) -> PokemonForm:
         if ' ' not in key:
@@ -33,18 +44,19 @@ class PokemonContainer(dict[str, PokemonForm]):
 
         for choice in choices:
             for feature in pokemon.features:
-                if feature.isAspect and isinstance(feature, ChoiceFeature) and choice[0] in feature.keys:
+                if isinstance(feature, ChoiceFeature) and feature.isAspect and choice[0] in feature.keys:
                     aspects.append(feature.aspectFormat.replace("{{choice}}", choice[1]))
+
+        if all(aspect in pokemon.aspects for aspect in aspects):
+            self[key] = pokemon
+            return pokemon
+
 
         for form in pokemon.forms:
             if all(aspect in form.aspects for aspect in aspects):
                 self[key] = form
                 return form
 
-
-        if all(aspect in pokemon.aspects for aspect in aspects):
-            self[key] = pokemon
-            return pokemon
 
         raise KeyError(f"can't resolve the key: {key}")
 

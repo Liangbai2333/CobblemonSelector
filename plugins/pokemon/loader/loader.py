@@ -6,7 +6,7 @@ from nonebot import logger
 from plugins.pokemon.biome.biome import Biome
 from plugins.pokemon.loader.data import *
 from plugins.pokemon.path import resolve, get_file_name_without_ext
-from plugins.pokemon.selector.biome_detail import resolve_biome_to_details
+from plugins.pokemon.selector.biome_detail import resolve_biome_to_details, resolve_reversed_pokemon_to_biomes
 from plugins.pokemon.spawn_pool.detail import SpawnDetail
 from plugins.pokemon.spawn_pool.pool import SpawnPool
 from plugins.pokemon.species.container import pokemon_container
@@ -111,6 +111,7 @@ def init_pokemon_forms() -> dict[str, Biome]:
             with open(os.path.join(root, file), "r", encoding="utf-8") as f:
                 pokemon = Pokemon.model_validate_json(f.read())
                 name = get_file_name_without_ext(file)
+                pokemon.original_name = name
                 count += 1
                 pokemon_container[pokemon.name.lower()] = pokemon
                 pokemon_container[name] = pokemon
@@ -147,4 +148,5 @@ init_pokemon_forms()
 _resolve_feature_assignments()
 logger.info("Resolving dependency relations...")
 biome_to_details = resolve_biome_to_details(list(biome_map.values()), list(itertools.chain.from_iterable(detail_map.values())))
+resolve_reversed_pokemon_to_biomes(list(biome_map.values()), list(itertools.chain.from_iterable(detail_map.values())))
 logger.info("Successfully resolved dependency relations")

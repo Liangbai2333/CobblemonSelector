@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ pokemon.name }} - 宝可梦图鉴</title>
+    <title>{{ pokemon.get_i18n_name() }} - 宝可梦图鉴</title>
     <style>
         :root {
             --primary-color: #4285F4;
@@ -14,6 +14,7 @@
             --text-secondary: #666666;
             --border-color: #e0e6f0;
             --shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            --container-width: 1000px;
         }
 
         body {
@@ -24,15 +25,23 @@
             color: var(--text-color);
             font-size: 14px;
             line-height: 1.4;
+            text-align: center;
+            display: block;
+            box-sizing: border-box;
         }
 
         .container {
-            max-width: 480px;
+            max-width: none !important;
+            width: auto !important;
             margin: 0 auto;
             background-color: var(--card-bg);
             border-radius: 12px;
             box-shadow: var(--shadow);
-            overflow: hidden;
+            overflow: visible;
+            display: inline-block;
+            min-width: 95%;
+            box-sizing: border-box;
+            margin-right: 5px;
         }
 
         /* 头部区域 */
@@ -43,11 +52,16 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin: 0;
+            border-radius: 12px 12px 0 0;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .pokemon-name-container {
             display: flex;
             align-items: baseline;
+            margin-left: 5px;
         }
 
         .pokemon-number {
@@ -66,43 +80,51 @@
         /* 类型标签 */
         .pokemon-types {
             display: flex;
-            gap: 6px;
+            flex-direction: column;
+            gap: 5px;
+            width: 80px;
+            margin: 0 auto;
+            margin-left: calc(50% - 5px); /* 向左偏移5px */
+            transform: translateX(-50%); /* 修正偏移 */
         }
 
         .type {
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.8em;
+            padding: 4px 6px;
+            border-radius: 10px;
             color: white;
+            font-weight: 600;
+            font-size: 0.8em;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             text-align: center;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            width: 100%;
         }
 
         /* 类型颜色 */
         .normal { background-color: #A8A878; }
-        .fire { background-color: #F08030; }
-        .water { background-color: #6890F0; }
-        .grass { background-color: #78C850; }
-        .electric { background-color: #F8D030; }
-        .ice { background-color: #98D8D8; }
-        .fighting { background-color: #C03028; }
-        .poison { background-color: #A040A0; }
-        .ground { background-color: #E0C068; }
-        .flying { background-color: #A890F0; }
-        .psychic { background-color: #F85888; }
-        .bug { background-color: #A8B820; }
-        .rock { background-color: #B8A038; }
-        .ghost { background-color: #705898; }
-        .dragon { background-color: #7038F8; }
-        .dark { background-color: #705848; }
-        .steel { background-color: #B8B8D0; }
-        .fairy { background-color: #EE99AC; }
+        .fire { background: linear-gradient(to right, #F08030, #FD7D24); }
+        .water { background: linear-gradient(to right, #6890F0, #4A90DA); }
+        .grass { background: linear-gradient(to right, #78C850, #5FBD58); }
+        .electric { background: linear-gradient(to right, #F8D030, #EED535); }
+        .ice { background: linear-gradient(to right, #98D8D8, #51C4E7); }
+        .fighting { background: linear-gradient(to right, #C03028, #D56723); }
+        .poison { background: linear-gradient(to right, #A040A0, #B97FC9); }
+        .ground { background: linear-gradient(to right, #E0C068, #DA7C4D); }
+        .flying { background: linear-gradient(to right, #A890F0, #BDB9B8); }
+        .psychic { background: linear-gradient(to right, #F85888, #F366B9); }
+        .bug { background: linear-gradient(to right, #A8B820, #92BC2C); }
+        .rock { background: linear-gradient(to right, #B8A038, #A38C21); }
+        .ghost { background: linear-gradient(to right, #705898, #556AAE); }
+        .dragon { background: linear-gradient(to right, #7038F8, #0A6DC4); }
+        .dark { background: linear-gradient(to right, #705848, #707070); }
+        .steel { background: linear-gradient(to right, #B8B8D0, #9EB7B8); }
+        .fairy { background: linear-gradient(to right, #EE99AC, #ED6EC7); }
 
         /* 主要内容区域 */
         .content {
             padding: 0;
+            overflow: visible;
+            width: 100%;
         }
 
         /* 图片和基本信息区域 */
@@ -114,12 +136,9 @@
 
         .pokemon-image-container {
             width: 110px;
-            height: 110px;
             flex-shrink: 0;
-            background-color: rgba(245, 248, 255, 0.8);
-            border-radius: 8px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             margin-right: 15px;
         }
@@ -128,6 +147,7 @@
             width: 90px;
             height: 90px;
             object-fit: contain;
+            margin-bottom: 10px;
         }
 
         .pokemon-info {
@@ -222,34 +242,156 @@
             font-size: 0.95em;
         }
 
-        /* 进化链 */
-        .evolution-section {
-            padding: 15px;
-            border-bottom: 1px solid var(--border-color);
+        /* 进化树容器 */
+        .evo-tree-container {
+            width: 100%;
+            overflow-x: auto;
+            padding: 20px 0;
+            position: relative;
         }
 
-        .evolution-chain {
+        .evo-tree {
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* 整体垂直居中 */
+            min-width: min-content;
+            padding: 20px 40px;
+        }
+
+        /* 进化阶段 */
+        .evo-stage {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 30px;
+            position: relative;
+        }
+
+        /* 阶段标记 */
+        .evolution-stage-marker,
+        .stage-bracket,
+        .stage-label {
+            display: none;
+        }
+
+        /* 精灵项 */
+        .evo-pokemon {
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* 垂直居中对齐 */
+            margin: 10px 0;
+        }
+
+        /* 进化分支 */
+        .evo-branch {
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* 垂直居中对齐 */
+            position: relative;
+            margin: 20px 0;
+        }
+
+        /* 连接线容器 */
+        .evo-arrow {
+            position: relative;
+            width: 60px;
+            margin: 0 15px;
+            height: 24px;
             display: flex;
             align-items: center;
-            flex-wrap: wrap;
-            margin-top: 10px;
         }
 
-        .evolution-item {
+        /* 水平连接线 */
+        .evo-arrow-line {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(66,133,244,0.2), #4285F4);
+        }
+
+        /* 进化条件 */
+        .evo-conditions {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: none;
+            font-size: 0.65em;
+            color: #666;
+            background-color: #fff;
+            padding: 0 4px;
+            white-space: nowrap;
+            line-height: 1;
+        }
+
+        /* 当条件文本过长时，调整连接线容器的宽度 */
+        .evo-arrow.has-long-text {
+            width: auto;
+            min-width: 60px;
+        }
+
+        .evo-arrow.has-long-text .evo-conditions {
+            width: auto;
+        }
+
+        /* 子进化容器 */
+        .evo-children {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-left: 20px;
+        }
+
+        /* 垂直连接线 */
+        .evo-children:before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(180deg, #4285F4, rgba(66,133,244,0.2));
+        }
+
+        /* 精灵名称卡片 */
+        .evo-name {
+            background: #f5f8ff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e6f0;
+            width: auto;       /* 改为自适应宽度 */
+            min-width: 30px;   /* 设置最小宽度 */
+            max-width: 150px;  /* 设置最大宽度 */
             text-align: center;
+            font-size: 0.9em;
             font-weight: 500;
+            box-shadow: 0 2px 4px rgba(66,133,244,0.1);
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
-        .evolution-arrow {
-            margin: 0 10px;
-            color: var(--text-secondary);
-            font-size: 1.2em;
+        /* 当鼠标悬停时显示完整文本 */
+        .evo-name:hover {
+            border-color: #4285F4;
+            box-shadow: 0 4px 8px rgba(66,133,244,0.15);
+            overflow: visible;
+            white-space: normal;
+            z-index: 10;
         }
 
-        .evolution-level {
-            font-size: 0.8em;
-            color: var(--text-secondary);
-            margin-top: 3px;
+        /* 连接点 */
+        .evo-branch:before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%; /* 垂直居中 */
+            transform: translateY(-50%);
+            width: 20px;
+            height: 2px;
+            background: #4285F4;
         }
 
         /* 招式列表 */
@@ -271,6 +413,207 @@
             font-size: 0.85em;
             font-weight: 500;
         }
+
+        /* 添加到现有样式中 */
+        .evolution-more-button {
+            display: none;
+        }
+
+        /* 修改进化链相关的 CSS 样式 */
+        .evolution-next-level {
+            display: none;
+        }
+
+        /* 努力值产出样式 */
+        .ev-yield {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .ev-item {
+            background: linear-gradient(to right, #f0f4ff, #e8f0ff);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: #4285F4;
+            border: 1px solid rgba(66, 133, 244, 0.2);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+        }
+
+        .ev-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 6px rgba(66, 133, 244, 0.15);
+            border-color: rgba(66, 133, 244, 0.4);
+        }
+
+        /* 美化信息项 */
+        .info-item {
+            background: #f8faff;
+            border-radius: 10px;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border: 1px solid #e8eeff;
+            transition: all 0.2s ease;
+        }
+
+        .info-item:hover {
+            background: #f0f6ff;
+            box-shadow: 0 3px 10px rgba(66, 133, 244, 0.1);
+        }
+
+        .info-label {
+            font-size: 0.8em;
+            color: #666;
+            margin-bottom: 5px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-value {
+            font-size: 1em;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* 调整信息网格布局，使特性可以单独占一行 */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        /* 特性容器样式 - 确保它占据整行 */
+        .abilities-container {
+            grid-column: 1 / -1; /* 从第一列跨到最后一列 */
+            margin-top: 10px;
+        }
+
+        /* 特性样式 */
+        .abilities-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .ability-item {
+            background: #f5f8ff;
+            border-radius: 8px;
+            padding: 10px;
+            border: 1px solid #e0e6f0;
+            transition: all 0.2s ease;
+        }
+
+        .ability-item:hover {
+            background: #eef3ff;
+            box-shadow: 0 2px 8px rgba(66, 133, 244, 0.1);
+        }
+
+        .ability-name {
+            font-weight: 600;
+            color: #4285F4;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ability-hidden {
+            font-size: 0.75em;
+            color: #888;
+            font-weight: normal;
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 10px;
+        }
+
+        .ability-desc {
+            font-size: 0.85em;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* 生成稀有度样式 */
+        .spawn-buckets {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .spawn-bucket {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: white;
+            font-weight: 500;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .spawn-bucket.common {
+            background: linear-gradient(to right, #4CAF50, #8BC34A);
+        }
+
+        .spawn-bucket.uncommon {
+            background: linear-gradient(to right, #2196F3, #03A9F4);
+        }
+
+        .spawn-bucket.rare {
+            background: linear-gradient(to right, #9C27B0, #673AB7);
+        }
+
+        .spawn-bucket.ultra-rare {
+            background: linear-gradient(to right, #F44336, #FF9800);
+        }
+
+        /* 调整标签样式 - 垂直排列 */
+        .pokemon-labels {
+            margin-top: 50px; /* 增加与属性标签的距离 */
+            display: flex;
+            flex-direction: column; /* 垂直排列 */
+            gap: 5px;
+            width: 100%;
+            align-items: center;
+        }
+
+        /* 调整单个标签样式 */
+        .label-tag {
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-size: 0.7em;
+            font-weight: 500;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            width: 80px; /* 固定宽度 */
+            text-align: center; /* 文字居中 */
+        }
+
+        /* 默认标签样式 */
+        .label-default {
+            background: #f0f4ff;
+            color: #666;
+            border: 1px solid #e0e6f0;
+        }
+
+        /* 世代标签样式 */
+        .label-gen1 { background: linear-gradient(to right, #FF1111, #CC0000); color: white; }
+        .label-gen2 { background: linear-gradient(to right, #FFD733, #FFAA00); color: #333; }
+        .label-gen3 { background: linear-gradient(to right, #4DAD5B, #45A049); color: white; }
+        .label-gen4 { background: linear-gradient(to right, #7BB9E8, #5A8DB8); color: white; }
+        .label-gen5 { background: linear-gradient(to right, #424B50, #2D3436); color: white; }
+        .label-gen6 { background: linear-gradient(to right, #1A1A1A, #454545); color: white; }
+        .label-gen7 { background: linear-gradient(to right, #E95B3E, #F17C56); color: white; }
+        .label-gen8 { background: linear-gradient(to right, #00A1E9, #0075BE); color: white; }
+        .label-gen9 { background: linear-gradient(to right, #B567CE, #9146FF); color: white; }
+
+        /* 特殊标签样式 */
+        .label-mythical { background: linear-gradient(to right, #FB8C00, #FFCA28); color: #333; }
+        .label-legendary { background: linear-gradient(to right, #7B1FA2, #9C27B0); color: white; }
+        .label-gmax { background: linear-gradient(to right, #D50000, #FF5252); color: white; }
     </style>
 </head>
 <body>
@@ -279,59 +622,7 @@
         <div class="header">
             <div class="pokemon-name-container">
                 <span class="pokemon-number">#{{ pokemon.get_pokedex() }}</span>
-                <h1>{{ pokemon.get_i18n_name() }} ( {{ pokemon.name }} )</h1>
-            </div>
-
-            <div class="pokemon-types">
-                {% if pokemon.primaryType is defined %}
-                <span class="type {{ pokemon.primaryType }}">
-                    {% if pokemon.primaryType == 'normal' %}一般
-                    {% elif pokemon.primaryType == 'fire' %}火
-                    {% elif pokemon.primaryType == 'water' %}水
-                    {% elif pokemon.primaryType == 'grass' %}草
-                    {% elif pokemon.primaryType == 'electric' %}电
-                    {% elif pokemon.primaryType == 'ice' %}冰
-                    {% elif pokemon.primaryType == 'fighting' %}格斗
-                    {% elif pokemon.primaryType == 'poison' %}毒
-                    {% elif pokemon.primaryType == 'ground' %}地面
-                    {% elif pokemon.primaryType == 'flying' %}飞行
-                    {% elif pokemon.primaryType == 'psychic' %}超能力
-                    {% elif pokemon.primaryType == 'bug' %}虫
-                    {% elif pokemon.primaryType == 'rock' %}岩石
-                    {% elif pokemon.primaryType == 'ghost' %}幽灵
-                    {% elif pokemon.primaryType == 'dragon' %}龙
-                    {% elif pokemon.primaryType == 'dark' %}恶
-                    {% elif pokemon.primaryType == 'steel' %}钢
-                    {% elif pokemon.primaryType == 'fairy' %}妖精
-                    {% else %}{{ pokemon.primaryType }}
-                    {% endif %}
-                </span>
-                {% endif %}
-
-                {% if pokemon.secondaryType is defined and pokemon.secondaryType != None %}
-                <span class="type {{ pokemon.secondaryType }}">
-                    {% if pokemon.secondaryType == 'normal' %}一般
-                    {% elif pokemon.secondaryType == 'fire' %}火
-                    {% elif pokemon.secondaryType == 'water' %}水
-                    {% elif pokemon.secondaryType == 'grass' %}草
-                    {% elif pokemon.secondaryType == 'electric' %}电
-                    {% elif pokemon.secondaryType == 'ice' %}冰
-                    {% elif pokemon.secondaryType == 'fighting' %}格斗
-                    {% elif pokemon.secondaryType == 'poison' %}毒
-                    {% elif pokemon.secondaryType == 'ground' %}地面
-                    {% elif pokemon.secondaryType == 'flying' %}飞行
-                    {% elif pokemon.secondaryType == 'psychic' %}超能力
-                    {% elif pokemon.secondaryType == 'bug' %}虫
-                    {% elif pokemon.secondaryType == 'rock' %}岩石
-                    {% elif pokemon.secondaryType == 'ghost' %}幽灵
-                    {% elif pokemon.secondaryType == 'dragon' %}龙
-                    {% elif pokemon.secondaryType == 'dark' %}恶
-                    {% elif pokemon.secondaryType == 'steel' %}钢
-                    {% elif pokemon.secondaryType == 'fairy' %}妖精
-                    {% else %}{{ pokemon.secondaryType }}
-                    {% endif %}
-                </span>
-                {% endif %}
+                <h1>{{ pokemon.get_full_i18n_name()  }} {{ pokemon.get_full_name() }}</h1>
             </div>
         </div>
 
@@ -339,7 +630,95 @@
             <!-- 图片和基本信息区域 -->
             <div class="pokemon-card">
                 <div class="pokemon-image-container">
-                    <img src="{{ pokemon.get_image_url() }}" alt="{{ pokemon.get_i18n_name() }}" class="pokemon-image">
+                    <img class="pokemon-image" src="{{ pokemon.get_image_url() }}" alt="{{ pokemon.get_i18n_name() }}">
+
+                    <!-- 将属性标签移到这里 -->
+                    <div class="pokemon-types">
+                        {% if pokemon.primaryType is defined %}
+                        <span class="type {{ pokemon.primaryType }}">
+                            {% if pokemon.primaryType == 'normal' %}一般
+                            {% elif pokemon.primaryType == 'fire' %}火
+                            {% elif pokemon.primaryType == 'water' %}水
+                            {% elif pokemon.primaryType == 'grass' %}草
+                            {% elif pokemon.primaryType == 'electric' %}电
+                            {% elif pokemon.primaryType == 'ice' %}冰
+                            {% elif pokemon.primaryType == 'fighting' %}格斗
+                            {% elif pokemon.primaryType == 'poison' %}毒
+                            {% elif pokemon.primaryType == 'ground' %}地面
+                            {% elif pokemon.primaryType == 'flying' %}飞行
+                            {% elif pokemon.primaryType == 'psychic' %}超能力
+                            {% elif pokemon.primaryType == 'bug' %}虫
+                            {% elif pokemon.primaryType == 'rock' %}岩石
+                            {% elif pokemon.primaryType == 'ghost' %}幽灵
+                            {% elif pokemon.primaryType == 'dragon' %}龙
+                            {% elif pokemon.primaryType == 'dark' %}恶
+                            {% elif pokemon.primaryType == 'steel' %}钢
+                            {% elif pokemon.primaryType == 'fairy' %}妖精
+                            {% else %}{{ pokemon.primaryType }}
+                            {% endif %}
+                        </span>
+                        {% endif %}
+
+                        {% if pokemon.secondaryType is defined and pokemon.secondaryType != None %}
+                        <span class="type {{ pokemon.secondaryType }}">
+                            {% if pokemon.secondaryType == 'normal' %}一般
+                            {% elif pokemon.secondaryType == 'fire' %}火
+                            {% elif pokemon.secondaryType == 'water' %}水
+                            {% elif pokemon.secondaryType == 'grass' %}草
+                            {% elif pokemon.secondaryType == 'electric' %}电
+                            {% elif pokemon.secondaryType == 'ice' %}冰
+                            {% elif pokemon.secondaryType == 'fighting' %}格斗
+                            {% elif pokemon.secondaryType == 'poison' %}毒
+                            {% elif pokemon.secondaryType == 'ground' %}地面
+                            {% elif pokemon.secondaryType == 'flying' %}飞行
+                            {% elif pokemon.secondaryType == 'psychic' %}超能力
+                            {% elif pokemon.secondaryType == 'bug' %}虫
+                            {% elif pokemon.secondaryType == 'rock' %}岩石
+                            {% elif pokemon.secondaryType == 'ghost' %}幽灵
+                            {% elif pokemon.secondaryType == 'dragon' %}龙
+                            {% elif pokemon.secondaryType == 'dark' %}恶
+                            {% elif pokemon.secondaryType == 'steel' %}钢
+                            {% elif pokemon.secondaryType == 'fairy' %}妖精
+                            {% else %}{{ pokemon.secondaryType }}
+                            {% endif %}
+                        </span>
+                        {% endif %}
+                    </div>
+
+                    <!-- 添加标签显示 -->
+                    {% if pokemon.labels and pokemon.labels|length > 0 %}
+                    <div class="pokemon-labels">
+                        {% for label in pokemon.labels %}
+                            {% if label == 'gen1' %}
+                                <span class="label-tag label-gen1">第一世代</span>
+                            {% elif label == 'gen2' %}
+                                <span class="label-tag label-gen2">第二世代</span>
+                            {% elif label == 'gen3' %}
+                                <span class="label-tag label-gen3">第三世代</span>
+                            {% elif label == 'gen4' %}
+                                <span class="label-tag label-gen4">第四世代</span>
+                            {% elif label == 'gen5' %}
+                                <span class="label-tag label-gen5">第五世代</span>
+                            {% elif label == 'gen6' %}
+                                <span class="label-tag label-gen6">第六世代</span>
+                            {% elif label == 'gen7' %}
+                                <span class="label-tag label-gen7">第七世代</span>
+                            {% elif label == 'gen8' %}
+                                <span class="label-tag label-gen8">第八世代</span>
+                            {% elif label == 'gen9' %}
+                                <span class="label-tag label-gen9">第九世代</span>
+                            {% elif label == 'mythical' %}
+                                <span class="label-tag label-mythical">神话</span>
+                            {% elif label == 'legendary' %}
+                                <span class="label-tag label-legendary">传说</span>
+                            {% elif label == 'gmax' %}
+                                <span class="label-tag label-gmax">超极巨化</span>
+                            {% else %}
+                                <span class="label-tag label-default">{{ label }}</span>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% endif %}
                 </div>
 
                 <div class="pokemon-info">
@@ -354,37 +733,22 @@
                     </div>
 
                     <div class="info-item">
-                        <span class="info-label">特性</span>
+                        <span class="info-label">性别比例</span>
                         <span class="info-value">
-                            {% if pokemon.ability_sets is defined and pokemon.ability_sets %}
-                                {% set abilities = [] %}
-                                {% for ability in pokemon.ability_sets %}
-                                    {% if ability.prefix == 'h' %}
-                                        {% set _ = abilities.append(ability.get_i18n_name() + '（隐藏）') %}
-                                    {% else %}
-                                        {% set _ = abilities.append(ability.get_i18n_name()) %}
-                                    {% endif %}
-                                {% endfor %}
-                                {{ abilities|join(', ') }}
+                            {% if pokemon.maleRatio == -1 %}
+                                无性别
                             {% else %}
-                                暂无数据
+                                ♂{{ (pokemon.maleRatio * 100)|round(1) }}% : ♀{{ (100 - (pokemon.maleRatio * 100))|round(1) }}%
                             {% endif %}
                         </span>
                     </div>
 
-                    {% if pokemon.maleRatio is defined %}
-                    <div class="info-item">
-                        <span class="info-label">性别比例</span>
-                        <span class="info-value">♂{{ (pokemon.maleRatio * 100)|round(1) }}% : ♀{{ (100 - (pokemon.maleRatio * 100))|round(1) }}%</span>
-                    </div>
-                    {% endif %}
-
-                    {% if pokemon.egg_group_sets is defined and pokemon.egg_group_sets %}
+                    {% if pokemon.eggGroups is defined and pokemon.eggGroups %}
                     <div class="info-item">
                         <span class="info-label">蛋组</span>
                         <span class="info-value">
                             {% set egg_groups = [] %}
-                            {% for egg_group in pokemon.egg_group_sets %}
+                            {% for egg_group in pokemon.eggGroups %}
                                 {% set _ = egg_groups.append(egg_group.get_i18n_name()) %}
                             {% endfor %}
                             {{ egg_groups|join(', ') }}
@@ -398,6 +762,101 @@
                         <span class="info-value">{{ pokemon.catchRate }}</span>
                     </div>
                     {% endif %}
+
+                    {% if pokemon.eggCycles %}
+                    <div class="info-item">
+                        <span class="info-label">孵化周期</span>
+                        <span class="info-value">{{ pokemon.eggCycles }}</span>
+                    </div>
+                    {% endif %}
+
+                    {% if pokemon.evYield %}
+                    <div class="info-item">
+                        <span class="info-label">努力值产出</span>
+                        <div class="ev-yield">
+                            {% if pokemon.evYield.hp > 0 %}
+                            <span class="ev-item">HP +{{ pokemon.evYield.hp }}</span>
+                            {% endif %}
+
+                            {% if pokemon.evYield.attack > 0 %}
+                            <span class="ev-item">攻击 +{{ pokemon.evYield.attack }}</span>
+                            {% endif %}
+
+                            {% if pokemon.evYield.defence > 0 %}
+                            <span class="ev-item">防御 +{{ pokemon.evYield.defence }}</span>
+                            {% endif %}
+
+                            {% if pokemon.evYield.special_attack > 0 %}
+                            <span class="ev-item">特攻 +{{ pokemon.evYield.special_attack }}</span>
+                            {% endif %}
+
+                            {% if pokemon.evYield.special_defence > 0 %}
+                            <span class="ev-item">特防 +{{ pokemon.evYield.special_defence }}</span>
+                            {% endif %}
+
+                            {% if pokemon.evYield.speed > 0 %}
+                            <span class="ev-item">速度 +{{ pokemon.evYield.speed }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <!-- 添加基础经验产出 -->
+                    {% if pokemon.baseExperienceYield %}
+                    <div class="info-item">
+                        <span class="info-label">基础经验产出</span>
+                        <span class="info-value">{{ pokemon.baseExperienceYield }}</span>
+                    </div>
+                    {% endif %}
+
+                    <!-- 添加生成详情 - 只取第一个 -->
+                    {% if pokemon.spawn_details and pokemon.spawn_details|length > 0 %}
+                    <div class="info-item">
+                        <span class="info-label">生成稀有度</span>
+                        <div class="spawn-buckets">
+                            {% set detail = pokemon.spawn_details[0] %}
+                            {% if detail.bucket %}
+                                <span class="spawn-bucket {{ detail.bucket.name|lower }}">
+                                    {% if detail.bucket.name == 'common' %}
+                                        常见
+                                    {% elif detail.bucket.name == 'uncommon' %}
+                                        少见
+                                    {% elif detail.bucket.name == 'rare' %}
+                                        稀有
+                                    {% elif detail.bucket.name == 'ultra-rare' %}
+                                        极稀有
+                                    {% else %}
+                                        {{ detail.bucket.name }}
+                                    {% endif %}
+                                </span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <!-- 特性放在最后，单独占一行 -->
+                    <div class="abilities-container">
+                        <div class="info-item">
+                            <span class="info-label">特性</span>
+                            <div class="abilities-list">
+                                {% if pokemon.abilities is defined and pokemon.abilities %}
+                                    {% for ability in pokemon.abilities %}
+                                        <div class="ability-item">
+                                            <div class="ability-name">
+                                                {{ ability.get_i18n_name() }}
+                                                {% if ability.prefix == 'h' %}
+                                                    <span class="ability-hidden">隐藏</span>
+                                                {% endif %}
+                                            </div>
+                                            <div class="ability-desc">{{ ability.get_i18n_desc() }}</div>
+                                        </div>
+                                    {% endfor %}
+                                {% else %}
+                                    <span class="info-value">暂无数据</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -407,11 +866,12 @@
                 <div class="column">
                     <h2 class="section-title">种族值</h2>
 
+                    {% if pokemon.baseStats is defined and pokemon.baseStats %}
                     <div class="stat-row">
                         <div class="stat-label">HP</div>
                         <div class="stat-value">{{ pokemon.baseStats.hp }}</div>
                         <div class="stat-bar-container">
-                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.hp / 255) * 100 }}%;"></div>
+                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.hp / 255) * 100 }}%"></div>
                         </div>
                     </div>
 
@@ -419,7 +879,7 @@
                         <div class="stat-label">攻击</div>
                         <div class="stat-value">{{ pokemon.baseStats.attack }}</div>
                         <div class="stat-bar-container">
-                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.attack / 255) * 100 }}%;"></div>
+                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.attack / 255) * 100 }}%"></div>
                         </div>
                     </div>
 
@@ -427,7 +887,7 @@
                         <div class="stat-label">防御</div>
                         <div class="stat-value">{{ pokemon.baseStats.defence }}</div>
                         <div class="stat-bar-container">
-                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.defence / 255) * 100 }}%;"></div>
+                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.defence / 255) * 100 }}%"></div>
                         </div>
                     </div>
 
@@ -435,7 +895,7 @@
                         <div class="stat-label">特攻</div>
                         <div class="stat-value">{{ pokemon.baseStats.special_attack }}</div>
                         <div class="stat-bar-container">
-                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.special_attack / 255) * 100 }}%;"></div>
+                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.special_attack / 255) * 100 }}%"></div>
                         </div>
                     </div>
 
@@ -443,7 +903,7 @@
                         <div class="stat-label">特防</div>
                         <div class="stat-value">{{ pokemon.baseStats.special_defence }}</div>
                         <div class="stat-bar-container">
-                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.special_defence / 255) * 100 }}%;"></div>
+                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.special_defence / 255) * 100 }}%"></div>
                         </div>
                     </div>
 
@@ -451,9 +911,12 @@
                         <div class="stat-label">速度</div>
                         <div class="stat-value">{{ pokemon.baseStats.speed }}</div>
                         <div class="stat-bar-container">
-                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.speed / 255) * 100 }}%;"></div>
+                            <div class="stat-bar-fill" style="width: {{ (pokemon.baseStats.speed / 255) * 100 }}%"></div>
                         </div>
                     </div>
+                    {% else %}
+                    <p>暂无种族值数据</p>
+                    {% endif %}
                 </div>
 
                 <!-- 右列：简介 -->
@@ -464,77 +927,239 @@
             </div>
 
             <!-- 进化链 -->
-            {% if pokemon.evolution_chain is defined and pokemon.evolution_chain %}
+            {% if pokemon.evolutions is defined or pokemon.preEvolution is defined %}
             <div class="evolution-section">
                 <h2 class="section-title">进化</h2>
-                <div class="evolution-chain">
-                    {% macro render_evolution_chain(pokemon_obj, is_current=false) %}
-                        <div class="evolution-item {% if is_current %}current{% endif %}">
-                            <div>{{ pokemon_obj.get_i18n_name() }}</div>
+
+                <!-- 修复查找基础形态的代码，使用数组和条件变量 -->
+                {% set base_forms = [pokemon] %}
+                {% set should_continue = true %}
+
+                <!-- 尝试找到最基础的形态 -->
+                {% for i in range(5) if should_continue %} <!-- 限制最多5代进化 -->
+                    {% if base_forms[0].preEvolution and should_continue %}
+                        {% set pre_pokemon = base_forms[0].get_pre_evolution_pokemon() %}
+                        {% if pre_pokemon is not none %}
+                            {% set _ = base_forms.pop(0) %}
+                            {% set _ = base_forms.insert(0, pre_pokemon) %}
+                        {% else %}
+                            {% set should_continue = false %}
+                        {% endif %}
+                    {% else %}
+                        {% set should_continue = false %}
+                    {% endif %}
+                {% endfor %}
+
+                {% set base_form = base_forms[0] %}
+
+                <!-- 递归渲染进化树 -->
+                {% macro render_evolution_chain(current_pokemon, depth=0) %}
+                    <!-- 使用 ID 字符串比较，确保唯一性 -->
+                    {% set current_id = pokemon.name ~ "-" ~ pokemon.get_full_i18n_name() %}
+                    {% set pokemon_id = current_pokemon.name ~ "-" ~ current_pokemon.get_full_i18n_name() %}
+
+                    <div class="evo-pokemon" data-depth="{{ depth }}">
+                        <div class="evo-name">
+                            {{ current_pokemon.get_full_i18n_name() }}
+                            {% if current_id == pokemon_id %}
+                                <span style="color: red; font-weight: bold; margin-left: 5px;">★</span>
+                            {% endif %}
                         </div>
 
-                        {% if pokemon_obj.evolution_chain and pokemon_obj.evolution_chain.evolution_conditions %}
-                            {% for condition in pokemon_obj.evolution_chain.evolution_conditions %}
-                                <div class="evolution-arrow">→</div>
-                                <div class="evolution-item">
-                                    <div>{{ condition.evolution.get_i18n_name() }}</div>
-                                    <div class="evolution-level">
-                                        {% if condition.condition == 'level' %}
-                                            Lv.{{ condition.value }}
-                                        {% elif condition.condition == 'friendship' %}
-                                            友好度 {{ condition.value }}
-                                        {% else %}
-                                            {{ condition.condition }}: {{ condition.value }}
-                                        {% endif %}
-                                    </div>
-                                </div>
+                        {% if current_pokemon.evolutions and current_pokemon.evolutions|length > 0 %}
+                            <div class="evo-children">
+                                {% for evolution in current_pokemon.evolutions %}
+                                    <div class="evo-branch">
+                                        <div class="evo-arrow">
+                                            <div class="evo-arrow-line"></div>
+                                            <div class="evo-conditions">
+                                                {% if evolution.get_evo_context_i18n() and evolution.get_evo_context_i18n() != '' %}
+                                                    {{ evolution.get_evo_context_i18n() }}
+                                                    {% if evolution.requirements and evolution.requirements|length > 0 %}, {% endif %}
+                                                {% endif %}
 
-                                {% if condition.evolution.evolution_chain and condition.evolution.evolution_chain.evolution_conditions %}
-                                    {% for next_condition in condition.evolution.evolution_chain.evolution_conditions %}
-                                        <div class="evolution-arrow">→</div>
-                                        <div class="evolution-item">
-                                            <div>{{ next_condition.evolution.get_i18n_name() }}</div>
-                                            <div class="evolution-level">
-                                                {% if next_condition.condition == 'level' %}
-                                                    Lv.{{ next_condition.value }}
-                                                {% elif next_condition.condition == 'friendship' %}
-                                                    友好度 {{ next_condition.value }}
-                                                {% else %}
-                                                    {{ next_condition.condition }}: {{ next_condition.value }}
+                                                {% for req in evolution.requirements %}
+                                                    {{ req.get_evo_i18n() }}
+                                                    {% if not loop.last %}, {% endif %}
+                                                {% endfor %}
+
+                                                {% if evolution.consumeHeldItem %}
+                                                    (消耗持有物)
+                                                {% endif %}
+                                                {% if evolution.optional %}
+                                                    (可选)
                                                 {% endif %}
                                             </div>
                                         </div>
-                                    {% endfor %}
-                                {% endif %}
-                            {% endfor %}
+                                        {{ render_evolution_chain(evolution.get_result_pokemon(), depth + 1) }}
+                                    </div>
+                                {% endfor %}
+                            </div>
                         {% endif %}
-                    {% endmacro %}
+                    </div>
+                {% endmacro %}
 
-                    {% if pokemon.evolution_chain.pre_evolution %}
-                        {% set root_pokemon = pokemon.evolution_chain.pre_evolution %}
-                        {% if root_pokemon.evolution_chain and root_pokemon.evolution_chain.pre_evolution %}
-                            {% set root_pokemon = root_pokemon.evolution_chain.pre_evolution %}
-                        {% endif %}
-                        {{ render_evolution_chain(root_pokemon) }}
-                    {% else %}
-                        {{ render_evolution_chain(pokemon, true) }}
-                    {% endif %}
+                <!-- 渲染整个进化链 -->
+                <div class="evo-tree-container">
+                    <div class="evo-tree">
+                        {{ render_evolution_chain(base_form) }}
+                    </div>
                 </div>
             </div>
             {% endif %}
 
             <!-- 招式列表 -->
-            {% if pokemon.move_sets is defined and pokemon.move_sets|length > 0 %}
+            {% if pokemon.moves is defined and pokemon.moves|length > 0 %}
             <div class="moves-section">
                 <h2 class="section-title">招式</h2>
                 <div class="moves-list">
-                    {% for move in pokemon.move_sets %}
-                    <span class="move-item">{{ move.get_i18n_name() }}</span>
+                    {% for move in pokemon.moves %}
+                        {% if move.condition is number or move.condition|int > 0 %}
+                            <span class="move-item">{{ move.get_i18n_name() }} (Lv.{{ move.condition }})</span>
+                        {% endif %}
                     {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- 生成生物群系 -->
+            {% if pokemon.biomes is defined and pokemon.biomes %}
+            <div class="moves-section">
+                <h2 class="section-title">生成生物群系</h2>
+                <div class="moves-list">
+                    {% set spawn_biomes = pokemon.get_spawn_biomes() %}
+                    {% if spawn_biomes and spawn_biomes|length > 0 %}
+                        {% for biome in spawn_biomes %}
+                        <span class="move-item">{{ biome.get_i18n_name() }}</span>
+                        {% endfor %}
+                    {% else %}
+                        <p>暂无生物群系数据</p>
+                    {% endif %}
                 </div>
             </div>
             {% endif %}
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                try {
+                    // 获取原始进化树容器
+                    const originalContainer = document.querySelector('.evo-tree-container');
+                    if (!originalContainer) return;
+
+                    // 获取所有宝可梦元素及其深度
+                    const allPokemon = document.querySelectorAll('.evo-pokemon');
+                    if (allPokemon.length === 0) return;
+
+                    // 构建进化关系图
+                    const evolutionMap = new Map();
+                    const pokemonByStage = {};
+
+                    // 第一步：收集所有精灵信息
+                    allPokemon.forEach(pokemon => {
+                        const depth = parseInt(pokemon.getAttribute('data-depth') || '0');
+                        if (!pokemonByStage[depth]) {
+                            pokemonByStage[depth] = [];
+                        }
+
+                        const nameElement = pokemon.querySelector('.evo-name');
+                        const name = nameElement ? nameElement.textContent.trim() : '';
+
+                        // 获取进化条件
+                        let condition = '';
+                        const branch = pokemon.closest('.evo-branch');
+                        if (branch) {
+                            const conditionElement = branch.querySelector('.evo-conditions');
+                            if (conditionElement) {
+                                condition = conditionElement.textContent.trim();
+                            }
+                        }
+
+                        const pokemonData = {
+                            element: pokemon,
+                            name: name,
+                            condition: condition,
+                            depth: depth,
+                            parent: null,
+                            children: []
+                        };
+
+                        evolutionMap.set(pokemon, pokemonData);
+                        pokemonByStage[depth].push(pokemonData);
+                    });
+
+                    // 第二步：建立父子关系
+                    allPokemon.forEach(pokemon => {
+                        const branch = pokemon.closest('.evo-branch');
+                        if (branch) {
+                            const parentPokemon = branch.parentElement.closest('.evo-pokemon');
+                            if (parentPokemon && evolutionMap.has(parentPokemon)) {
+                                const currentData = evolutionMap.get(pokemon);
+                                const parentData = evolutionMap.get(parentPokemon);
+                                currentData.parent = parentData;
+                                parentData.children.push(currentData);
+                            }
+                        }
+                    });
+
+                    // 第三步：调整每个阶段内的精灵位置
+                    Object.keys(pokemonByStage).forEach(stage => {
+                        const pokemons = pokemonByStage[stage];
+
+                        // 按父子关系排序
+                        pokemons.sort((a, b) => {
+                            if (!a.parent && !b.parent) return 0;
+                            if (!a.parent) return -1;
+                            if (!b.parent) return 1;
+
+                            const aParentIndex = Array.from(allPokemon).indexOf(a.parent.element);
+                            const bParentIndex = Array.from(allPokemon).indexOf(b.parent.element);
+                            return aParentIndex - bParentIndex;
+                        });
+
+                        // 调整子元素位置
+                        pokemons.forEach(pokemon => {
+                            if (pokemon.parent) {
+                                const childrenContainer = pokemon.parent.element.querySelector('.evo-children');
+                                if (childrenContainer) {
+                                    childrenContainer.style.display = 'flex';
+                                    childrenContainer.style.flexDirection = 'column';
+                                    childrenContainer.style.justifyContent = 'center';
+                                    childrenContainer.style.alignItems = 'flex-start';
+                                    childrenContainer.style.marginLeft = '40px';
+                                }
+
+                                const branch = pokemon.element.closest('.evo-branch');
+                                if (branch) {
+                                    branch.style.marginBottom = '10px';
+                                    branch.style.marginTop = '10px';
+                                }
+                            }
+                        });
+                    });
+                } catch (error) {
+                    console.error('Error in evolution tree layout:', error);
+                }
+            }, 500);
+
+            // 检查条件文本长度并调整连接线容器宽度
+            const conditions = document.querySelectorAll('.evo-conditions');
+            conditions.forEach(condition => {
+                const arrow = condition.closest('.evo-arrow');
+                if (condition.scrollWidth > 60) { // 60px是默认宽度
+                    arrow.classList.add('has-long-text');
+                    arrow.style.width = (condition.scrollWidth + 10) + 'px'; // 添加一些padding
+
+                    // 调整连接线长度
+                    const line = arrow.querySelector('.evo-arrow-line');
+                    if (line) {
+                        line.style.width = '100%';
+                    }
+                }
+            });
+        });
+    </script>
 </body>
-</html> 
+</html>
