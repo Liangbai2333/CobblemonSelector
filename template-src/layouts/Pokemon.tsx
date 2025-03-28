@@ -17,6 +17,7 @@ export default function Pokemon() {
             try {
                 setLoading(true);
                 const data = await getPokemonByName(id);
+                console.log(data)
                 setPokemon(data);
                 setError(null);
             } catch (err) {
@@ -32,15 +33,20 @@ export default function Pokemon() {
 
     return (
         <>
-            <div className="text-center">
+            <div className="text-center font-sans">
                 {loading && <p>Loading...</p>}
                 {error && <p>{error}</p>}
                 {pokemon && (
                     <PokeCard>
                         <div className="inline-flex p-1 w-fit min-w-64 min-h-8 bg-blue-500 text-white">
-                            <PokeImage name={pokemon.i18n_name} image={pokemon.image_url}/>
-                            <span className="mt-auto">{pokemon.i18n_name}</span>
-                            <span className="ml-auto mr-2">{pokemon.pokedex_number}</span>
+                            <div className="m-2">
+                                <span className="mt-auto text-sm"># {pokemon.pokedex_number}</span>
+                                <span
+                                    className="ml-2 mt-auto text-2xl font-bold">{pokemon.i18n_name} ({pokemon.name})</span>
+                            </div>
+                        </div>
+                        <div className="">
+                            <PokeImage name={pokemon.i18n_name} image={pokemon.image_url} />
                         </div>
                     </PokeCard>
                 )}

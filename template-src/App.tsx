@@ -6,9 +6,9 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Navigate to="/pokemon/1" replace />} />
+                <Route path="/" element={<Navigate to="/pokemon/bulbasaur" replace />} />
                 <Route path="/pokemon">
-                    <Route index element={<Navigate to="/pokemon/1" replace />}/>
+                    <Route index element={<Navigate to="/pokemon/bulbasaur" replace />}/>
                     <Route path=":id" element={<Pokemon />}/>
                 </Route>
             </Routes>

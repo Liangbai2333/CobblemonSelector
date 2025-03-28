@@ -173,7 +173,7 @@ class PokemonForm(BaseModel, Translatable):
     #     return value
 
     def get_image_url(self):
-        return f"file://{os.path.join(os.getcwd(), f"images/{self.species.name if self.species else self.name}/{self.name}.png")}"
+        return f"/images/{self.species.name if self.species else self.name}/{self.name}.png"
 
     def get_pokedex(self):
         """
