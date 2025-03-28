@@ -1,0 +1,35 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "xerneas neutral-mode",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 0.1,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_snowy_forest"
+                ],
+                "timeRange": "day"
+            }
+        },
+        {
+            "pokemon": "xerneas neutral-mode",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 0.1,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_snowy_forest"
+                ],
+                "timeRange": "noon"
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "kubfu",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "30",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_forest"
+                ],
+                "timeRange": "afternoon"
+            }
+        }
+    ]
+}

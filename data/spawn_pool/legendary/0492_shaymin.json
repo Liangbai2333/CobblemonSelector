@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "shaymin",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "30",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#minecraft:flower_forest"
+                ],
+                "timeRange": "morning"
+            }
+        }
+    ]
+}

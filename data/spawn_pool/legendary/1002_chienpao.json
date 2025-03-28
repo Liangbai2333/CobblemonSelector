@@ -1,0 +1,24 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "chienpao",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_high_lands",
+                    "#cobblemon:is_plateau",
+                    "#cobblemon:is_snowy_taiga"
+                ],
+                "timeRange": "night"
+            }
+        }
+    ]
+}

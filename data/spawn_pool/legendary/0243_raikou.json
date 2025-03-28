@@ -1,0 +1,26 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "raikou",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_savanna",
+                    "#cobblemon:is_plateau",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_plains",
+                    "#cobblemon:is_desert"
+                ]
+            }
+        }
+    ]
+}

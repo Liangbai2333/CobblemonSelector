@@ -1,0 +1,37 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "cresselia",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:evolution/vivillon/elegant"
+                ],
+                "moonPhase": "0",
+                "timeRange": "night"
+            }
+        },
+        {
+            "pokemon": "cresselia",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:evolution/vivillon/elegant"
+                ],
+                "moonPhase": "0",
+                "timeRange": "midnight"
+            }
+        }
+    ]
+}

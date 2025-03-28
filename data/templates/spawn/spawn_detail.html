@@ -431,7 +431,7 @@
                     <div class="condition-item">
                         <div class="condition-property">
                             <span class="property-name">时间范围</span>
-                            <span class="property-value">{{ spawn_detail.condition.timeRange }}</span>
+                            <span class="property-value">{{ spawn_detail.condition.get_i18n_time_range() }}</span>
                         </div>
                     </div>
                     {% endif %}
@@ -596,7 +596,7 @@
                     <div class="condition-item">
                         <div class="condition-property">
                             <span class="property-name">时间范围</span>
-                            <span class="property-value">{{ spawn_detail.anticondition.timeRange }}</span>
+                            <span class="property-value">{{ spawn_detail.anticondition.get_i18n_time_range() }}</span>
                         </div>
                     </div>
                     {% endif %}
@@ -766,7 +766,7 @@
                         <div class="condition-item">
                             <div class="condition-property">
                                 <span class="property-name">时间范围</span>
-                                <span class="property-value">{{ spawn_detail.weightMultiplier.condition.timeRange }}</span>
+                                <span class="property-value">{{ spawn_detail.weightMultiplier.condition.get_i18n_time_range() }}</span>
                             </div>
                         </div>
                         {% endif %}
@@ -928,7 +928,7 @@
                         <div class="condition-item">
                             <div class="condition-property">
                                 <span class="property-name">时间范围</span>
-                                <span class="property-value">{{ spawn_detail.weightMultiplier.anticondition.timeRange }}</span>
+                                <span class="property-value">{{ spawn_detail.weightMultiplier.anticondition.get_i18n_time_range() }}</span>
                             </div>
                         </div>
                         {% endif %}

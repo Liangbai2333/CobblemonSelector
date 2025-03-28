@@ -1,0 +1,21 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "latios",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_lukewarm_ocean",
+                    "#cobblemon:is_ocean"
+                ],
+                "timeRange": "afternoon"
+            }
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "terapagos normal-form",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 0.01,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_forest"
+                ],
+                "timeRange": "dawn"
+            }
+        },
+        {
+            "pokemon": "terapagos normal-form",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 0.01,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_forest"
+                ],
+                "timeRange": "dusk"
+            }
+        }
+    ]
+}

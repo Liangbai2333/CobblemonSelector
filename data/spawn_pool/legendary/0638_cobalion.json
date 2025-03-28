@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "cobalion",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_hills",
+                    "#minecraft:birch_forest"
+                ],
+                "timeRange": "night"
+            }
+        }
+    ]
+}

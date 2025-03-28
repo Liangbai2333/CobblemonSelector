@@ -1,0 +1,25 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "tornadus",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_plains",
+                    "#minecraft:sunflower_plains"
+                ],
+                "isRaining": true,
+                "isThundering": true,
+                "timeRange": "afternoon"
+            }
+        }
+    ]
+}

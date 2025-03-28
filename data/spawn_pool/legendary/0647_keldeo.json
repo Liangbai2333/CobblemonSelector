@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "keldeo",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_river"
+                ],
+                "timeRange": "day"
+            }
+        }
+    ]
+}

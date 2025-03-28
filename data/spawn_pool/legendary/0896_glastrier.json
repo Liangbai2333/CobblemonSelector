@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "glastrier",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_tundra"
+                ],
+                "timeRange": "day"
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "mew",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "30",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_jungle"
+                ],
+                "timeRange": "day"
+            }
+        }
+    ]
+}

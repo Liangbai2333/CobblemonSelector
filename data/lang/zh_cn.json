@@ -587,6 +587,8 @@
     "biome.minecraft.is_meadow": "草甸",
     "biome.minecraft.is_mushroom_fields": "蘑菇岛",
     "biome.minecraft.is_nether_wastes": "下界荒地",
+    "biome.minecraft.is_nether": "下界",
+    "biome.minecraft.is_mountain": "山地",
     "biome.minecraft.is_ocean": "海洋",
     "biome.minecraft.is_old_growth_birch_forest": "原始桦木森林",
     "biome.minecraft.is_old_growth_pine_taiga": "原始松木针叶林",

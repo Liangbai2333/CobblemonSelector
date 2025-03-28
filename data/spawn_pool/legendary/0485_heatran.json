@@ -1,0 +1,26 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "heatran",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 2.0,
+            "condition": {
+                "neededNearbyBlocks": [
+                    "#minecraft:lava"
+                ],
+                "maxY": 50.0,
+                "biomes": [
+                    "#minecraft:is_nether",
+                    "#cobblemon:is_badlands"
+                ]
+            }
+        }
+    ]
+}

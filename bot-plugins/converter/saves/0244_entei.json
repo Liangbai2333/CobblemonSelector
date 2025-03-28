@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "entei",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_mountain",
+                    "#cobblemon:is_sandy",
+                    "#cobblemon:is_lush"
+                ],
+                "timeRange": "day"
+            }
+        }
+    ]
+}

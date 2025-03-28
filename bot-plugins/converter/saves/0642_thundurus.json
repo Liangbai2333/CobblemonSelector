@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "thundurus incarnate-forme",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_plains",
+                    "#minecraft:sunflower_plains"
+                ],
+                "isRaining": true,
+                "isThundering": false,
+                "timeRange": "morning"
+            }
+        }
+    ]
+}

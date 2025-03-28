@@ -1,0 +1,24 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "genesect",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_hills",
+                    "#cobblemon:is_peak",
+                    "#cobblemon:is_mountain"
+                ],
+                "timeRange": "night"
+            }
+        }
+    ]
+}

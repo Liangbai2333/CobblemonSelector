@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "cosmog",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "#minecraft:sunflower_plains"
+                ],
+                "timeRange": "dawn,dusk"
+            }
+        }
+    ]
+}

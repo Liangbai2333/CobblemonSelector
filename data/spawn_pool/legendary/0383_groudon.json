@@ -1,0 +1,24 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "groudon",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_desert"
+                ],
+                "isRaining": false,
+                "isThundering": false,
+                "timeRange": "day"
+            }
+        }
+    ]
+}

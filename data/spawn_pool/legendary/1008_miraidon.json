@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "miraidon",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 0.5,
+            "condition": {
+                "biomes": [
+                    "#minecraft:small_end_islands"
+                ],
+                "timeRange": "night"
+            }
+        }
+    ]
+}

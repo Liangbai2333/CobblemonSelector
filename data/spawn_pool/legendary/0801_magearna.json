@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "magearna",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "50",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_spooky"
+                ],
+                "timeRange": "morning"
+            }
+        }
+    ]
+}

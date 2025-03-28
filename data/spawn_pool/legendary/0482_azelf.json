@@ -1,0 +1,24 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "azelf",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "submerged",
+            "bucket": "ultra-rare",
+            "level": "50",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_hills",
+                    "#cobblemon:is_lush"
+                ],
+                "timeRange": "morning"
+            }
+        }
+    ]
+}

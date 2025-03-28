@@ -1,0 +1,27 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "suicune",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#minecraft:snowy_beach",
+                    "#cobblemon:is_coast",
+                    "#cobblemon:is_beach",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_plains",
+                    "#cobblemon:is_desert"
+                ]
+            }
+        }
+    ]
+}

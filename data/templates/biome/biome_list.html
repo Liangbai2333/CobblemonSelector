@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝可梦生成群系列表</title>
+    <style>
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background-color: #f5f8ff;
+            margin: 0;
+            padding: 15px;
+            font-size: 12px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4285F4;
+        }
+
+        .header h1 {
+            color: #4285F4;
+            font-size: 20px;
+            margin: 0 0 5px 0;
+        }
+
+        .header p {
+            color: #666;
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .biome-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 11px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .biome-table th {
+            background: linear-gradient(135deg, #4285F4, #5b9aff);
+            color: white;
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+
+        .biome-table td {
+            padding: 6px 10px;
+            border-bottom: 1px solid #e0e6f0;
+            background-color: white;
+        }
+
+        .biome-table tr:nth-child(even) td {
+            background-color: #f8faff;
+        }
+
+        .biome-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .biome-name {
+            font-weight: 500;
+        }
+
+        .replace-badge {
+            background-color: #F85888;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 9px;
+            margin-left: 5px;
+            font-weight: 500;
+        }
+
+        .stat-value {
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .common { color: #78C850; }
+        .uncommon { color: #6890F0; }
+        .rare { color: #F8D030; }
+        .ultra-rare { color: #F85888; }
+
+        .total-value {
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>宝可梦生成群系列表</h1>
+        <p>共 {{ biomes|length }} 个群系</p>
+    </div>
+
+    <table class="biome-table">
+        <thead>
+            <tr>
+                <th style="width: 40%">群系名称</th>
+                <th style="width: 12%; text-align: center">普通</th>
+                <th style="width: 12%; text-align: center">少见</th>
+                <th style="width: 12%; text-align: center">稀有</th>
+                <th style="width: 12%; text-align: center">极稀有</th>
+                <th style="width: 12%; text-align: center">总数</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for biome in biomes %}
+            <tr>
+                <td>
+                    <span class="biome-name">{{ biome.get_i18n_name() }}</span>
+                    {% if biome.replace %}
+                    <span class="replace-badge">替</span>
+                    {% endif %}
+                </td>
+                <td class="stat-value common">{{ biome.get_total_number_for_bucket_name("common")|round(0)|int }}</td>
+                <td class="stat-value uncommon">{{ biome.get_total_number_for_bucket_name("uncommon")|round(0)|int }}</td>
+                <td class="stat-value rare">{{ biome.get_total_number_for_bucket_name("rare")|round(0)|int }}</td>
+                <td class="stat-value ultra-rare">{{ biome.get_total_number_for_bucket_name("ultra-rare")|round(0)|int }}</td>
+                <td class="total-value">{{ (biome.get_total_number_for_bucket_name("common") +
+                       biome.get_total_number_for_bucket_name("uncommon") +
+                       biome.get_total_number_for_bucket_name("rare") +
+                       biome.get_total_number_for_bucket_name("ultra-rare"))|round(0)|int }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

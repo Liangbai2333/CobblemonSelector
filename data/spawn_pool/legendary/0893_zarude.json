@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "zarude",
+            "type": "pokemon",
+            "presets": [
+                "treetop"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_jungle"
+                ],
+                "timeRange": "night"
+            }
+        }
+    ]
+}

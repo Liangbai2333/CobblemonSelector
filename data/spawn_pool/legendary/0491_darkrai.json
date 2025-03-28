@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "darkrai",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_spooky"
+                ],
+                "moonPhase": "4",
+                "timeRange": "night"
+            }
+        }
+    ]
+}

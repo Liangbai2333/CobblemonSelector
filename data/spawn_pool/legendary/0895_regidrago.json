@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "regidrago",
+            "type": "pokemon",
+            "presets": [
+                "natural",
+                "nether_structures"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#minecraft:is_nether"
+                ],
+                "timeRange": "day"
+            }
+        }
+    ]
+}

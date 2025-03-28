@@ -1,0 +1,27 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "manaphy",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "submerged",
+            "bucket": "ultra-rare",
+            "level": "50",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_ocean",
+                    "#cobblemon:is_deep_ocean",
+                    "#cobblemon:is_cold_ocean",
+                    "#cobblemon:is_frozen_ocean"
+                ],
+                "isRaining": false,
+                "isThundering": false,
+                "timeRange": "morning"
+            }
+        }
+    ]
+}

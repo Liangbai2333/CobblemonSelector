@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "kyogre",
+            "type": "pokemon",
+            "presets": [
+                "water"
+            ],
+            "context": "submerged",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_deep_ocean"
+                ],
+                "isRaining": true,
+                "timeRange": "night"
+            }
+        }
+    ]
+}

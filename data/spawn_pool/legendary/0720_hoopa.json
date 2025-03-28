@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "hoopa",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "50",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_end",
+                    "#cobblemon:is_desert"
+                ],
+                "timeRange": "afternoon"
+            }
+        }
+    ]
+}

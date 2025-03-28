@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "uxie",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_hills",
+                    "#cobblemon:is_desert",
+                    "#cobblemon:is_snowy_forest"
+                ],
+                "timeRange": "afternoon"
+            }
+        }
+    ]
+}

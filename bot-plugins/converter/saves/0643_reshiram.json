@@ -1,0 +1,21 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "reshiram",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 0.1,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_snowy_taiga",
+                    "#cobblemon:evolution/vivillon/garden"
+                ],
+                "timeRange": "day"
+            }
+        }
+    ]
+}

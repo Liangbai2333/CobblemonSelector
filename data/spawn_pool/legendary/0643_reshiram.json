@@ -1,0 +1,25 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "reshiram",
+            "type": "pokemon",
+            "presets": [
+                "natural",
+                "treetop"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_snowy_taiga",
+                    "#cobblemon:is_taiga",
+                    "#cobblemon:is_sky"
+                ],
+                "timeRange": "day"
+            }
+        }
+    ]
+}

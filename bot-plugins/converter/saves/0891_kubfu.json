@@ -1,0 +1,20 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "kubfu",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_bamboo"
+                ],
+                "timeRange": "afternoon"
+            }
+        }
+    ]
+}

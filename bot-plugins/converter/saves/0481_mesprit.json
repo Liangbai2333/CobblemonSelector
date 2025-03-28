@@ -1,0 +1,41 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "mesprit",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_hills",
+                    "#cobblemon:evolution/vivillon/elegant",
+                    "#cobblemon:is_desert",
+                    "#cobblemon:is_forest"
+                ],
+                "timeRange": "dawn"
+            }
+        },
+        {
+            "pokemon": "mesprit",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_hills",
+                    "#cobblemon:evolution/vivillon/elegant",
+                    "#cobblemon:is_desert",
+                    "#cobblemon:is_forest"
+                ],
+                "timeRange": "morning"
+            }
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "landorus",
+            "type": "pokemon",
+            "presets": [
+                "natural",
+                "treetop"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_badlands",
+                    "#cobblemon:is_sky"
+                ],
+                "timeRange": "dawn,dusk"
+            }
+        }
+    ]
+}

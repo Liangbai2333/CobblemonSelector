@@ -1,0 +1,26 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "latias",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "40",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_frozen_ocean",
+                    "#cobblemon:is_ocean",
+                    "#cobblemon:is_cold_ocean",
+                    "#cobblemon:is_deep_ocean",
+                    "#cobblemon:is_sky"
+                ],
+                "timeRange": "morning"
+            }
+        }
+    ]
+}

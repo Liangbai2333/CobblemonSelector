@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "chiyu",
+            "type": "pokemon",
+            "presets": [
+                "lava"
+            ],
+            "context": "lavafloor",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "minY": 80.0,
+                "biomes": [
+                    "#cobblemon:is_badlands"
+                ],
+                "timeRange": "day"
+            }
+        }
+    ]
+}

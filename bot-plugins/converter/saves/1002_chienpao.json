@@ -1,0 +1,21 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "chienpao",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#minecraft:snowy_beach",
+                    "#cobblemon:is_snowy_forest"
+                ],
+                "timeRange": "night"
+            }
+        }
+    ]
+}

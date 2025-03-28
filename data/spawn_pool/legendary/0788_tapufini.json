@@ -1,0 +1,22 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "tapufini",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "surface",
+            "bucket": "ultra-rare",
+            "level": "40",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_jungle"
+                ],
+                "timeRange": "afternoon"
+            }
+        }
+    ]
+}

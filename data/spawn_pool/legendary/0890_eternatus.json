@@ -1,0 +1,23 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "eternatus",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 1.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_end",
+                    "#cobblemon:is_swamp"
+                ],
+                "timeRange": "dawn,dusk"
+            }
+        }
+    ]
+}

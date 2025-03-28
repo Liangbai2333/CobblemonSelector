@@ -1,0 +1,25 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "rayquaza",
+            "type": "pokemon",
+            "presets": [
+                "natural",
+                "treetop"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 2.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_mountain",
+                    "#cobblemon:is_peak",
+                    "#cobblemon:is_hills"
+                ],
+                "timeRange": "dawn,dusk"
+            }
+        }
+    ]
+}

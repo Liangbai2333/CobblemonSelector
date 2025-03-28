@@ -1,0 +1,42 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "diancie",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "50",
+            "weight": 3.0,
+            "condition": {
+                "maxY": 50.0,
+                "biomes": [
+                    "#cobblemon:is_mountain",
+                    "#cobblemon:is_peak",
+                    "#cobblemon:is_hills"
+                ],
+                "timeRange": "morning"
+            }
+        },
+        {
+            "pokemon": "diancie",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "50",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_deep_ocean"
+                ],
+                "timeRange": "morning"
+            }
+        }
+    ]
+}

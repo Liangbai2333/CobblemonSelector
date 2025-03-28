@@ -1,0 +1,25 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "kyogre standard",
+            "type": "pokemon",
+            "presets": [],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 0.1,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_deep_ocean",
+                    "#cobblemon:is_frozen_ocean",
+                    "#cobblemon:is_lukewarm_ocean",
+                    "#cobblemon:is_cold_ocean"
+                ],
+                "isRaining": true,
+                "isThundering": false,
+                "timeRange": "night"
+            }
+        }
+    ]
+}

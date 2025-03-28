@@ -1,0 +1,25 @@
+{
+    "enabled": true,
+    "spawns": [
+        {
+            "pokemon": "victini",
+            "type": "pokemon",
+            "presets": [
+                "natural"
+            ],
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_savanna",
+                    "#cobblemon:is_plateau"
+                ],
+                "isRaining": false,
+                "isThundering": false,
+                "timeRange": "day"
+            }
+        }
+    ]
+}
