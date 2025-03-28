@@ -14,11 +14,11 @@ class TypedModel(BaseModel):
         """自动注册子类"""
         # super可能不是basemodel与typedmodel，此处不应这样用
         # super().__init_subclass__(**kwargs)
-        # if 'types' not in kwargs:
-        #     cls._field_primitive = "types"
+        # if 'type' not in kwargs:
+        #     cls._field_primitive = "type"
         # else:
-        #     cls._field_primitive = kwargs['types']
-        type_name = kwargs.get("types", None)
+        #     cls._field_primitive = kwargs['type']
+        type_name = kwargs.get("type", None)
         if not type_name:
             # 如果没有提供新的type值，但父类有type值，则继承父类的type值
             # 获取第一个非object的父类
@@ -29,7 +29,7 @@ class TypedModel(BaseModel):
                         cls._field_primitive = base._field_primitive
                     break
         if not type_name:
-            type_name = "types"
+            type_name = "type"
 
         cls._field_primitive = type_name
 
