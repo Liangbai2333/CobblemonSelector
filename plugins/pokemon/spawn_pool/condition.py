@@ -1,6 +1,6 @@
-from typing import Optional, Union
+from typing import Optional
 
-from pydantic import BaseModel, Field, field_validator, model_serializer
+from pydantic import BaseModel, Field, field_validator, field_serializer
 
 from plugins.pokemon.biome.biome import Biome
 from plugins.pokemon.loader.data import biome_map
@@ -40,37 +40,9 @@ class SpawnCondition(BaseModel):
         }
         return mapping.get(self.timeRange, self.timeRange)
 
-    @model_serializer
-    def serialize(self):
-        biome_names = []
-        for biome in self.biomes:
-            name_original = biome.translation_name
-            if not name_original.startswith("#"):
-                if not ":" in name_original:
-                    name_original = f"#cobblemon:{name_original.replace(".", "/")}"
-                else:
-                    name_original = f"#{name_original.replace('.', '/')}"
-            biome_names.append(name_original)
-
-        return {
-            "biomes": biome_names,
-            "moonPhase": self.moonPhase,
-            "canSeeSky": self.canSeeSky,
-            "minX": self.minX,
-            "minY": self.minY,
-            "minZ": self.minZ,
-            "maxX": self.maxX,
-            "maxY": self.maxY,
-            "maxZ": self.maxZ,
-            "minLight": self.minLight,
-            "maxLight": self.maxLight,
-            "minSkyLight": self.minSkyLight,
-            "maxSkyLight": self.maxSkyLight,
-            "isRaining": self.isRaining,
-            "isThundering": self.isThundering,
-            "timeRange": self.timeRange,
-            "isSlimeChunk": self.isSlimeChunk,
-        }
+    @field_serializer("biomes")
+    def serialize_biomes(self, biomes: list[Biome]) -> list[str]:
+        return [biome.get_name_with_liked() for biome in biomes]
 
 
     @field_validator("biomes", mode="before")

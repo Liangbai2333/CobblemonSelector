@@ -26,10 +26,10 @@ class Evolution(BaseModel):
     def get_evo_context_i18n(self) -> str:
         if self.variant == "item_interact":
             (namespace, key) = self.requiredContext.split(":")
-            return f"物品{get_lang().get(f"item.{namespace}.{key}", self.requiredContext)}交互进化"
+            return f"物品{get_lang().get(f"item.{namespace}.{key}")}交互进化"
         if self.variant == "block_click":
             (namespace, key) = self.requiredContext.split(":")
-            return f"点击f{get_lang().get(f"block.{namespace}.{key}", self.requiredContext)}进化"
+            return f"点击f{get_lang().get(f"block.{namespace}.{key}")}进化"
         if self.variant == "trade":
             return "通讯进化"
         return ""

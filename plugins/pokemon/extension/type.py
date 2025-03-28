@@ -18,17 +18,22 @@ class TypedModel(BaseModel):
         #     cls._field_primitive = "type"
         # else:
         #     cls._field_primitive = kwargs['type']
-        cls._field_primitive = kwargs.pop('type', "type")
-        super().__init_subclass__(**kwargs)
-        type_name = kwargs.pop("type", None)
+        type_name = kwargs.get("type", None)
         if not type_name:
             # 如果没有提供新的type值，但父类有type值，则继承父类的type值
             # 获取第一个非object的父类
             for base in cls.__bases__:
                 if base is not object and issubclass(base, TypedModel):
                     if hasattr(base, '_field_primitive') and base._field_primitive:
+                        type_name = base._field_primitive
                         cls._field_primitive = base._field_primitive
                     break
+        if not type_name:
+            type_name = "type"
+
+        cls._field_primitive = type_name
+
+
 
         # 获取子类的字段的Literal值
         type_hints = get_type_hints(cls)

@@ -104,12 +104,23 @@ class Biome(BaseModel, Translatable):
         name = biome_name[1:] if biome_name.startswith("#") else biome_name
         if name.startswith("minecraft"):
             (namespace, key) = name.split(":")
-            return get_lang().get(f"biome.{namespace}.{key}", name)
+            return get_lang().get(f"biome.{namespace}.{key}")
         elif name.startswith("cobblemon"):
             (_, key) = name.split(":")
             return self.translate(key)
         else:
             return self.translate(biome_name)
+
+
+    def get_name_with_liked(self) -> str:
+        name_original = self.translation_name
+        if not name_original.startswith("#"):
+            if not ":" in name_original:
+                name_original = f"#cobblemon:{name_original.replace(".", "/")}"
+            else:
+                name_original = f"#{name_original.replace('.', '/')}"
+
+        return name_original
 
 
     def __hash__(self):

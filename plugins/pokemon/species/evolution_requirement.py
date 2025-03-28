@@ -122,7 +122,7 @@ class HeldItem(EvolutionRequirement):
     def get_evo_i18n(self) -> str:
         item_name = self.itemCondition[1:] if self.itemCondition.startswith("#") else self.itemCondition
         (namespace, key) = item_name.split(":")
-        return f"持有{get_lang().get(f"item.{namespace}.{key}", "未知")}"
+        return f"持有{get_lang().get(f"item.{namespace}.{key}")}"
 
 
 class Level(EvolutionRequirement):
@@ -186,7 +186,7 @@ class MoveType(EvolutionRequirement):
     type: str = Field(description="招式类型")
 
     def get_evo_i18n(self) -> str:
-        return f"拥有{get_lang().get(f"cobblemon.type.{self.type}", self.type)}招式类型"
+        return f"拥有{get_lang().get(f"cobblemon.type.{self.type}")}招式类型"
 
 
 
@@ -210,7 +210,7 @@ class PlayerHasAdvancement(EvolutionRequirement):
 
     def get_evo_i18n(self) -> str:
         (namespace, key) = self.requiredAdvancement.split(":")
-        return f"拥有成就{get_lang().get(f"advancements.{namespace}.{key}", self.requiredAdvancement)}"
+        return f"拥有成就{get_lang().get(f"advancements.{namespace}.{key}")}"
 
 
 class PokemonProperties(EvolutionRequirement):
@@ -261,8 +261,8 @@ class StatCompare(EvolutionRequirement):
     lowStat: str = Field(description="低值")
 
     def get_evo_i18n(self) -> str:
-        high_stat_name = get_lang().get(f"cobblemon.stat.{self.highStat}.name", self.highStat)
-        low_stat_name = get_lang().get(f"cobblemon.stat.{self.lowStat}.name", self.lowStat)
+        high_stat_name = get_lang().get(f"cobblemon.stat.{self.highStat}.name")
+        low_stat_name = get_lang().get(f"cobblemon.stat.{self.lowStat}.name")
         return f"{high_stat_name}大于{low_stat_name}"
 
 
@@ -273,8 +273,8 @@ class StatEqual(EvolutionRequirement):
     statTwo: str = Field(description="值2")
 
     def get_evo_i18n(self) -> str:
-        stat_one_name = get_lang().get(f"cobblemon.stat.{self.statOne}.name", self.statOne)
-        stat_two_name = get_lang().get(f"cobblemon.stat.{self.statTwo}.name", self.statTwo)
+        stat_one_name = get_lang().get(f"cobblemon.stat.{self.statOne}.name")
+        stat_two_name = get_lang().get(f"cobblemon.stat.{self.statTwo}.name")
         return f"{stat_one_name}等于{stat_two_name}"
 
 

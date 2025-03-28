@@ -16,6 +16,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from .routers import pokemon
+app.include_router(pokemon.pokemon_router)
+
 root_path = os.getcwd()
 
 # 捕获前端路由请求，返回index.html

@@ -1,7 +1,8 @@
 import os.path
 from typing import Optional, TypeAlias, Any
 
-from pydantic import BaseModel, Field, model_serializer
+from pydantic import BaseModel, Field, field_serializer, model_serializer
+from pydantic_core.core_schema import SerializationInfo, SerializerFunctionWrapHandler
 
 from plugins.pokemon.biome.biome import Biome
 from plugins.pokemon.i18n.translatable import Translatable
@@ -59,30 +60,36 @@ class PokemonForm(BaseModel, Translatable):
     biomes: Optional[list[Biome]] = Field(default=None, description="Pokémon  生成生物群系")
     spawn_details: Optional[list[SpawnDetail]] = Field(default=None, description="Pokémon 生成详情")
 
-    @model_serializer
-    def serialize(self):
-        serialized = {
-            "species": self.species.name if self.species else None,
-        }
-        for field in self.model_fields.keys():
-            if field in serialized:
-                continue
-            value = getattr(self, field, None)
-            if value is not None:
-                serialized[field] = value
+    @field_serializer("species")
+    def serialize_species(self, species: PokemonType):
+        return species.name if species else self.name
+
+
+    @model_serializer(mode="wrap")
+    def serialize(self, nxt: SerializerFunctionWrapHandler):
+        serialized = super().serialize(nxt)
+        serialized["search_name"] = self.get_search_name()
         return serialized
 
-    def get_species_name(self) -> str:
+    # Failed: Recursive!!!
+    # @model_serializer()
+    # def serialize(self):
+    #     serialized = self.model_dump(exclude={"species"})
+    #     if self.species:
+    #         serialized['species'] = self.species.name
+    #     return serialized
+
+    def get_hooked_name(self) -> str:
         return self.species.original_name if self.species else self.original_name
 
     def get_translation_key(self) -> str:
         return "species"
 
     def get_i18n_name(self) -> str:
-        return self.translate(f"{self.get_species_name()}.name")
+        return self.translate(f"{self.get_hooked_name()}.name")
 
     def get_i18n_desc(self) -> str:
-        return self.translate(f"{self.get_species_name()}.desc")
+        return self.translate(f"{self.get_hooked_name()}.desc")
 
     def get_full_i18n_name(self) -> str:
         original = self.get_i18n_name()
@@ -104,6 +111,11 @@ class PokemonForm(BaseModel, Translatable):
 
     def get_full_name(self):
         return f"{self.species.name + "-" if self.species else ''}{self.name}"
+
+    def get_search_name(self, split="_"):
+        if not self.species:
+            return f"{self.get_hooked_name()}"
+        return f"{self.get_hooked_name()}{split}{split.join(self.aspects)}"
 
     def __hash__(self):
         return hash(f"{self.species.name if self.species else ""}{self.name}")
@@ -191,26 +203,4 @@ class Pokemon(PokemonForm):
     def model_post_init(self, __context: Any) -> None:
         for form in self.forms:
             form.species = self
-
-
-    # 报错因为装饰器吗？
-    @model_serializer
-    def serialize(self):
-        serialized = {
-            "implemented": self.implemented,
-            "nationalPokedexNumber": self.nationalPokedexNumber,
-            "features": self.features,
-            # self.forms报错？
-            "forms": [form.name for form in self.forms],
-        }
-        # 合并父类的序列化结果，仅保留非空字段
-        # parent_serialized = super().serialize()
-        # serialized.update({k: v for k, v in parent_serialized.items() if v is not None})
-        for field in self.model_fields.keys():
-            if field in serialized:
-                continue
-            value = getattr(self, field, None)
-            if value is not None:
-                serialized[field] = value
-        return serialized
 
