@@ -1,6 +1,7 @@
 .venv
 .idea
-dist
+dist/
+templates/
 
 ### Mac OS ###
 .DS_Store

@@ -9,7 +9,9 @@ driver = nonebot.get_driver()
 driver.register_adapter(OntBotAdapter)
 
 # 在这里加载插件
-nonebot.load_plugins("bot-plugins")
+nonebot.load_plugins("plugins")
+
+config = driver.config
 
 if __name__ == "__main__":
     nonebot.run()

@@ -5,6 +5,7 @@ from pydantic import Field, BaseModel
 
 from plugins.pokemon.path import resolve
 
+# deprecated
 class Lang(BaseModel):
     """
     语言文件映射

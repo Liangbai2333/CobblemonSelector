@@ -25,7 +25,7 @@ adapters = [
 ]
 plugins = ["nonebot_plugin_htmlrender"]
 plugin_dirs = [
-    "bot-plugins"
+    "plugins"
 ]
 builtin_plugins = []
 
