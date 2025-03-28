@@ -279,28 +279,6 @@ export interface SpawnDetail {
   labels: string[];
 }
 
-// 宝可梦属性类型
-export enum PokemonType {
-  NORMAL = "Normal",
-  FIRE = "Fire",
-  WATER = "Water",
-  ELECTRIC = "Electric",
-  GRASS = "Grass",
-  ICE = "Ice",
-  FIGHTING = "Fighting",
-  POISON = "Poison",
-  GROUND = "Ground",
-  FLYING = "Flying",
-  PSYCHIC = "Psychic",
-  BUG = "Bug",
-  ROCK = "Rock",
-  GHOST = "Ghost",
-  DRAGON = "Dragon",
-  DARK = "Dark",
-  STEEL = "Steel",
-  FAIRY = "Fairy"
-}
-
 // Feature 基础接口
 export interface Feature {
   type: string;
@@ -339,13 +317,17 @@ export interface FlagFeature extends Feature {
   isAspect: boolean;
 }
 
+export type PokemonType = 'normal' | 'fire' | 'water' | 'grass' | 'electric' | 'ice' |
+                  'fighting' | 'poison' | 'ground' | 'flying' | 'psychic' |
+                  'bug' | 'rock' | 'ghost' | 'dragon' | 'dark' | 'steel' | 'fairy';
+
 // 主要的PokemonForm接口
 export interface PokemonForm extends I18nFull {
   species?: string;
   original_name?: string;
   name: string;
-  primaryType: string;
-  secondaryType?: string;
+  primaryType: PokemonType;
+  secondaryType?: PokemonType;
   maleRatio: number;
   height: number;
   weight: number;
