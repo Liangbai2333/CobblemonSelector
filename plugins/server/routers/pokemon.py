@@ -2,8 +2,6 @@ from typing import Any
 
 from fastapi import APIRouter
 
-from plugins.pokemon.species.pokemon import PokemonForm
-
 pokemon_router = APIRouter(
     prefix="/api/pokemon",
     tags=["pokemon"],
