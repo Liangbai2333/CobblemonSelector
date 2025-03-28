@@ -370,9 +370,8 @@ export interface PokemonForm extends I18nFull {
 
   // 额外的序列化字段
   search_name: string;
-
-  // 可以添加中文翻译相关字段
-  chinese_name?: string;
+  image_url: string;
+  pokedex_number: string;
 }
 
 // Pokemon 接口，继承自 PokemonForm

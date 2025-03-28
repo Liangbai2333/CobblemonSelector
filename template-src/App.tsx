@@ -6,7 +6,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Pokemon />} />
+                <Route path="/" element={<Navigate to="/pokemon/1" replace />} />
                 <Route path="/pokemon">
                     <Route index element={<Navigate to="/pokemon/1" replace />}/>
                     <Route path=":id" element={<Pokemon />}/>

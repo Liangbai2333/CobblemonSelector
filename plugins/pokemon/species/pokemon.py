@@ -69,6 +69,8 @@ class PokemonForm(BaseModel, Translatable):
     def serialize(self, nxt: SerializerFunctionWrapHandler):
         serialized = super().serialize(nxt)
         serialized["search_name"] = self.get_search_name()
+        serialized["image_url"] = self.get_image_url()
+        serialized["pokedex_number"] = self.get_pokedex()
         return serialized
 
     # Failed: Recursive!!!
