@@ -8,6 +8,8 @@ import TypeTag from "../components/TypeTag.tsx";
 import PokeInfoTag from "../components/PokeInfoTag.tsx";
 import Tag from "../components/Tag.tsx";
 import Ability from "../components/Ability.tsx";
+import BaseStatsBar from "../components/BaseStatsBar.tsx";
+import EvolutionChain from "../components/EvolutionChain.tsx";
 
 export default function Pokemon() {
     const {id} = useParams<'id'>() as { id: string };
@@ -21,7 +23,6 @@ export default function Pokemon() {
             try {
                 setLoading(true);
                 const data = await getPokemonByName(id);
-                console.log(data)
                 setPokemon(data);
                 setError(null);
             } catch (err) {
@@ -37,7 +38,7 @@ export default function Pokemon() {
 
     return (
         <>
-            <div className="text-center font-sans">
+            <div className="text-center font-mono">
                 {loading && <p>Loading...</p>}
                 {error && <p>{error}</p>}
                 {pokemon && (
@@ -57,7 +58,13 @@ export default function Pokemon() {
                                     {pokemon.secondaryType && <TypeTag primaryType={pokemon.secondaryType}/>}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-2 auto-rows-max mt-4 pr-3 gap-2">
+                            <div className="grow grid grid-cols-2 auto-rows-max mt-4 pr-3 gap-2">
+                                <div className="col-span-2">
+                                    <PokeInfoTag>
+                                        <span className="text-gray-700">简介</span>
+                                        <span className="max-w-56">{pokemon.i18n_desc}</span>
+                                    </PokeInfoTag>
+                                </div>
                                 <PokeInfoTag>
                                     <span className="text-gray-700">身高</span>
                                     <span>{pokemon.height / 10}{' '}米</span>
@@ -123,8 +130,10 @@ export default function Pokemon() {
                                             <span className="text-gray-700">特性</span>
                                             {pokemon.abilities.map((ability) => {
                                                 return (
-                                                    <Ability name={ability.i18n_name}
-                                                             description={ability.i18n_desc}/>
+                                                    <Ability key={ability.name} name={ability.i18n_name}
+                                                             description={ability.i18n_desc}
+                                                             hidden={ability.prefix == "h"}
+                                                    />
                                                 )
                                             })}
                                         </PokeInfoTag>
@@ -132,6 +141,25 @@ export default function Pokemon() {
                                 )}
                             </div>
                         </div>
+                        {pokemon.baseStats && (
+                            <>
+                                <div className="h-px mt-3 w-full bg-gray-300"></div>
+                                <div className="mt-2 space-y-2">
+                                    <div className="text-xl text-blue-500 font-bold">种族值</div>
+                                    <BaseStatsBar name="HP" value={pokemon.baseStats.hp} max={255} />
+                                    <BaseStatsBar name="攻击" value={pokemon.baseStats.attack} max={190} />
+                                    <BaseStatsBar name="防御" value={pokemon.baseStats.defence} max={250} />
+                                    <BaseStatsBar name="特攻" value={pokemon.baseStats.special_attack} max={194} />
+                                    <BaseStatsBar name="特防" value={pokemon.baseStats.special_defence} max={250} />
+                                    <BaseStatsBar name="速度" value={pokemon.baseStats.speed} max={200} />
+                                </div>
+                                <div className="h-px mt-3 w-full bg-gray-300"></div>
+                            </>
+                        )}
+                        <div className="text-xl text-blue-500 font-bold mt-2 mb-8">进化链</div>
+                        <EvolutionChain pokemon={pokemon} />
+                        <div className="h-px mt-3 w-full bg-gray-300"></div>
+
                     </PokeCard>
                 )}
             </div>

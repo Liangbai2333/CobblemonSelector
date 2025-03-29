@@ -1,7 +1,8 @@
 from enum import Enum
 from typing import Literal, Optional
 
-from pydantic import Field, field_validator, BaseModel
+from pydantic import Field, field_validator, BaseModel, model_serializer
+from pydantic_core.core_schema import SerializerFunctionWrapHandler
 
 from plugins.pokemon.extension.type import TypedModel
 from plugins.pokemon.lang import get_lang
@@ -12,6 +13,12 @@ from plugins.pokemon.species.move import Move
 
 class EvolutionRequirement(TypedModel, type="variant"):
     variant: str = Field(description="进化需求选择器")
+
+    @model_serializer(mode="wrap")
+    def serialize(self, nxt: SerializerFunctionWrapHandler):
+        serialized = nxt(self)
+        serialized["i18n_name"] = self.get_evo_i18n()
+        return serialized
 
     def get_evo_i18n(self) -> str:
         pass

@@ -27,7 +27,7 @@ export interface Move extends I18nFull {
 }
 
 // Evolution 相关接口
-export interface EvolutionRequirement {
+export interface EvolutionRequirement extends I18n {
   variant: string;
 }
 
