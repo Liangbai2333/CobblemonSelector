@@ -55,6 +55,9 @@ export default function Pokemon() {
                                     className="w-16 h-16' rounded-full"
                                     src={pokemon.image_url}
                                     alt={pokemon.i18n_name}
+                                    onError={(e) => {
+                                        e.currentTarget.src = "/images/none.png"
+                                    }}
                                 />
                                 <div className="mt-5 space-y-2">
                                     <TypeTag primaryType={pokemon.primaryType}/>

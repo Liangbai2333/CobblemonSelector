@@ -201,7 +201,7 @@ export interface BattleCriticalHits extends EvolutionRequirement {
   amount: number;
 }
 
-export interface Evolution {
+export interface Evolution extends I18n {
   id: string;
   variant: string;
   result: string;

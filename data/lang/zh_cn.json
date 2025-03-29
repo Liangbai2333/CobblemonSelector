@@ -14059,5 +14059,7 @@
     "cobblemon.form.aspect.ice-memory": "冰存储器",
     "cobblemon.form.aspect.dragon-memory": "龙存储器",
     "cobblemon.form.aspect.dark-memory": "恶存储器",
-    "cobblemon.form.aspect.fairy-memory": "妖精存储器"
+    "cobblemon.form.aspect.fairy-memory": "妖精存储器",
+    "cobblemon.move.dragoncheer": "龙声鼓舞",
+    "item.cobblemon.syrupy_apple": "蜜汁苹果"
 }

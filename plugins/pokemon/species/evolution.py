@@ -1,6 +1,7 @@
 from typing import Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_serializer
+from pydantic_core.core_schema import SerializerFunctionWrapHandler
 
 from plugins.pokemon.lang import get_lang
 from plugins.pokemon.species.evolution_requirement import EvolutionRequirement
@@ -18,6 +19,11 @@ class Evolution(BaseModel):
     requirements: list[EvolutionRequirement] = Field(default=[], description="进化条件")
     requiredContext: Optional[str] = Field(default=None, description="进化条件上下文")
 
+    @model_serializer(mode="wrap")
+    def serialize(self, nxt: SerializerFunctionWrapHandler):
+        serialized = nxt(self)
+        serialized["i18n_name"] = self.get_evo_context_i18n()
+        return serialized
 
     def get_result_pokemon(self):
         from plugins.pokemon import pokemon_container
