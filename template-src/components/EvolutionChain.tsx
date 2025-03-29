@@ -44,7 +44,7 @@ function EvolutionBranch({evolutionNodes}: { evolutionNodes: { evolution: Evolut
     }
 
     {/* 这里渲染竖直线条与子链路 高度根据nodes数组大小计算, 不知道为什么justify-between不生效 */}
-    const height = `${evolutionNodes.length * 5.7}rem`
+    const height = `${evolutionNodes.length * 6}rem`
     return (
         <div className="flex items-center">
             <div className="ml-2 h-0.5 w-8 bg-gray-400"></div>

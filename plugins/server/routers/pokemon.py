@@ -11,7 +11,7 @@ pokemon_router = APIRouter(
 
 @pokemon_router.get("/{name}")
 async def get_pokemon(name: str) -> dict[str, Any]:
-    name = name.replace("_", " ")
+    name = name.replace("$", " ")
     from plugins.pokemon import pokemon_container
     pokemon = pokemon_container.get(name)
     if pokemon is None:

@@ -114,7 +114,7 @@ class PokemonForm(BaseModel, Translatable):
     def get_full_name(self):
         return f"{self.species.name + "-" if self.species else ''}{self.name}"
 
-    def get_search_name(self, split="_"):
+    def get_search_name(self, split="$"):
         if not self.species:
             return f"{self.get_hooked_name()}"
         return f"{self.get_hooked_name()}{split}{split.join(self.aspects)}"
