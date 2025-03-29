@@ -1,5 +1,4 @@
 import PokeCard from "../components/PokeCard.tsx";
-import PokeImage from "../components/PokeImage.tsx";
 import {useParams} from "react-router";
 import {getPokemonByName} from '../api';
 import {PokemonForm} from '../types/Pokemon.type';
@@ -52,7 +51,11 @@ export default function Pokemon() {
                         </div>
                         <div className="flex">
                             <div className="flex-col w-fit p-3 mr-2">
-                                <PokeImage name={pokemon.i18n_name} image={pokemon.image_url}/>
+                                <img
+                                    className="w-16 h-16' rounded-full"
+                                    src={pokemon.image_url}
+                                    alt={pokemon.i18n_name}
+                                />
                                 <div className="mt-5 space-y-2">
                                     <TypeTag primaryType={pokemon.primaryType}/>
                                     {pokemon.secondaryType && <TypeTag primaryType={pokemon.secondaryType}/>}
@@ -146,19 +149,21 @@ export default function Pokemon() {
                                 <div className="h-px mt-3 w-full bg-gray-300"></div>
                                 <div className="mt-2 space-y-2">
                                     <div className="text-xl text-blue-500 font-bold">种族值</div>
-                                    <BaseStatsBar name="HP" value={pokemon.baseStats.hp} max={255} />
-                                    <BaseStatsBar name="攻击" value={pokemon.baseStats.attack} max={190} />
-                                    <BaseStatsBar name="防御" value={pokemon.baseStats.defence} max={250} />
-                                    <BaseStatsBar name="特攻" value={pokemon.baseStats.special_attack} max={194} />
-                                    <BaseStatsBar name="特防" value={pokemon.baseStats.special_defence} max={250} />
-                                    <BaseStatsBar name="速度" value={pokemon.baseStats.speed} max={200} />
+                                    <BaseStatsBar name="HP" value={pokemon.baseStats.hp} max={255}/>
+                                    <BaseStatsBar name="攻击" value={pokemon.baseStats.attack} max={190}/>
+                                    <BaseStatsBar name="防御" value={pokemon.baseStats.defence} max={250}/>
+                                    <BaseStatsBar name="特攻" value={pokemon.baseStats.special_attack} max={194}/>
+                                    <BaseStatsBar name="特防" value={pokemon.baseStats.special_defence} max={250}/>
+                                    <BaseStatsBar name="速度" value={pokemon.baseStats.speed} max={200}/>
                                 </div>
                                 <div className="h-px mt-3 w-full bg-gray-300"></div>
                             </>
                         )}
                         <div className="text-xl text-blue-500 font-bold mt-2 mb-8">进化链</div>
-                        <EvolutionChain pokemon={pokemon} />
+                        <EvolutionChain pokemon={pokemon}/>
                         <div className="h-px mt-3 w-full bg-gray-300"></div>
+                        <div className="text-xl text-blue-500 font-bold mt-2 mb-8">招式</div>
+
 
                     </PokeCard>
                 )}

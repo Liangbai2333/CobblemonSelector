@@ -1,6 +1,6 @@
-import {PokemonForm} from "../types/Pokemon.type.ts";
+import {Evolution, PokemonForm} from "../types/Pokemon.type.ts";
 import {getPokemonByName} from "../api";
-import {useEffect, useState} from "react";
+import {ReactNode, useEffect, useState} from "react";
 
 async function getFirstForm(pokemon: PokemonForm): Promise<PokemonForm> {
     if (pokemon.preEvolution) {
@@ -9,9 +9,44 @@ async function getFirstForm(pokemon: PokemonForm): Promise<PokemonForm> {
     return pokemon;
 }
 
+function EvolutionLine({evolution, isLast}: { evolution: Evolution, isLast: boolean }) {
+    return (
+        <div className="flex-col space-y-0.5 mx-2 mb-4">
+            <div
+                className="text-xs px-2">{evolution.requirements.map((requirement) => requirement.i18n_name).join(", ")}</div>
+            {!isLast && (
+                <div className="h-px w-full bg-gray-400"></div>
+            )}
+        </div>
+    )
+}
 
-// 先放置自己，绘制线条后递归交给下一级PokemonForm
-export function EvolutionNode({pokemon}: { pokemon: PokemonForm }) {
+function EvolutionBranch({evolutionNodes}: { evolutionNodes: { evolution: Evolution, nodes: ReactNode }[] }) {
+    {/* 这里终止渲染 */}
+    if (evolutionNodes.length == 0) {
+        return null
+    }
+
+    if (evolutionNodes.length == 1) {
+        const {evolution, nodes} = evolutionNodes[0]
+
+        return (
+            <>
+                {/*这里是倒数第二个, 因为只能进化一次*/}
+                <EvolutionLine evolution={evolution} isLast={false}/>
+                {nodes}
+            </>
+        )
+    }
+
+    {/* 这里渲染竖直线条与子链路 */}
+    return (
+        <div className="h-px w-full bg-gray-400"></div>
+    )
+}
+
+
+function EvolutionNode({pokemon}: { pokemon: PokemonForm }) {
     const [evolutionResults, setEvolutionResults] = useState<PokemonForm[] | null>(null)
 
     useEffect(() => {
@@ -27,28 +62,26 @@ export function EvolutionNode({pokemon}: { pokemon: PokemonForm }) {
 
     return (
         <div className="flex items-center">
-            <div
-                className="w-fit p-1 bg-blue-500 text-white text-center rounded shadow"
-            >
-                {pokemon.i18n_name}
+            <div className="flex-col">
+                <img
+                    className="w-16 h-16' rounded-full"
+                    src={pokemon.image_url}
+                    alt={pokemon.i18n_name}
+                />
+                <div className="mt-2 text-center">
+                    <span className="text-sm font-medium">{pokemon.i18n_name}</span>
+                </div>
             </div>
-            {pokemon.evolutions.map((evolution) => {
-                return (
-                    <div className="flex items-center">
-                        <div className="flex-col space-y-0.5 mx-2 mb-4">
-                            <div
-                                className="text-xs px-4">{evolution.requirements.map((requirement) => requirement.i18n_name).join(", ")}</div>
-                            {pokemon.evolutions && (
-                                <div className="h-px w-full bg-gray-400"></div>
-                            )}
-                        </div>
-                        {evolutionResults && evolutionResults.map((result) => {
-                            return <EvolutionNode pokemon={result}/>
-                        })}
-                    </div>
+            {pokemon.evolutions && evolutionResults &&
+                (
+                    <EvolutionBranch evolutionNodes={pokemon.evolutions.map((evolution, index) => {
+                        return {
+                            evolution: evolution,
+                            nodes: <EvolutionNode key={index} pokemon={evolutionResults[index]}/>
+                        }
+                    })}/>
                 )
-            })}
-
+            }
         </div>
     )
 }
@@ -67,7 +100,7 @@ export default function EvolutionChain({pokemon}: { pokemon: PokemonForm }) {
 
     return firstForm ? (
         <div className="ml-4">
-            <EvolutionNode pokemon={firstForm} />
+            <EvolutionNode pokemon={firstForm}/>
         </div>
     ) : "Loading..."
 }
