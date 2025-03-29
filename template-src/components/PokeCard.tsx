@@ -1,9 +1,9 @@
-import {ReactElement} from "react";
+import {ReactNode} from "react";
 
-export default function PokeCard({children}: { children: ReactElement[] }) {
+export default function PokeCard({children}: { children: ReactNode[] }) {
     return (
         <div className="flex h-screen w-screen justify-center">
-            <div className="shadow-md rounded-xl flex-col max-h-screen max-w-screen items-center overflow-hidden">
+            <div className="pokemon-start shadow-xl rounded-xl flex-col max-h-screen max-w-screen items-center overflow-hidden">
                 {children}
             </div>
         </div>

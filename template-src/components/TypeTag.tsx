@@ -49,7 +49,7 @@ export default function TypeTag({primaryType}: { primaryType: PokemonType }) {
     const colorClass: string = typeColors[primaryType] || 'bg-gray-200 text-gray-800';
 
     return (
-        <div className={`${colorClass} w-16 h-6 rounded-xl ring`}>
+        <div className={`${colorClass} w-16 h-6 rounded-xl ring font-bold`}>
             {translation}
         </div>
     )

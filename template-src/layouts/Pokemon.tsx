@@ -6,6 +6,8 @@ import {PokemonForm} from '../types/Pokemon.type';
 import {useEffect, useState} from "react";
 import TypeTag from "../components/TypeTag.tsx";
 import PokeInfoTag from "../components/PokeInfoTag.tsx";
+import Tag from "../components/Tag.tsx";
+import Ability from "../components/Ability.tsx";
 
 export default function Pokemon() {
     const {id} = useParams<'id'>() as { id: string };
@@ -73,6 +75,60 @@ export default function Pokemon() {
                                         <span className="text-gray-700">蛋组</span>
                                         <span>{pokemon.eggGroups.map(eggGroup => eggGroup.i18n_name).join(", ")}</span>
                                     </PokeInfoTag>
+                                )}
+                                {pokemon.catchRate && (
+                                    <PokeInfoTag>
+                                        <span className="text-gray-700">捕获率</span>
+                                        <span>{pokemon.catchRate}</span>
+                                    </PokeInfoTag>
+                                )}
+                                {pokemon.eggCycles && (
+                                    <PokeInfoTag>
+                                        <span className="text-gray-700">孵化周期</span>
+                                        <span>{pokemon.eggCycles}</span>
+                                    </PokeInfoTag>
+                                )}
+                                {pokemon.evYield && (
+                                    <PokeInfoTag>
+                                        <span className="text-gray-700">努力值产出</span>
+                                        {pokemon.evYield.hp ? (
+                                            <Tag text={`HP: ${pokemon.evYield.hp}`}/>
+                                        ) : null}
+                                        {pokemon.evYield.attack ? (
+                                            <Tag text={`攻击: ${pokemon.evYield.attack}`}/>
+                                        ) : null}
+                                        {pokemon.evYield.defence ? (
+                                            <Tag text={`防御: ${pokemon.evYield.defence}`}/>
+                                        ) : null}
+                                        {pokemon.evYield.special_attack ? (
+                                            <Tag text={`特攻: ${pokemon.evYield.special_attack}`}/>
+                                        ) : null}
+                                        {pokemon.evYield.special_defence ? (
+                                            <Tag text={`特防: ${pokemon.evYield.special_defence}`}/>
+                                        ) : null}
+                                        {pokemon.evYield.speed ? (
+                                            <Tag text={`速度: ${pokemon.evYield.speed}`}/>
+                                        ) : null}
+                                    </PokeInfoTag>
+                                )}
+                                {pokemon.baseExperienceYield && (
+                                    <PokeInfoTag>
+                                        <span className="text-gray-700">基础经验产出</span>
+                                        <span>{pokemon.baseExperienceYield}</span>
+                                    </PokeInfoTag>
+                                )}
+                                {pokemon.abilities && (
+                                    <div className="col-span-2">
+                                        <PokeInfoTag className="pb-2">
+                                            <span className="text-gray-700">特性</span>
+                                            {pokemon.abilities.map((ability) => {
+                                                return (
+                                                    <Ability name={ability.i18n_name}
+                                                             description={ability.i18n_desc}/>
+                                                )
+                                            })}
+                                        </PokeInfoTag>
+                                    </div>
                                 )}
                             </div>
                         </div>

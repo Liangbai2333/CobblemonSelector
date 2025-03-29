@@ -12,6 +12,7 @@ nonebot-plugin-htmlrender = "^0.6.0"
 pillow = "^11.1.0"
 pypinyin = "^0.53.0"
 levenshtein = "^0.27.1"
+playwright = "^1.51.0"
 
 [tool.poetry.group.dev.dependencies]
 requests = "^2.32.3"
