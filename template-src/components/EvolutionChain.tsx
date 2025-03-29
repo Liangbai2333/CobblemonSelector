@@ -86,9 +86,6 @@ function EvolutionNode({pokemon}: { pokemon: PokemonForm }) {
         fetchData().catch(console.error)
     }, [i18n_name]);
 
-    console.log(pokemon.image_url)
-
-    // 不知道为什么有时候imageurl是undefined
     return (
         <div className="flex items-center">
             <div className="flex-col">
