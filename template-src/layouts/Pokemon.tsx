@@ -1,8 +1,4 @@
 import PokeCard from "../components/PokeCard.tsx";
-import {useParams} from "react-router";
-import {getPokemonByName} from '../api';
-import {PokemonForm} from '../types/Pokemon.type';
-import {useEffect, useState} from "react";
 import TypeTag from "../components/TypeTag.tsx";
 import PokeInfoTag from "../components/PokeInfoTag.tsx";
 import Tag from "../components/Tag.tsx";
@@ -11,31 +7,10 @@ import BaseStatsBar from "../components/BaseStatsBar.tsx";
 import EvolutionChain from "../components/EvolutionChain.tsx";
 import MoveTag from "../components/MoveTag.tsx";
 import BiomeTag from "../components/BiomeTag.tsx";
+import usePokemon from "../stores/usePokemon.ts";
 
 export default function Pokemon() {
-    const {id} = useParams<'id'>() as { id: string };
-
-    const [pokemon, setPokemon] = useState<PokemonForm>()
-    const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                setLoading(true);
-                const data = await getPokemonByName(id);
-                setPokemon(data);
-                setError(null);
-            } catch (err) {
-                setError('Failed to fetch Pokemon data');
-                console.error(err);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchData();
-    }, [])
+    const {pokemon, loading, error} = usePokemon()
 
     return (
         <>
@@ -44,13 +19,7 @@ export default function Pokemon() {
                 {error && <p>{error}</p>}
                 {pokemon && (
                     <PokeCard>
-                        <div className="inline-flex p-1 w-full min-w-64 min-h-8 bg-blue-500 text-white">
-                            <div className="m-2">
-                                <span className="mt-auto text-sm"># {pokemon.pokedex_number}</span>
-                                <span
-                                    className="ml-2 mt-auto text-2xl font-bold">{pokemon.i18n_name} ({pokemon.name})</span>
-                            </div>
-                        </div>
+                        <PokeCard.Header pokemon={pokemon}/>
                         <div className="flex">
                             <div className="flex-col w-fit p-3 mr-2">
                                 <img
@@ -136,9 +105,9 @@ export default function Pokemon() {
                                     <div className="col-span-2">
                                         <PokeInfoTag className="pb-2">
                                             <span className="text-gray-700">特性</span>
-                                            {pokemon.abilities.map((ability) => {
+                                            {pokemon.abilities.map((ability, index) => {
                                                 return (
-                                                    <Ability key={ability.name} name={ability.i18n_name}
+                                                    <Ability key={index} name={ability.i18n_name}
                                                              description={ability.i18n_desc}
                                                              hidden={ability.prefix == "h"}
                                                     />
@@ -198,10 +167,9 @@ export default function Pokemon() {
                                         })
                                     }
                                 </div>
-                                <div className="h-px mt-5 w-full bg-gray-300"></div>
                             </>
-
                         )}
+                        <div className="h-px mt-5 w-full bg-gray-300"></div>
                     </PokeCard>
                 )}
             </div>

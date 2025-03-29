@@ -1,7 +1,11 @@
 import api from './axiosConfig';
-import { PokemonForm } from '../types/Pokemon.type';
+import {PokemonForm, SpawnDetail} from '../types/Pokemon.type';
 
 // 获取单个宝可梦详情
 export const getPokemonByName = async (name: string): Promise<PokemonForm> => {
   return api.get(`/pokemon/${name}`);
+};
+
+export const getSpawnByNameAndIndex = async (name: string, index: number): Promise<SpawnDetail> => {
+  return api.get(`/spawn/${name}/${index}`);
 };
