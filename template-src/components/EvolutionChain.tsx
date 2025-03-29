@@ -134,9 +134,5 @@ export default function EvolutionChain({pokemon}: { pokemon: PokemonForm }) {
         })
     }, [i18n_name])
 
-    return firstForm ? (
-        <div className="ml-4">
-            {renderEvolutionChainFrom(firstForm)}
-        </div>
-    ) : "Loading..."
+    return firstForm ? renderEvolutionChainFrom(firstForm): "Loading..."
 }

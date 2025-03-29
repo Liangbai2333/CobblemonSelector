@@ -165,7 +165,7 @@ export default function Pokemon() {
                             </>
                         )}
                         <div className="text-xl text-blue-500 font-bold mt-2 mb-8">进化链</div>
-                        <div className="flex mb-8 mr-4 items-center justify-center">
+                        <div className="flex mb-8 mx-4 items-center justify-center">
                             <EvolutionChain pokemon={pokemon}/>
                         </div>
                         <div className="h-px mt-3 w-full bg-gray-300"></div>
