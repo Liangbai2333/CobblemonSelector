@@ -32,7 +32,7 @@ function generateConditionItems(condition: SpawnCondition) {
             <ConditionContainer.Item
                 name="生物群系"
                 value=
-                    {condition.biomes ? condition.biomes.map((biome) => biome.i18n_name).join(", ") : "任意群系"}
+                    {condition.biomes.length > 0 ? condition.biomes.filter((biome) => biome.i18n_name.match(/[\u4e00-\u9fa5]+/g)).map((biome) => biome.i18n_name).join(", ") : "任意群系"}
                 isFirst={true}
             />
             {condition.canSeeSky != undefined && (
@@ -168,6 +168,7 @@ export default function SpawnDetail() {
 
                         {anticondition && (
                             <>
+                                <div className="h-px mt-3 w-full bg-gray-300"></div>
                                 <div>
                                     <div className="px-4 text-md text-blue-500 font-bold mt-2">排除条件</div>
                                     <div className="mx-auto mt-4 text-sm">
@@ -177,6 +178,10 @@ export default function SpawnDetail() {
                                     </div>
                                 </div>
                             </>
+                        )}
+
+                        {!condition && !anticondition && (
+                            <div className="px-4 text-md text-blue-500 font-bold mt-2 text-center">无生成条件</div>
                         )}
                     </div>
                     <div className="h-px mt-5 w-full bg-gray-300"></div>

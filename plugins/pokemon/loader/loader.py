@@ -110,6 +110,7 @@ def init_pokemon_forms() -> dict[str, Biome]:
                 continue
             with open(os.path.join(root, file), "r", encoding="utf-8") as f:
                 pokemon = Pokemon.model_validate_json(f.read())
+                pokemon.aspects = [] # Ensure standard aspects
                 name = get_file_name_without_ext(file)
                 pokemon.original_name = name
                 count += 1

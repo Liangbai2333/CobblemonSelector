@@ -88,13 +88,13 @@ class PokemonForm(BaseModel, Translatable):
         return "species"
 
     def get_i18n_name(self) -> str:
-        return self.translate(f"{self.get_hooked_name()}.name")
+        return self.get_full_i18n_name()
 
     def get_i18n_desc(self) -> str:
         return self.translate(f"{self.get_hooked_name()}.desc")
 
     def get_full_i18n_name(self) -> str:
-        original = self.get_i18n_name()
+        original = self.translate(f"{self.get_hooked_name()}.name")
         for aspect in self.aspects:
             aspect_key = f"cobblemon.form.aspect.{aspect}"
             if aspect_key in get_lang().mapping:
@@ -131,6 +131,9 @@ class PokemonForm(BaseModel, Translatable):
                 raise AttributeError(f"{self.__class__.__name__} 对象没有属性 '{item}'")
             return value
         except AttributeError:
+            # ?
+            if item == "biomes" or item == "spawn_details":
+                return None
             # 获取parent属性（直接调用super避免递归）
             try:
                 species = super().__getattribute__("species")
