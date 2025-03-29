@@ -14,12 +14,7 @@
             "condition": {
                 "maxY": 50.0,
                 "biomes": [
-                    "#cobblemon:is_cold",
-                    "#minecraft:frozen_river",
-                    "#cobblemon:is_glacial",
-                    "#cobblemon:is_snowy_forest",
-                    "#cobblemon:is_tundra",
-                    "#cobblemon:is_freezing"
+                    "#cobblemon:is_cold"
                 ],
                 "timeRange": "morning"
             }

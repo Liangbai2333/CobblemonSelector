@@ -14,7 +14,7 @@
             "condition": {
                 "biomes": [
                     "#cobblemon:is_end",
-                    "#cobblemon:is_swamp"
+                    "#cobblemon:is_freshwater"
                 ],
                 "timeRange": "dawn,dusk"
             }

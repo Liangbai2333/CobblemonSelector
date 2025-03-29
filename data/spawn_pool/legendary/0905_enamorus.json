@@ -11,7 +11,7 @@
             "weight": 3.0,
             "condition": {
                 "biomes": [
-                    "#minecraft:sunflower_plains"
+                    "minecraft:sunflower_plains"
                 ],
                 "timeRange": "dawn"
             }
@@ -26,7 +26,7 @@
             "weight": 3.0,
             "condition": {
                 "biomes": [
-                    "#minecraft:sunflower_plains"
+                    "minecraft:sunflower_plains"
                 ],
                 "timeRange": "dusk"
             }

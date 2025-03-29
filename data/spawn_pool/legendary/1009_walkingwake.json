@@ -11,10 +11,10 @@
             "weight": 1.0,
             "condition": {
                 "biomes": [
-                    "#minecraft:snowy_beach",
+                    "minecraft:snowy_beach",
                     "#cobblemon:is_coast",
-                    "#cobblemon:is_deep_ocean",
-                    "#cobblemon:is_desert"
+                    "#cobblemon:is_ocean",
+                    "#cobblemon:is_arid"
                 ],
                 "timeRange": "midnight"
             }
@@ -29,10 +29,10 @@
             "weight": 1.0,
             "condition": {
                 "biomes": [
-                    "#minecraft:snowy_beach",
+                    "minecraft:snowy_beach",
                     "#cobblemon:is_coast",
-                    "#cobblemon:is_deep_ocean",
-                    "#cobblemon:is_desert"
+                    "#cobblemon:is_ocean",
+                    "#cobblemon:is_arid"
                 ],
                 "timeRange": "night"
             }

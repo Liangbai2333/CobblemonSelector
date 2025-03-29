@@ -13,7 +13,6 @@
             "weight": 2.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_hills",
                     "#cobblemon:is_peak",
                     "#cobblemon:is_mountain"
                 ],

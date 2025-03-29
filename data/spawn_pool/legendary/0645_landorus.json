@@ -14,7 +14,7 @@
             "weight": 3.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_badlands",
+                    "#cobblemon:is_arid",
                     "#cobblemon:is_sky"
                 ],
                 "timeRange": "dawn,dusk"

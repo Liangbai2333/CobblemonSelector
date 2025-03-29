@@ -1,6 +1,7 @@
 from typing import Optional
 
-from pydantic import BaseModel, Field, field_validator, field_serializer
+from pydantic import BaseModel, Field, field_validator, field_serializer, model_serializer
+from pydantic_core.core_schema import SerializerFunctionWrapHandler
 
 from plugins.pokemon.biome.biome import Biome
 from plugins.pokemon.loader.data import biome_map
@@ -40,9 +41,11 @@ class SpawnCondition(BaseModel):
         }
         return mapping.get(self.timeRange, self.timeRange)
 
-    @field_serializer("biomes")
-    def serialize_biomes(self, biomes: list[Biome]) -> list[str]:
-        return [biome.get_name_with_liked() for biome in biomes]
+    @model_serializer(mode="wrap")
+    def serialize(self, nxt: SerializerFunctionWrapHandler):
+        serialized = nxt(self)
+        serialized["liked_biomes"] = [biome.get_name_with_liked() for biome in self.biomes]
+        return serialized
 
 
     @field_validator("biomes", mode="before")

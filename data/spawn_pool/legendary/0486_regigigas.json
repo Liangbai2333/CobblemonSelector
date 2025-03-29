@@ -14,7 +14,7 @@
             "condition": {
                 "maxY": 40.0,
                 "biomes": [
-                    "#cobblemon:is_savanna"
+                    "#cobblemon:is_arid"
                 ],
                 "timeRange": "dawn,dusk"
             }

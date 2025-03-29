@@ -15,8 +15,7 @@
                 "maxY": 50.0,
                 "biomes": [
                     "#cobblemon:is_mountain",
-                    "#cobblemon:is_peak",
-                    "#cobblemon:is_hills"
+                    "#cobblemon:is_peak"
                 ],
                 "timeRange": "morning"
             }
@@ -33,7 +32,7 @@
             "weight": 3.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_deep_ocean"
+                    "#cobblemon:is_ocean"
                 ],
                 "timeRange": "morning"
             }

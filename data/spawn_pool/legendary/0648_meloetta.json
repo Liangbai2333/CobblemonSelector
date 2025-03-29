@@ -13,7 +13,7 @@
             "weight": 3.0,
             "condition": {
                 "biomes": [
-                    "#minecraft:sunflower_plains",
+                    "minecraft:sunflower_plains",
                     "#cobblemon:is_floral"
                 ],
                 "timeRange": "night"

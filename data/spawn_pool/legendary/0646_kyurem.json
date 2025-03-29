@@ -13,7 +13,7 @@
             "weight": 2.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_freezing"
+                    "#cobblemon:is_cold"
                 ],
                 "timeRange": "dawn,dusk"
             }

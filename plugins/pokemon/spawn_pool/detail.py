@@ -1,6 +1,6 @@
 from typing import Literal, Optional
 
-from pydantic import BaseModel, Field, field_validator, field_serializer
+from pydantic import BaseModel, Field, field_validator
 
 from plugins.pokemon.spawn_pool.bucket import SpawnBucket, get_bucket
 from plugins.pokemon.spawn_pool.condition import SpawnCondition
@@ -29,15 +29,6 @@ class SpawnDetail(BaseModel):
     weightMultiplier: Optional[WeightMultiplier] = Field(default=None, description="权重倍率")
     percentage: Optional[float] = Field(default=None, description="百分比")
     labels: list[str] = Field(default=[], description="标签")
-
-    @field_serializer("presets")
-    def serialize_presets(self, presets: list[Preset]) -> list[str]:
-        return [preset.name for preset in presets]
-
-
-    @field_serializer("bucket")
-    def serialize_bucket(self, bucket: SpawnBucket) -> str:
-        return bucket.name
 
 
     def is_regional(self) -> bool:

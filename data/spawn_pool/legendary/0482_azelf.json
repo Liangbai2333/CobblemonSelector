@@ -14,7 +14,7 @@
             "condition": {
                 "biomes": [
                     "#cobblemon:is_forest",
-                    "#cobblemon:is_hills",
+                    "#cobblemon:is_mountain",
                     "#cobblemon:is_lush"
                 ],
                 "timeRange": "morning"

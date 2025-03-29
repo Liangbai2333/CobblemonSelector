@@ -13,7 +13,7 @@
             "weight": 3.0,
             "condition": {
                 "biomes": [
-                    "#minecraft:flower_forest"
+                    "minecraft:flower_forest"
                 ],
                 "timeRange": "morning"
             }

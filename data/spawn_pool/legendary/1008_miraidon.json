@@ -13,7 +13,7 @@
             "weight": 0.5,
             "condition": {
                 "biomes": [
-                    "#minecraft:small_end_islands"
+                    "minecraft:small_end_islands"
                 ],
                 "timeRange": "night"
             }

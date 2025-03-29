@@ -14,7 +14,7 @@
             "condition": {
                 "biomes": [
                     "#cobblemon:is_plains",
-                    "#minecraft:sunflower_plains"
+                    "minecraft:sunflower_plains"
                 ],
                 "isRaining": true,
                 "isThundering": true,

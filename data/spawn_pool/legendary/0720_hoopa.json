@@ -14,7 +14,7 @@
             "condition": {
                 "biomes": [
                     "#cobblemon:is_end",
-                    "#cobblemon:is_desert"
+                    "#cobblemon:is_arid"
                 ],
                 "timeRange": "afternoon"
             }

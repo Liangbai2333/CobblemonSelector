@@ -10,18 +10,7 @@
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "70",
-            "weight": 3.0,
-            "condition": {
-                "biomes": [
-                    "#cobblemon:is_mountain",
-                    "#cobblemon:is_peak",
-                    "#cobblemon:is_hills",
-                    "#cobblemon:is_jungle",
-                    "#cobblemon:is_forest",
-                    "#cobblemon:is_plains",
-                    "#cobblemon:is_desert"
-                ]
-            }
+            "weight": 1.0
         }
     ]
 }

@@ -232,13 +232,16 @@ export interface Preset extends I18n {
   name: string;
 }
 
+export type SpawnBucketType = "common" | "uncommon" | "rare" | "ultra-rare"
+
 export interface SpawnBucket extends I18n {
-  name: string;
+  name: SpawnBucketType;
   weight: number;
 }
 
 export interface SpawnCondition {
   biomes: Biome[];
+  liked_biomes: string[];
   moonPhase?: string | number;
   canSeeSky?: boolean;
   minX?: number;

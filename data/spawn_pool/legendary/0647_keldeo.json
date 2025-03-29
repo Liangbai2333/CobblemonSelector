@@ -13,7 +13,7 @@
             "weight": 3.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_river"
+                    "#cobblemon:is_freshwater"
                 ],
                 "timeRange": "day"
             }

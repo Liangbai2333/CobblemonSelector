@@ -13,7 +13,7 @@
             "weight": 2.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_deep_ocean"
+                    "#cobblemon:is_ocean"
                 ],
                 "isRaining": true,
                 "timeRange": "night"

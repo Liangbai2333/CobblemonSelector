@@ -14,7 +14,7 @@
             "condition": {
                 "biomes": [
                     "#minecraft:is_nether",
-                    "#cobblemon:is_badlands"
+                    "#cobblemon:is_arid"
                 ],
                 "timeRange": "night"
             }

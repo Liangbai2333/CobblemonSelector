@@ -13,8 +13,8 @@
             "weight": 3.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_hills",
-                    "#minecraft:birch_forest"
+                    "#cobblemon:is_mountain",
+                    "#cobblemon:is_forest"
                 ],
                 "timeRange": "night"
             }
