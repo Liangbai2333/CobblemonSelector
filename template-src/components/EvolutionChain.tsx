@@ -99,7 +99,7 @@ function EvolutionNode({pokemon}: { pokemon: PokemonForm }) {
                     onError={(e) => {
                         e.currentTarget.src = "/images/none.png"
                     }}
-                /> : <img className="w-16 h-16'" src="/images/none.png" />}
+                /> : <img className="w-16 h-16'" src="/images/none.png"  alt="???"/>}
                 <div className="mt-2 text-center">
                     <span className="text-sm font-medium">{pokemon.i18n_name}</span>
                 </div>

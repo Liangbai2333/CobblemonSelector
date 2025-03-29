@@ -4,7 +4,7 @@ export default function BaseStatsBar({name, value, max}: {name: string, value: n
             <span>{name}: {value}</span>
             <div className="w-1/2 h-4 bg-gray-300 rounded-full overflow-hidden">
                 <div
-                    className={`h-full bg-green-300`}
+                    className={`h-full bg-green-500`}
                     style={{width: `${value / max * 100}%`}}
                 ></div>
             </div>

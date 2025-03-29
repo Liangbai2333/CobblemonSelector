@@ -9,6 +9,8 @@ import Tag from "../components/Tag.tsx";
 import Ability from "../components/Ability.tsx";
 import BaseStatsBar from "../components/BaseStatsBar.tsx";
 import EvolutionChain from "../components/EvolutionChain.tsx";
+import MoveTag from "../components/MoveTag.tsx";
+import BiomeTag from "../components/BiomeTag.tsx";
 
 export default function Pokemon() {
     const {id} = useParams<'id'>() as { id: string };
@@ -163,11 +165,43 @@ export default function Pokemon() {
                             </>
                         )}
                         <div className="text-xl text-blue-500 font-bold mt-2 mb-8">进化链</div>
-                        <EvolutionChain pokemon={pokemon}/>
+                        <div className="flex mb-8 mr-4 items-center justify-center">
+                            <EvolutionChain pokemon={pokemon}/>
+                        </div>
                         <div className="h-px mt-3 w-full bg-gray-300"></div>
                         <div className="text-xl text-blue-500 font-bold mt-2 mb-8">招式</div>
 
+                        <div
+                            className="flex max-w-96 mx-auto flex-wrap items-center justify-center gap-2">
+                            {pokemon.moves
+                                .filter((move) => typeof move.condition == 'number')
+                                .map((move, index) => {
+                                    return (
+                                        <MoveTag key={index} move={move}/>
+                                    )
+                                })
+                            }
+                        </div>
 
+                        {pokemon.biomes && (
+                            <>
+                                <div className="h-px mt-3 w-full bg-gray-300"></div>
+                                <div className="text-xl text-blue-500 font-bold mt-2">生成群系</div>
+                                <div
+                                    className="flex mt-2 max-w-96 mx-auto flex-wrap items-center justify-center gap-2">
+                                    {pokemon.biomes
+                                        .filter((biome) => typeof biome.values[0] == "string")
+                                        .map((biome, index) => {
+                                            return (
+                                                <BiomeTag key={index} biome={biome} />
+                                            )
+                                        })
+                                    }
+                                </div>
+                                <div className="h-px mt-5 w-full bg-gray-300"></div>
+                            </>
+
+                        )}
                     </PokeCard>
                 )}
             </div>
