@@ -157,7 +157,8 @@ export default function Pokemon() {
                                 <div className="h-px mt-3 w-full bg-gray-300"></div>
                                 <div className="text-xl text-blue-500 font-bold mt-2">生成群系</div>
                                 <div
-                                    className="flex mt-2 max-w-96 mx-auto flex-wrap items-center justify-center gap-2">
+                                    // 怎么解决这个把父容器撑开的问题?
+                                    className="flex flex-wrap mt-2 max-w-96 mx-auto items-center justify-center gap-2">
                                     {pokemon.biomes
                                         .filter((biome) => typeof biome.values[0] == "string")
                                         .map((biome, index) => {

@@ -16,9 +16,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-from .routers import pokemon, spawn
+from .routers import pokemon, spawn, biome
 app.include_router(pokemon.pokemon_router)
 app.include_router(spawn.spawn_router)
+app.include_router(biome.biome_router)
 
 root_path = os.getcwd()
 

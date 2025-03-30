@@ -19,7 +19,7 @@ export default function useSpawnDetail() {
                 setDetail(data);
                 setError(null);
             } catch (err) {
-                setError('Failed to fetch Pokemon data');
+                setError('Failed to fetch spawn detail data');
                 console.error(err);
             } finally {
                 setLoading(false);
