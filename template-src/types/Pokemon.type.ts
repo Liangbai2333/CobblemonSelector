@@ -222,7 +222,6 @@ export interface Biome extends I18n {
   translation_name?: string;
   replace: boolean;
   values: (string | BiomeValueRef)[];
-  details?: any[];
 }
 
 // SpawnDetail 相关接口
@@ -365,4 +364,27 @@ export interface Pokemon extends PokemonForm {
   nationalPokedexNumber: number;
   features: Feature[];
   forms: PokemonForm[];
+}
+
+// 群系生成详情
+export interface BiomeSpawnDetail {
+  enabled: boolean;
+  target: string;
+  imageUrl: string;
+  levelRange: string;
+  bucket: SpawnBucket;
+  percentage: number;
+  weight: number;
+}
+
+export interface BiomeSpawnBucket extends SpawnBucket{
+  num_pokemon: number;
+  total_weight: number;
+}
+
+export interface BiomeSpawn extends Biome {
+  sub_biomes: string[];
+  total_weight: number;
+  details: BiomeSpawnDetail[];
+  buckets: BiomeSpawnBucket[];
 }

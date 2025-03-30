@@ -5,13 +5,9 @@ from nonebot.adapters.onebot.v11 import Message, MessageSegment
 from nonebot.internal.matcher import Matcher
 from nonebot.internal.params import ArgPlainText
 from nonebot.params import CommandArg
-from nonebot_plugin_htmlrender import template_to_pic
 
 from plugins.pokedex.search_biome import search_biome
-from plugins.pokedex.search_pokemon import search_pokemon
-from plugins.pokemon.loader.data import biome_map
-from plugins.pokemon.path import resolve
-
+from plugins.pokedex.util import screenshot
 
 c = on_command("群系", aliases={"biome"}, block=True)
 
@@ -34,9 +30,6 @@ async def _(matcher: Matcher, biome_name: str = ArgPlainText()):
         await matcher.finish("找不到这个群系")
 
     biome = results[0][0]
-    pic = await template_to_pic(resolve(
-        "templates/biome"
-    ), "biome_detail.html", {
-        "biome": biome
-    })
-    await matcher.finish(MessageSegment.image(pic))
+    await matcher.finish(
+        MessageSegment.image(await screenshot(f"biome/{biome.translation_name}"))
+    )

@@ -6,7 +6,7 @@ export default function Ability({name, description, hidden}: { name: string, des
             <div className="flex w-full text-lg text-blue-500 font-bold justify-between">
                 <span>{name}</span>
                 {hidden && (
-                    <Tag className="inline-flex text-xs rounded-lg text-gray-700" color="gray" text="隐藏"/>
+                    <Tag className="inline-flex text-xs rounded-lg shadow-none text-gray-700" color="gray" text="隐藏"/>
                 )}
             </div>
             <div className="text-xs ">{description}</div>

@@ -1,13 +1,11 @@
 from typing import Union, Optional, Any, Self
 
-from pydantic import BaseModel, Field, model_validator, ModelWrapValidatorHandler, model_serializer
-from pydantic_core.core_schema import SerializerFunctionWrapHandler
+from pydantic import BaseModel, Field, model_validator, ModelWrapValidatorHandler
 
 from plugins.pokemon.i18n.translatable import Translatable
 from plugins.pokemon.lang import get_lang
 from plugins.pokemon.loader.data import biome_map
 from plugins.pokemon.spawn_pool.bucket import get_bucket, SpawnBucket
-from plugins.pokemon.spawn_pool.detail import SpawnDetail
 
 
 class BiomeValueRef(BaseModel):
@@ -22,19 +20,6 @@ class Biome(BaseModel, Translatable):
 
     details: Optional[list] = Field(default=None, description="生成详情", exclude=True)
 
-    @model_serializer(mode="wrap")
-    def serialize(self, nxt: SerializerFunctionWrapHandler):
-        serialized = super().serialize(nxt)
-        serialized["details"] = [{
-            *detail,
-            ""
-        } for detail in self.get_non_repeat_pokemon_details()]
-        serialized["search_name"] = self.get_search_name()
-        serialized["image_url"] = self.get_image_url()
-        serialized["pokedex_number"] = self.get_pokedex()
-        return serialized
-
-
     @model_validator(mode="wrap")
     @classmethod
     def preprocess_data(cls, data: Any, handler: ModelWrapValidatorHandler[Self]) -> Self:
@@ -43,7 +28,7 @@ class Biome(BaseModel, Translatable):
                 return biome_map[data]
         return handler(data)
 
-    def get_non_repeat_pokemon_details(self) -> list[SpawnDetail]:
+    def get_non_repeat_pokemon_details(self) -> list:
         pokemon_temp = []
         detail_temp = []
         for detail in self.details:

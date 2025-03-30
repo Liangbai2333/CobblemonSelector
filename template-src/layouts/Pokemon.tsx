@@ -163,7 +163,7 @@ export default function Pokemon() {
                                         .filter((biome) => typeof biome.values[0] == "string")
                                         .map((biome, index) => {
                                             return (
-                                                <BiomeTag key={index} biome={biome} />
+                                                <BiomeTag key={index} biomeName={biome.i18n_name} />
                                             )
                                         })
                                     }

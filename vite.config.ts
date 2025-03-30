@@ -12,4 +12,5 @@ export default defineConfig({
         react(),
         tailwindcss()
     ],
+    envPrefix: "CS_"
 })

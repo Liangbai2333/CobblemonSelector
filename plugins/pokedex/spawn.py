@@ -5,9 +5,9 @@ from nonebot.adapters.onebot.v11 import Message, MessageSegment
 from nonebot.internal.matcher import Matcher
 from nonebot.internal.params import ArgPlainText
 from nonebot.params import CommandArg
-from nonebot_plugin_htmlrender import get_new_page
 
 from plugins.pokedex.search_pokemon import search_pokemon
+from plugins.pokedex.util import screenshot
 
 c = on_command("生成", aliases={"spawn", "detail"}, block=True)
 
@@ -47,11 +47,6 @@ async def _(matcher: Matcher, pokemon_name: str = ArgPlainText(), index: str = A
     if index_num < 0:
         index_num = poke.spawn_details.index(max(poke.spawn_details, key=lambda x: x.weight))
 
-    async with get_new_page(device_scale_factor=3) as page:
-        page.on("console", lambda msg: logger.debug(f"浏览器控制台: {msg.text}"))
-        await page.goto(f"http://localhost:8888/spawn/{poke.get_search_name()}/{index_num}")
-        image_bytes = await page.locator(".pokemon-start").screenshot(
-            type="png",
-            timeout=30_000,
-        )
-        await matcher.finish(MessageSegment.image(image_bytes))
+    await matcher.finish(
+        MessageSegment.image(await screenshot(f"spawn/{poke.get_search_name()}/{index_num}", device_scale_factor=3))
+    )

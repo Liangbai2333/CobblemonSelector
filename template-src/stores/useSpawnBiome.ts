@@ -1,12 +1,12 @@
 import {useParams} from "react-router";
 import {useEffect, useState} from "react";
-import {Biome} from "../types/Pokemon.type.ts";
-import {getBiomeByName} from "../api";
+import {BiomeSpawn} from "../types/Pokemon.type.ts";
+import {getSpawnBiomeByName} from "../api";
 
-export default function useBiome() {
+export default function useSpawnBiome() {
     const {name} = useParams<'name'>() as { name: string };
 
-    const [biome, setBiome] = useState<Biome>()
+    const [spawnBiome, setSpawnBiome] = useState<BiomeSpawn>()
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
@@ -14,11 +14,11 @@ export default function useBiome() {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const data = await getBiomeByName(name)
-                setBiome(data)
+                const data = await getSpawnBiomeByName(name)
+                setSpawnBiome(data)
                 setError(null);
             } catch (err) {
-                setError('Failed to fetch biome data');
+                setError('Failed to fetch spawn biome data');
                 console.error(err);
             } finally {
                 setLoading(false);
@@ -28,5 +28,5 @@ export default function useBiome() {
         fetchData().catch((reason) => console.error(reason))
     }, [name])
 
-    return {biome, loading, error}
+    return {spawnBiome, loading, error}
 }

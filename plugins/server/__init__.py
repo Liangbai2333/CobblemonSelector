@@ -16,4 +16,4 @@ config = get_plugin_config(Config)
 
 from .server import bootstrap
 
-bootstrap(config.server_port)
+bootstrap(config.cs_server_port)

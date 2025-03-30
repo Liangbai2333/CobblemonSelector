@@ -33,3 +33,7 @@ ultra_rare = _register_bucket(SpawnBucket(name="ultra-rare", weight=0.2))
 
 def get_bucket(name: str):
     return _buckets.get(name, common)
+
+
+def get_buckets():
+    return _buckets.values()
