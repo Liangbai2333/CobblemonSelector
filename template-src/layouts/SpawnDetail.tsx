@@ -111,6 +111,7 @@ export default function SpawnDetail() {
     const detail = pokemon?.spawn_details?.[index];
     const condition = detail?.condition
     const anticondition = detail?.anticondition
+    const weightMultiplier = detail?.weightMultiplier
 
     return (
         <div className="text-center font-mono">
@@ -182,6 +183,34 @@ export default function SpawnDetail() {
 
                         {!condition && !anticondition && (
                             <div className="px-4 text-md text-blue-500 font-bold mt-2 text-center">无生成条件</div>
+                        )}
+
+                        {weightMultiplier && (
+                            <>
+                                <div className="h-px mt-3 w-full bg-gray-300"></div>
+                                <div>
+                                    <div className="px-4 text-md text-blue-500 font-bold mt-2">权重倍率</div>
+                                    <div className="mx-auto mt-4 text-sm">
+                                        <ConditionContainer>
+                                            <div className="text-lg text-green-600 font-bold">倍率: {weightMultiplier.multiplier}x</div>
+                                            {weightMultiplier.condition && (
+                                                <>
+                                                    <div className="text-[1rem] text-gray-700 font-bold py-2">应用条件</div>
+                                                    {generateConditionItems(weightMultiplier.condition)}
+                                                </>
+                                            )}
+
+                                            {weightMultiplier.anticondition && (
+                                                <>
+                                                    <div className="text-[1rem] text-gray-700 font-bold py-2">排除条件</div>
+                                                    {generateConditionItems(weightMultiplier.anticondition)}
+                                                </>
+                                            )}
+
+                                        </ConditionContainer>
+                                    </div>
+                                </div>
+                            </>
                         )}
                     </div>
                     <div className="h-px mt-5 w-full bg-gray-300"></div>
