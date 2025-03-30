@@ -1,5 +1,7 @@
-from nonebot import require, logger
+from nonebot import require, logger, get_plugin_config
 from nonebot.plugin import PluginMetadata
+
+from plugins.pokedex.config import Config
 
 require("pokemon")
 
@@ -8,6 +10,8 @@ __plugin_meta__ = PluginMetadata(
     description="",
     usage="",
 )
+
+config = get_plugin_config(Config)
 
 from plugins.pokedex.search_pokemon import build_pokemon_index
 from plugins.pokedex.search_biome import build_biome_index
