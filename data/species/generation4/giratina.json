@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 487,
   "name": "Giratina",
   "primaryType": "ghost",
@@ -172,6 +173,12 @@
     "tutor:twister"
   ],
   "evolutions": [],
+  "hitbox": {
+    "width": 2.5,
+    "height": 6.5,
+    "fixed": false
+  },
+  "baseScale": 1.1,
   "forms": [
     {
       "name": "Origin",
@@ -332,6 +339,21 @@
         "tutor:twister"
       ],
       "evolutions": [],
+      "hitbox": {
+        "width": 4.5,
+        "height": 6.5,
+        "fixed": false
+      },
+      "behaviour": {
+        "moving": {
+          "walk": {
+            "walkSpeed": 0.17
+          },
+          "fly": {
+            "canFly": true
+          }
+        }
+      },
       "battleOnly": false,
       "drops": {
         "amount": 5,

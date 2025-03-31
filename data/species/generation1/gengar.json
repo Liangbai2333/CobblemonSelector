@@ -262,7 +262,7 @@
       "baseExperienceYield": 300,
       "dynamaxBlocked": true,
       "evolutions": [],
-      "battleOnly": true
+      "battleOnly": false
     },
     {
       "name": "Gmax",
@@ -283,7 +283,7 @@
       ],
       "dynamaxBlocked": true,
       "evolutions": [],
-      "battleOnly": true
+      "battleOnly": false
     }
   ]
 }

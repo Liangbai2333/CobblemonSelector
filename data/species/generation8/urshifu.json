@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 892,
   "name": "Urshifu",
   "primaryType": "fighting",
@@ -44,10 +45,10 @@
   "catchRate": 3,
   "eggCycles": 120,
   "baseFriendship": 50,
-  "baseScale": 1,
+  "baseScale": 0.7,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 2,
+    "height": 3,
     "fixed": false
   },
   "moves": [
@@ -168,6 +169,7 @@
   ],
   "preEvolution": "kubfu",
   "evolutions": [],
+  "features": ["urshifu_wushu_style"],
   "forms": [
     {
       "name": "Rapid-Strike",
@@ -177,7 +179,7 @@
       "height": 19,
       "weight": 1050,
       "pokedex": [
-        "cobblemon.species.urshifu-rapidstrike.desc"
+        "cobblemon.species.urshifu.desc"
       ],
       "labels": [
         "gen8",

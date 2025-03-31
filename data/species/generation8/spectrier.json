@@ -1,24 +1,10 @@
 {
-  "nationalPokedexNumber": 897,
+  "implemented": true,
   "name": "Spectrier",
+  "nationalPokedexNumber": 897,
   "primaryType": "ghost",
-  "maleRatio": -1,
-  "height": 20,
-  "weight": 445,
-  "pokedex": [
-    "cobblemon.species.spectrier.desc"
-  ],
-  "labels": [
-    "gen8",
-    "legendary"
-  ],
-  "aspects": [],
   "abilities": [
-    "grimneigh",
-    "h:grimneigh"
-  ],
-  "eggGroups": [
-    "undiscovered"
+    "grimneigh"
   ],
   "baseStats": {
     "hp": 100,
@@ -28,25 +14,15 @@
     "special_defence": 80,
     "speed": 130
   },
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 3,
-    "special_defence": 0,
-    "speed": 0
-  },
+  "catchRate": 3,
+  "maleRatio": -1,
+  "shoulderMountable": false,
   "baseExperienceYield": 290,
   "experienceGroup": "slow",
-  "catchRate": 3,
   "eggCycles": 120,
-  "baseFriendship": 35,
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
+  "eggGroups": [
+    "undiscovered"
+  ],
   "moves": [
     "1:tackle",
     "1:tailwhip",
@@ -69,57 +45,68 @@
     "tm:calmmind",
     "tm:confuseray",
     "tm:crunch",
-    "tm:curse",
     "tm:darkpulse",
-    "tm:doubleedge",
     "tm:drainingkiss",
     "tm:endure",
     "tm:facade",
     "tm:foulplay",
     "tm:gigaimpact",
-    "tm:haze",
     "tm:hex",
     "tm:hyperbeam",
-    "tm:lashout",
     "tm:mudshot",
     "tm:nastyplot",
     "tm:nightshade",
-    "tm:painsplit",
     "tm:payback",
     "tm:phantomforce",
-    "tm:poltergeist",
     "tm:protect",
     "tm:psychic",
     "tm:psychocut",
     "tm:rest",
+    "tm:round",
     "tm:scaryface",
     "tm:shadowball",
     "tm:sleeptalk",
     "tm:snarl",
+    "tm:snore",
     "tm:stompingtantrum",
     "tm:substitute",
     "tm:swift",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
+    "tm:uproar",
     "tm:willowisp",
-    "tutor:bulldoze",
-    "tutor:calmmind",
-    "tutor:darkpulse",
-    "tutor:foulplay",
-    "tutor:gigaimpact",
-    "tutor:hyperbeam",
+    "tutor:disable",
+    "tutor:doubleedge",
     "tutor:lashout",
-    "tutor:painsplit",
-    "tutor:poltergeist",
-    "tutor:psychic",
-    "tutor:psychocut",
-    "tutor:rest",
-    "tutor:shadowball",
-    "tutor:sleeptalk",
-    "tutor:snarl",
-    "tutor:stompingtantrum",
-    "tutor:swift"
+    "tutor:nastyplot",
+    "tutor:thrash"
   ],
-  "evolutions": []
+  "labels": [
+    "gen8",
+    "legendary"
+  ],
+  "pokedex": [
+    "cobblemon.species.spectrier.desc"
+  ],
+  "evolutions": [],
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 4.5,
+    "height": 6,
+    "fixed": false
+  },
+  "baseFriendship": 35,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "height": 20,
+  "weight": 445,
+  "aspects": [],
+  "cannotDynamax": false
 }

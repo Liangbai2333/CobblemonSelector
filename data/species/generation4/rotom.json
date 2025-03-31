@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 479,
   "name": "Rotom",
   "primaryType": "electric",
@@ -12,7 +13,7 @@
   "labels": [
     "gen4"
   ],
-  "aspects": [],
+  "aspects": ["none"],
   "abilities": [
     "levitate",
     "h:levitate"
@@ -43,8 +44,8 @@
   "baseFriendship": 50,
   "baseScale": 0.75,
   "hitbox": {
-    "width": 0.55,
-    "height": 1.3,
+    "width": 1,
+    "height": 2.2,
     "fixed": false
   },
   "moves": [

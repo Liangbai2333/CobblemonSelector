@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 719,
   "name": "Diancie",
   "primaryType": "rock",
@@ -42,10 +43,10 @@
   "catchRate": 3,
   "eggCycles": 25,
   "baseFriendship": 50,
-  "baseScale": 1,
+  "baseScale": 1.3,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 2,
+    "height": 2,
     "fixed": false
   },
   "moves": [
@@ -210,7 +211,7 @@
       "baseExperienceYield": 350,
       "dynamaxBlocked": true,
       "evolutions": [],
-      "battleOnly": true
+      "battleOnly": false
     }
   ]
 }

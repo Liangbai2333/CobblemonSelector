@@ -1,27 +1,10 @@
 {
-  "nationalPokedexNumber": 889,
+  "implemented": true,
   "name": "Zamazenta",
+  "nationalPokedexNumber": 889,
   "primaryType": "fighting",
-  "maleRatio": -1,
-  "height": 29,
-  "weight": 2100,
-  "pokedex": [
-    "cobblemon.species.zamazenta.desc"
-  ],
-  "labels": [
-    "gen8",
-    "legendary",
-    "restricted"
-  ],
-  "aspects": [
-    "hero"
-  ],
   "abilities": [
-    "dauntlessshield",
-    "h:dauntlessshield"
-  ],
-  "eggGroups": [
-    "undiscovered"
+    "dauntlessshield"
   ],
   "baseStats": {
     "hp": 92,
@@ -31,35 +14,83 @@
     "special_defence": 115,
     "speed": 138
   },
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 3
-  },
-  "baseExperienceYield": 330,
-  "experienceGroup": "slow",
   "catchRate": 10,
+  "maleRatio": -1,
+  "shoulderMountable": false,
+  "forms": [
+    {
+      "name": "Crowned",
+      "primaryType": "fighting",
+      "secondaryType": "steel",
+      "abilities": [
+        "dauntlessshield"
+      ],
+      "baseStats": {
+        "hp": 92,
+        "attack": 120,
+        "defence": 140,
+        "special_attack": 80,
+        "special_defence": 140,
+        "speed": 128
+      },
+      "baseScale": 0.8,
+      "catchRate": 10,
+      "maleRatio": -1,
+      "baseExperienceYield": 335,
+      "baseFriendship": 0,
+      "evYield": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 0,
+        "special_defence": 0,
+        "speed": 3
+      },
+      "experienceGroup": "slow",
+      "eggCycles": 120,
+      "eggGroups": [
+        "undiscovered"
+      ],
+      "moves": [
+        "form_change:behemothbash"
+      ],
+      "labels": [
+        "gen8",
+        "legendary"
+      ],
+      "aspects": [
+        "crowned"
+      ],
+      "height": 29,
+      "weight": 7850,
+      "cannotDynamax": true,
+      "battleOnly": true,
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "item": "cobblemon:ability_shield"
+          }
+        ]
+      }
+    }
+  ],
+  "baseExperienceYield": 335,
+  "experienceGroup": "slow",
   "eggCycles": 120,
-  "baseFriendship": 0,
-  "dynamaxBlocked": true,
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
+  "eggGroups": [
+    "undiscovered"
+  ],
   "moves": [
-    "1:wideguard",
-    "1:metalclaw",
-    "1:howl",
-    "1:quickattack",
     "1:bite",
+    "1:howl",
+    "1:metalclaw",
+    "1:quickattack",
+    "1:wideguard",
     "11:slash",
     "22:irondefense",
     "33:ironhead",
+    "44:laserfocus",
     "44:metalburst",
     "55:crunch",
     "66:moonblast",
@@ -91,7 +122,6 @@
     "tm:irondefense",
     "tm:ironhead",
     "tm:irontail",
-    "tm:laserfocus",
     "tm:lightscreen",
     "tm:metalclaw",
     "tm:payback",
@@ -106,11 +136,13 @@
     "tm:revenge",
     "tm:reversal",
     "tm:roar",
+    "tm:round",
     "tm:safeguard",
     "tm:sandstorm",
     "tm:scaryface",
     "tm:sleeptalk",
     "tm:snarl",
+    "tm:snore",
     "tm:solarbeam",
     "tm:steelbeam",
     "tm:stoneedge",
@@ -124,70 +156,58 @@
     "tm:trailblaze",
     "tm:wildcharge",
     "tm:workup",
+    "tutor:closecombat",
     "tutor:coaching",
-    "tutor:dazzlinggleam",
-    "tutor:firefang",
-    "tutor:flashcannon",
-    "tutor:focusenergy",
-    "tutor:gigaimpact",
-    "tutor:helpinghand",
-    "tutor:hyperbeam",
-    "tutor:hypervoice",
-    "tutor:icefang",
+    "tutor:crunch",
     "tutor:irondefense",
     "tutor:ironhead",
-    "tutor:irontail",
-    "tutor:laserfocus",
-    "tutor:playrough",
-    "tutor:psychic",
-    "tutor:rest",
-    "tutor:sleeptalk",
-    "tutor:snarl",
+    "tutor:slash",
     "tutor:steelbeam",
-    "tutor:stoneedge",
-    "tutor:swift",
-    "tutor:thunderfang",
-    "tutor:wildcharge"
+    "tutor:wideguard"
   ],
-  "evolutions": [],
-  "forms": [
-    {
-      "name": "Crowned",
-      "primaryType": "fighting",
-      "secondaryType": "steel",
-      "maleRatio": -1,
-      "height": 29,
-      "weight": 7850,
-      "pokedex": [
-        "cobblemon.species.zamazenta-crowned.desc"
-      ],
-      "labels": [
-        "gen8",
-        "legendary",
-        "restricted"
-      ],
-      "aspects": [
-        "crowned"
-      ],
-      "baseStats": {
-        "hp": 92,
-        "attack": 120,
-        "defence": 140,
-        "special_attack": 80,
-        "special_defence": 140,
-        "speed": 128
+  "labels": [
+    "gen8",
+    "legendary"
+  ],
+  "pokedex": [
+    "cobblemon.species.zamazenta.desc"
+  ],
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 3,
+    "height": 3,
+    "fixed": false
+  },
+  "baseFriendship": 0,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 3
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "walkSpeed": 0.5,
+        "canWalk": true,
+        "avoidsLand": false
       },
-      "baseExperienceYield": 350,
-      "evolutions": [],
-      "battleOnly": true
+    "fly": {
+      "canFly": false
+    },
+    "swim": {
+      "swimSpeed": 0.5,
+      "canSwimInWater": false,
+      "canBreatheUnderwater": false
     }
-  ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:ability_shield"
-      }
-    ]
   }
+},
+  "height": 29,
+  "weight": 2100,
+  "dynamaxBlocked": true,
+  "aspects": [],
+  "cannotDynamax": true
 }

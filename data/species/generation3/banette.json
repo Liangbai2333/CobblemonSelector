@@ -1,25 +1,16 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 354,
   "name": "Banette",
   "primaryType": "ghost",
   "maleRatio": 0.5,
   "height": 11,
   "weight": 125,
-  "pokedex": [
-    "cobblemon.species.banette.desc"
-  ],
-  "labels": [
-    "gen3"
-  ],
+  "pokedex": ["cobblemon.species.banette.desc"],
+  "labels": ["gen3"],
   "aspects": [],
-  "abilities": [
-    "insomnia",
-    "frisk",
-    "h:cursedbody"
-  ],
-  "eggGroups": [
-    "amorphous"
-  ],
+  "abilities": ["insomnia", "frisk", "h:cursedbody"],
+  "eggGroups": ["amorphous"],
   "baseStats": {
     "hp": 64,
     "attack": 115,
@@ -203,20 +194,10 @@
       "maleRatio": 0.5,
       "height": 12,
       "weight": 130,
-      "pokedex": [
-        "cobblemon.species.banette-mega.desc"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "abilities": [
-        "prankster",
-        "h:prankster"
-      ],
+      "pokedex": ["cobblemon.species.banette-mega.desc"],
+      "labels": ["gen6", "mega"],
+      "aspects": ["mega"],
+      "abilities": ["prankster", "h:prankster"],
       "baseStats": {
         "hp": 64,
         "attack": 165,
@@ -228,7 +209,7 @@
       "baseExperienceYield": 194,
       "dynamaxBlocked": true,
       "evolutions": [],
-      "battleOnly": true
+      "battleOnly": false
     }
   ]
 }

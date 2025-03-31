@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 460,
   "name": "Abomasnow",
   "primaryType": "grass",
@@ -6,21 +7,11 @@
   "maleRatio": 0.5,
   "height": 22,
   "weight": 1355,
-  "pokedex": [
-    "cobblemon.species.abomasnow.desc"
-  ],
-  "labels": [
-    "gen4"
-  ],
+  "pokedex": ["cobblemon.species.abomasnow.desc"],
+  "labels": ["gen4"],
   "aspects": [],
-  "abilities": [
-    "snowwarning",
-    "h:soundproof"
-  ],
-  "eggGroups": [
-    "monster",
-    "grass"
-  ],
+  "abilities": ["snowwarning", "h:soundproof"],
+  "eggGroups": ["monster", "grass"],
   "baseStats": {
     "hp": 90,
     "attack": 92,
@@ -44,8 +35,8 @@
   "baseFriendship": 50,
   "baseScale": 1,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 2,
+    "height": 3,
     "fixed": false
   },
   "drops": {
@@ -198,20 +189,10 @@
       "maleRatio": 0.5,
       "height": 27,
       "weight": 1850,
-      "pokedex": [
-        "cobblemon.species.abomasnow-mega.desc"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "abilities": [
-        "snowwarning",
-        "h:snowwarning"
-      ],
+      "pokedex": ["cobblemon.species.abomasnow-mega.desc"],
+      "labels": ["gen6", "mega"],
+      "aspects": ["mega"],
+      "abilities": ["snowwarning", "h:snowwarning"],
       "baseStats": {
         "hp": 90,
         "attack": 132,
@@ -223,7 +204,7 @@
       "baseExperienceYield": 208,
       "dynamaxBlocked": true,
       "evolutions": [],
-      "battleOnly": true
+      "battleOnly": false
     }
   ]
 }

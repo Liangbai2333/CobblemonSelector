@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 1017,
   "name": "Ogerpon",
   "primaryType": "grass",
@@ -226,7 +227,7 @@
         "legendary"
       ],
       "aspects": [
-        "embody-aspect",
+        "embody_aspect",
         "teal-mask"
       ],
       "abilities": [
@@ -253,7 +254,7 @@
         "legendary"
       ],
       "aspects": [
-        "embody-aspect",
+        "embody_aspect",
         "wellspring-mask"
       ],
       "abilities": [
@@ -280,7 +281,7 @@
         "legendary"
       ],
       "aspects": [
-        "embody-aspect",
+        "embody_aspect",
         "hearthflame-mask"
       ],
       "abilities": [
@@ -307,7 +308,7 @@
         "legendary"
       ],
       "aspects": [
-        "embody-aspect",
+        "embody_aspect",
         "cornerstone-mask"
       ],
       "abilities": [

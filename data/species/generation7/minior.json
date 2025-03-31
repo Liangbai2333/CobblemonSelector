@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 774,
   "name": "Minior",
   "primaryType": "rock",
@@ -54,6 +55,9 @@
       "swim": {
         "avoidsWater": true,
         "canSwimInWater": false
+      },
+      "fly": {
+        "canFly": true
       }
     }
   },
@@ -160,6 +164,17 @@
       "maleRatio": -1,
       "height": 3,
       "weight": 400,
+      "behaviour": {
+        "moving": {
+          "swim": {
+            "avoidsWater": true,
+            "canSwimInWater": false
+          },
+          "fly": {
+            "canFly": true
+          }
+        }
+      },
       "pokedex": [
         "cobblemon.pokedex.minior-meteor.desc"
       ],

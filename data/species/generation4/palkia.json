@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 484,
   "name": "Palkia",
   "primaryType": "water",
@@ -45,11 +46,29 @@
   "catchRate": 3,
   "eggCycles": 120,
   "baseFriendship": 0,
-  "baseScale": 1,
+  "baseScale": 1.2,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 3.5,
+    "height": 5,
     "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": true,
+      "walk": {
+        "walkSpeed": 0.5,
+        "canWalk": true,
+        "avoidsLand": false
+      },
+    "fly": {
+      "canFly": true
+    },
+    "swim": {
+      "swimSpeed": 0.5,
+      "canSwimInWater": false,
+      "canBreatheUnderwater": false
+    }
+  }
   },
   "moves": [
     "1:scaryface",
@@ -179,13 +198,15 @@
     "tutor:twister",
     "tutor:waterpulse"
   ],
-  "evolutions": [],
+  "evolutions": [
+  ],
   "forms": [
     {
       "name": "Origin",
       "primaryType": "water",
       "secondaryType": "dragon",
       "maleRatio": -1,
+      "baseScale": 0.85,
       "height": 63,
       "weight": 6600,
       "pokedex": [
@@ -318,8 +339,32 @@
         "tutor:trick",
         "tutor:waterpulse"
       ],
-      "evolutions": [],
-      "battleOnly": false
+      "evolutions": [
+      ],
+      "battleOnly": false,
+      "hitbox": {
+        "width": 6,
+        "height": 10,
+        "fixed": false
+      },
+      "behaviour": {
+          "moving": {
+            "canLook": true,
+            "walk": {
+              "walkSpeed": 0.6,
+              "canWalk": true,
+              "avoidsLand": false
+            },
+          "fly": {
+            "canFly": true
+          },
+          "swim": {
+            "swimSpeed": 0.5,
+            "canSwimInWater": false,
+            "canBreatheUnderwater": false
+          }
+        }
+      }
     }
   ]
 }

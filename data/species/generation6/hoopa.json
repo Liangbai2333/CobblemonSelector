@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 720,
   "name": "Hoopa",
   "primaryType": "psychic",
@@ -9,6 +10,22 @@
   "pokedex": [
     "cobblemon.species.hoopa.desc"
   ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4"
+    }
+  },
   "labels": [
     "gen6",
     "mythical"
@@ -44,12 +61,6 @@
   "catchRate": 3,
   "eggCycles": 120,
   "baseFriendship": 100,
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
   "moves": [
     "1:destinybond",
     "1:allyswitch",
@@ -190,6 +201,12 @@
     "tutor:wonderroom",
     "tutor:zenheadbutt"
   ],
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 2,
+    "fixed": false
+  },
   "evolutions": [],
   "forms": [
     {
@@ -202,6 +219,12 @@
       "pokedex": [
         "cobblemon.species.hoopa-unbound.desc"
       ],
+      "baseScale": 0.5,
+      "hitbox": {
+        "width": 6,
+        "height": 12,
+        "fixed": false
+      },
       "labels": [
         "gen6",
         "mythical"

@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 741,
   "name": "Oricorio",
   "primaryType": "fire",
@@ -9,6 +10,16 @@
   "pokedex": [
     "cobblemon.species.oricorio.desc"
   ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
   "labels": [
     "gen7"
   ],
@@ -151,6 +162,7 @@
     "tutor:tailwind"
   ],
   "evolutions": [],
+  "features": ["dance_style"],
   "forms": [
     {
       "name": "Pom-Pom",
@@ -160,32 +172,32 @@
       "height": 6,
       "weight": 34,
       "pokedex": [
-        "cobblemon.species.oricorio-pompom.desc"
+        "cobblemon.species.oricorio.desc"
       ],
       "labels": [
         "gen7"
       ],
       "aspects": [
-        "pom_pom-style"
+        "pom-pom-style"
       ],
       "evolutions": [],
       "battleOnly": false
     },
     {
-      "name": "Pa\u00e2\u20ac\u2122u",
+      "name": "Pa’u",
       "primaryType": "psychic",
       "secondaryType": "flying",
       "maleRatio": 0.25,
       "height": 6,
       "weight": 34,
       "pokedex": [
-        "cobblemon.species.oricorio-pau.desc"
+        "cobblemon.species.oricorio.desc"
       ],
       "labels": [
         "gen7"
       ],
       "aspects": [
-        "pa'u-style"
+        "pa’u-style"
       ],
       "evolutions": [],
       "battleOnly": false
@@ -198,7 +210,7 @@
       "height": 6,
       "weight": 34,
       "pokedex": [
-        "cobblemon.species.oricorio-sensu.desc"
+        "cobblemon.species.oricorio.desc"
       ],
       "labels": [
         "gen7"

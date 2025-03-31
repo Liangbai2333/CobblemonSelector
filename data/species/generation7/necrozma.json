@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 800,
   "name": "Necrozma",
   "primaryType": "psychic",
@@ -44,8 +45,8 @@
   "baseFriendship": 0,
   "baseScale": 1,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 3,
+    "height": 3.5,
     "fixed": false
   },
   "moves": [
@@ -525,12 +526,17 @@
         "ultra_burst"
       ],
       "aspects": [
-        "ultra-fusion"
+        "ultra"
       ],
       "abilities": [
         "neuroforce",
         "h:neuroforce"
       ],
+      "hitbox": {
+        "width": 3,
+        "height": 4.45,
+        "fixed": false
+      },
       "baseStats": {
         "hp": 97,
         "attack": 167,

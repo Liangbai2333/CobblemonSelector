@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 483,
   "name": "Dialga",
   "primaryType": "steel",
@@ -45,12 +46,30 @@
   "catchRate": 3,
   "eggCycles": 120,
   "baseFriendship": 0,
-  "baseScale": 1,
+  "baseScale": 0.85,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 6,
+    "height": 7,
     "fixed": false
   },
+  "behaviour": {
+    "moving": {
+      "canLook": true,
+      "walk": {
+        "walkSpeed": 0.5,
+        "canWalk": true,
+        "avoidsLand": false
+      },
+    "fly": {
+      "canFly": true
+    },
+    "swim": {
+      "swimSpeed": 0.5,
+      "canSwimInWater": false,
+      "canBreatheUnderwater": false
+    }
+  }
+},
   "moves": [
     "1:scaryface",
     "1:metalclaw",
@@ -174,7 +193,8 @@
     "tutor:trick",
     "tutor:twister"
   ],
-  "evolutions": [],
+  "evolutions": [
+  ],
   "forms": [
     {
       "name": "Origin",
@@ -183,6 +203,7 @@
       "maleRatio": -1,
       "height": 70,
       "weight": 8500,
+      "baseScale": 0.85,
       "pokedex": [
         "cobblemon.species.dialga-origin.desc"
       ],
@@ -309,8 +330,32 @@
         "tutor:thunderbolt",
         "tutor:trick"
       ],
-      "evolutions": [],
-      "battleOnly": false
+      "evolutions": [
+      ],
+      "battleOnly": false,
+      "hitbox": {
+        "width": 5,
+        "height": 10,
+        "fixed": false
+      },
+      "behaviour": {
+        "moving": {
+          "canLook": true,
+          "walk": {
+            "walkSpeed": 0.6,
+            "canWalk": true,
+            "avoidsLand": false
+          },
+        "fly": {
+          "canFly": true
+        },
+        "swim": {
+          "swimSpeed": 0.5,
+          "canSwimInWater": false,
+          "canBreatheUnderwater": false
+        }
+      }
+    }
     }
   ]
 }

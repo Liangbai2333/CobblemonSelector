@@ -2,6 +2,7 @@
 .idea
 dist/
 templates
+images
 
 ### Mac OS ###
 .DS_Store

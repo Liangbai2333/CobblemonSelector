@@ -1,25 +1,10 @@
 {
-  "nationalPokedexNumber": 790,
+  "implemented": true,
   "name": "Cosmoem",
+  "nationalPokedexNumber": 790,
   "primaryType": "psychic",
-  "maleRatio": -1,
-  "height": 1,
-  "weight": 9999,
-  "pokedex": [
-    "cobblemon.species.cosmoem.desc"
-  ],
-  "labels": [
-    "gen7",
-    "legendary",
-    "restricted"
-  ],
-  "aspects": [],
   "abilities": [
-    "sturdy",
-    "h:sturdy"
-  ],
-  "eggGroups": [
-    "undiscovered"
+    "sturdy"
   ],
   "baseStats": {
     "hp": 43,
@@ -29,30 +14,26 @@
     "special_defence": 131,
     "speed": 37
   },
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
+  "catchRate": 45,
+  "maleRatio": -1,
+  "shoulderMountable": true,
   "baseExperienceYield": 140,
   "experienceGroup": "slow",
-  "catchRate": 3,
   "eggCycles": 120,
-  "baseFriendship": 0,
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
+  "eggGroups": [
+    "undiscovered"
+  ],
   "moves": [
     "1:cosmicpower",
     "1:teleport",
-    "1:splash",
     "tm:cosmicpower"
+  ],
+  "labels": [
+    "gen7",
+    "legendary"
+  ],
+  "pokedex": [
+    "cobblemon.species.cosmoem.desc"
   ],
   "preEvolution": "cosmog",
   "evolutions": [
@@ -94,5 +75,24 @@
         }
       ]
     }
-  ]
+  ],
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 1.7,
+    "height": 2.7,
+    "fixed": false
+  },
+  "baseFriendship": 0,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "height": 1,
+  "weight": 200,
+  "aspects": [],
+  "cannotDynamax": false
 }

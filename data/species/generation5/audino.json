@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 531,
   "name": "Audino",
   "primaryType": "normal",
@@ -41,10 +42,10 @@
   "catchRate": 255,
   "eggCycles": 20,
   "baseFriendship": 50,
-  "baseScale": 1,
+  "baseScale": 0.8,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 0.8,
+    "height": 1.8,
     "fixed": false
   },
   "drops": {
@@ -251,7 +252,7 @@
       "baseExperienceYield": 425,
       "dynamaxBlocked": true,
       "evolutions": [],
-      "battleOnly": true
+      "battleOnly": false
     }
   ]
 }

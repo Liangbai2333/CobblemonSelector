@@ -1,10 +1,12 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 351,
   "name": "Castform",
   "primaryType": "normal",
   "maleRatio": 0.5,
   "height": 3,
   "weight": 8,
+  "shoulderMountable": true,
   "pokedex": [
     "cobblemon.species.castform.desc"
   ],
@@ -46,7 +48,7 @@
   "baseScale": 1,
   "hitbox": {
     "width": 1,
-    "height": 1,
+    "height": 1.5,
     "fixed": false
   },
   "behaviour": {

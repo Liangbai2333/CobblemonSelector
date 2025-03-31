@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "nationalPokedexNumber": 744,
   "name": "Rockruff",
   "primaryType": "rock",
@@ -177,14 +178,34 @@
         },
         {
           "variant": "time_range",
-          "range": "day"
+          "range": "morning"
+        }
+      ]
+    },
+    {
+      "id": "rockruff_lycanrocdusk",
+      "variant": "level_up",
+      "result": "lycanroc wolf_form=dusk dusk",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "accelerock",
+        "counter"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 25
+        },
+        {
+          "variant": "time_range",
+          "range": "dusk"
         }
       ]
     },
     {
       "id": "rockruff_lycanrocmidnight",
       "variant": "level_up",
-      "result": "lycanroc wolf_form=midnight",
+      "result": "lycanroc wolf_form=midnight midnight",
       "consumeHeldItem": false,
       "learnableMoves": [
         "counter"
@@ -196,7 +217,7 @@
         },
         {
           "variant": "time_range",
-          "range": "night"
+          "range": "midnight"
         }
       ]
     }
@@ -312,28 +333,6 @@
         "tutor:suckerpunch",
         "tutor:thunderfang",
         "tutor:zenheadbutt"
-      ],
-      "evolutions": [
-        {
-          "id": "rockruff_lycanrocdusk",
-          "variant": "level_up",
-          "result": "lycanroc wolf_form=dusk",
-          "consumeHeldItem": false,
-          "learnableMoves": [
-            "thrash",
-            "crushclaw"
-          ],
-          "requirements": [
-            {
-              "variant": "level",
-              "minLevel": 25
-            },
-            {
-              "variant": "time_range",
-              "range": "dusk"
-            }
-          ]
-        }
       ],
       "battleOnly": false
     }

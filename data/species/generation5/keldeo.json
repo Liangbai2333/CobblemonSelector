@@ -1,27 +1,11 @@
 {
-  "nationalPokedexNumber": 647,
+  "implemented": true,
   "name": "Keldeo",
+  "nationalPokedexNumber": 647,
   "primaryType": "water",
   "secondaryType": "fighting",
-  "maleRatio": -1,
-  "height": 14,
-  "weight": 485,
-  "pokedex": [
-    "cobblemon.species.keldeo.desc"
-  ],
-  "labels": [
-    "gen5",
-    "mythical"
-  ],
-  "aspects": [
-    "ordinary-form"
-  ],
   "abilities": [
-    "justified",
-    "h:justified"
-  ],
-  "eggGroups": [
-    "undiscovered"
+    "justified"
   ],
   "baseStats": {
     "hp": 91,
@@ -31,6 +15,11 @@
     "special_defence": 90,
     "speed": 108
   },
+  "catchRate": 3,
+  "maleRatio": -1,
+  "shoulderMountable": false,
+  "baseExperienceYield": 290,
+  "baseFriendship": 35,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -39,17 +28,17 @@
     "special_defence": 0,
     "speed": 0
   },
-  "baseExperienceYield": 290,
   "experienceGroup": "slow",
-  "catchRate": 3,
   "eggCycles": 80,
-  "baseFriendship": 35,
+  "eggGroups": [
+    "undiscovered"
+  ],
   "moves": [
     "1:aquajet",
-    "1:leer",
     "1:helpinghand",
-    "1:workup",
+    "1:leer",
     "1:secretsword",
+    "1:workup",
     "7:bubblebeam",
     "14:quickguard",
     "21:doublekick",
@@ -60,10 +49,8 @@
     "56:swordsdance",
     "63:hydropump",
     "70:closecombat",
-    "form_change:secretsword",
     "tm:aerialace",
     "tm:airslash",
-    "tm:aquatail",
     "tm:aurasphere",
     "tm:batonpass",
     "tm:bounce",
@@ -71,22 +58,24 @@
     "tm:calmmind",
     "tm:chillingwater",
     "tm:closecombat",
-    "tm:coaching",
-    "tm:covet",
+    "tm:confide",
     "tm:cut",
+    "tm:coaching",
     "tm:doubleedge",
+    "tm:doubleteam",
     "tm:endure",
     "tm:facade",
     "tm:falseswipe",
     "tm:flipturn",
     "tm:focusblast",
+    "tm:frustration",
     "tm:gigaimpact",
     "tm:hail",
     "tm:helpinghand",
+    "tm:hiddenpower",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:icywind",
-    "tm:lastresort",
     "tm:liquidation",
     "tm:lowkick",
     "tm:megahorn",
@@ -99,80 +88,142 @@
     "tm:reflect",
     "tm:rest",
     "tm:retaliate",
+    "tm:return",
     "tm:revenge",
     "tm:reversal",
     "tm:roar",
     "tm:rocksmash",
+    "tm:round",
     "tm:safeguard",
+    "tm:scald",
+    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smartstrike",
+    "tm:snore",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
     "tm:surf",
+    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
+    "tm:toxic",
     "tm:trailblaze",
     "tm:upperhand",
     "tm:vacuumwave",
     "tm:waterpulse",
     "tm:workup",
     "tm:xscissor",
-    "tutor:aerialace",
+    "tutor:aquajet",
     "tutor:aquatail",
     "tutor:bounce",
-    "tutor:calmmind",
+    "tutor:bubblebeam",
     "tutor:coaching",
     "tutor:covet",
-    "tutor:falseswipe",
+    "tutor:doublekick",
+    "tutor:endeavor",
     "tutor:flipturn",
-    "tutor:gigaimpact",
     "tutor:helpinghand",
-    "tutor:hyperbeam",
+    "tutor:hydropump",
     "tutor:icywind",
     "tutor:lastresort",
+    "tutor:leer",
     "tutor:liquidation",
     "tutor:lowkick",
-    "tutor:megahorn",
-    "tutor:painsplit",
-    "tutor:poisonjab",
-    "tutor:rest",
-    "tutor:rocksmash",
+    "tutor:sacredsword",
     "tutor:secretsword",
     "tutor:sleeptalk",
-    "tutor:stoneedge",
+    "tutor:snore",
     "tutor:superpower",
-    "tutor:swift",
-    "tutor:vacuumwave",
-    "tutor:waterpulse",
-    "tutor:xscissor"
+    "tutor:swordsdance",
+    "tutor:waterpulse"
   ],
-  "evolutions": [],
+  "labels": [
+    "gen5",
+    "mythical",
+    "legendary"
+  ],
+  "pokedex": [
+    "cobblemon.species.keldeo.desc"
+  ],
+  "height": 14,
+  "weight": 485,
   "forms": [
     {
       "name": "Resolute",
       "primaryType": "water",
       "secondaryType": "fighting",
+      "abilities": [
+        "justified"
+      ],
+      "baseStats": {
+        "hp": 91,
+        "attack": 72,
+        "defence": 90,
+        "special_attack": 129,
+        "special_defence": 90,
+        "speed": 108
+      },
+      "catchRate": 3,
       "maleRatio": -1,
-      "height": 14,
-      "weight": 485,
-      "pokedex": [
-        "cobblemon.species.keldeo-resolute.desc"
+      "baseExperienceYield": 290,
+      "baseFriendship": 35,
+      "evYield": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 3,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "experienceGroup": "slow",
+      "eggCycles": 80,
+      "eggGroups": [
+        "undiscovered"
       ],
       "labels": [
         "gen5",
-        "mythical"
+        "mythical",
+        "legendary"
       ],
       "aspects": [
-        "resolute-form"
+        "resolute"
       ],
-      "evolutions": [],
+      "height": 14,
+      "weight": 485,
+      "cannotDynamax": false,
       "battleOnly": false
     }
-  ]
+  ],
+  "behaviour": {
+      "moving": {
+        "canLook": true,
+        "walk": {
+          "walkSpeed": 0.4,
+          "canWalk": true,
+          "avoidsLand": false
+        },
+      "fly": {
+        "canFly": false
+      },
+      "swim": {
+        "swimSpeed": 0.2,
+        "canSwimInWater": false,
+        "canBreatheUnderwater": false
+      }
+    }
+  },
+  "baseScale":1.0,
+  "hitbox": {
+    "width": 2,
+    "height": 2.2,
+    "fixed": false
+  },
+  "aspects": [],
+  "cannotDynamax": false
 }
