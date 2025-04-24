@@ -67,7 +67,7 @@ function EvolutionBranch({evolutionNodes}: { evolutionNodes: { evolution: Evolut
 
 function EvolutionNode({pokemon}: { pokemon: PokemonForm }) {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
             {pokemon.image_url != undefined ? <img
                 className="w-16 h-16'"
                 src={pokemon.image_url}

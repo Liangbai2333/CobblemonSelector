@@ -4,6 +4,7 @@ from nonebot import logger
 from pydantic import BaseModel, Field, ModelWrapValidatorHandler
 
 from plugins.pokemon.extension.type import TypedModel
+from plugins.pokemon.lang import get_lang
 from plugins.pokemon.loader.data import feature_map
 
 
@@ -42,6 +43,12 @@ class IntFeature(Feature):
     display: Optional[DisplayData] = Field(default=None, description="显示数据")
 
     isAspect: bool = Field(default=False, description="是否为种类方面")
+
+    def get_i18n_name(self) -> str:
+        if self.display is not None:
+            return get_lang().get(self.display.name)
+        return "未知"
+
 
 
 class ChoiceFeature(Feature):

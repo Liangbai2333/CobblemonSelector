@@ -25,6 +25,16 @@ const TIMES_MAPPING = {
     "afternoon": "下午",
     "evening": "晚上"
 }
+const MOON_PHASE_MAPPING = {
+    "0": "满月",
+    "1": "亏凸月",
+    "2": "下弦月",
+    "3": "残月",
+    "4": "新月",
+    "5": "娥眉月",
+    "6": "上弦月",
+    "7": "盈凸月"
+}
 
 function generateConditionItems(condition: SpawnCondition) {
     return (
@@ -40,7 +50,9 @@ function generateConditionItems(condition: SpawnCondition) {
                                          value={condition.canSeeSky ? "能" : "不能"}/>
             )}
             {condition.moonPhase != undefined && (
-                <ConditionContainer.Item name="月相" value={condition.moonPhase}/>
+                <ConditionContainer.Item name="月相" value={
+                    condition.moonPhase.toString().split(",").map((phase) => MOON_PHASE_MAPPING[phase.trim() as keyof typeof MOON_PHASE_MAPPING] || phase).join(", ")
+                }/>
             )}
             {(condition.minX != undefined || condition.maxX != undefined) && (
                 <ConditionContainer.Item name="X轴范围" value={
@@ -92,6 +104,40 @@ function generateConditionItems(condition: SpawnCondition) {
             {condition.timeRange != undefined && (
                 <ConditionContainer.Item name="时间范围"
                                          value={condition.timeRange.split(",").map((time) => TIMES_MAPPING[time.trim() as keyof typeof TIMES_MAPPING] || time).join(", ")}/>
+            )}
+            {(condition.minHeight != undefined || condition.maxHeight != undefined) && (
+                <ConditionContainer.Item name="生成空间高度范围" value={
+                    (condition.minHeight && condition.maxHeight)
+                        ? `${condition.minHeight} ~ ${condition.maxHeight}`
+                        : (condition.minHeight ? `≥${condition.minHeight}` : `≤${condition.maxHeight}`)
+                }/>
+            )}
+            {condition.neededBaseBlocksI18nName && condition.neededBaseBlocks.length > 0 && (
+                <ConditionContainer.Item name="生成方块" value={
+                    condition.neededBaseBlocksI18nName.join(", ")
+                }/>
+            )}
+            {condition.neededNearbyBlocksI18nName && condition.neededNearbyBlocks.length > 0 && (
+                <ConditionContainer.Item name="附近方块" value={
+                    condition.neededNearbyBlocksI18nName.join(", ")
+                }/>
+            )}
+            {(condition.minDepth != undefined || condition.maxDepth != undefined) && (
+                <ConditionContainer.Item name="生成深度范围" value={
+                    (condition.minDepth && condition.maxDepth)
+                        ? `${condition.minDepth} ~ ${condition.maxDepth}`
+                        : (condition.minDepth ? `≥${condition.minDepth}` : `≤${condition.maxDepth}`)
+                }/>
+            )}
+            {condition.fluidI18nName != undefined && (
+                <ConditionContainer.Item name="生成流体" value={
+                    condition.fluidI18nName
+                }/>
+            )}
+            {condition.fluidIsSource != undefined && (
+                <ConditionContainer.Item name="是否在流体源头" value={
+                    condition.fluidIsSource ? "是" : "否"
+                }/>
             )}
         </>
     )

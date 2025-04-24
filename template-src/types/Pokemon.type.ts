@@ -257,6 +257,19 @@ export interface SpawnCondition {
   isThundering?: boolean;
   timeRange?: string;
   isSlimeChunk?: boolean;
+
+  minHeight?: number;
+  maxHeight?: number;
+  neededNearbyBlocks: string[];
+  neededNearbyBlocksI18nName: string[];
+  neededBaseBlocks: string[];
+  neededBaseBlocksI18nName: string[];
+
+  minDepth?: number;
+  maxDepth?: number;
+  fluid?: string;
+  fluidI18nName?: string;
+  fluidIsSource?: boolean
 }
 
 export interface WeightMultiplier {

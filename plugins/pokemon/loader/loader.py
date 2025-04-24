@@ -77,7 +77,7 @@ def init_biomes() -> dict[str, Biome]:
             with open(os.path.join(root, file), "r", encoding="utf-8") as f:
                 biome = Biome.model_validate_json(f.read())
                 name = get_file_name_without_ext(file)
-                relpath = os.path.relpath(root, path)
+                relpath = os.path.relpath(root, path).replace("\\", "/")
                 count += 1
                 if relpath != ".":
                     translation_name = f"{relpath.replace('/', '.')}.{name}"

@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field, field_validator, field_serializer, model_
 from pydantic_core.core_schema import SerializerFunctionWrapHandler
 
 from plugins.pokemon.biome.biome import Biome
+from plugins.pokemon.lang import get_lang
 from plugins.pokemon.loader.data import biome_map
 
 
@@ -26,25 +27,28 @@ class SpawnCondition(BaseModel):
     timeRange: Optional[str] = Field(default=None, description="时间范围")
     isSlimeChunk: Optional[bool] = Field(default=None, description="是否是史莱姆区块")
 
-    def get_i18n_time_range(self):
-        mapping = {
-            "day": "白天",
-            "night": "黑夜",
-            "any": "任何时间",
-            "dawn": "黎明",
-            "dusk": "黄昏",
-            "noon": "中午",
-            "midnight": "午夜",
-            "morning": "早上",
-            "afternoon": "下午",
-            "evening": "晚上"
-        }
-        return mapping.get(self.timeRange, self.timeRange)
+    minHeight: Optional[int] = Field(default=None, description="生成空间最小高度")
+    maxHeight: Optional[int] = Field(default=None, description="生成空间最大高度")
+    neededNearbyBlocks: list[str] = Field(default=[], description="附近方块")
+    neededBaseBlocks: list[str] = Field(default=[], description="生成方块")
+
+    minDepth: Optional[int] = Field(default=None, description="深度最小值")
+    maxDepth: Optional[int] = Field(default=None, description="深度最大值")
+    fluid: Optional[str] = Field(default=None, description="流体")
+    fluidIsSource: Optional[bool] = Field(default=None, description="是否是流体源头")
+
+    def get_block_i18n_name(self, block_name: str) -> str:
+        (namespace, key) = block_name.replace("#", "").split(":")
+        return get_lang().get(f"block.{namespace}.{key}")
+
 
     @model_serializer(mode="wrap")
     def serialize(self, nxt: SerializerFunctionWrapHandler):
         serialized = nxt(self)
         serialized["liked_biomes"] = [biome.get_name_with_liked() for biome in self.biomes]
+        serialized["neededNearbyBlocksI18nName"] = [self.get_block_i18n_name(block_name) for block_name in self.neededNearbyBlocks]
+        serialized["neededBaseBlocksI18nName"] = [self.get_block_i18n_name(block_name) for block_name in self.neededBaseBlocks]
+        serialized["fluidI18nName"] = self.get_block_i18n_name(self.fluid) if self.fluid else None
         return serialized
 
 
