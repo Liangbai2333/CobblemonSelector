@@ -24,7 +24,7 @@ async def _(matcher: Matcher, arg: Message = CommandArg()):
                 await matcher.finish("请输入正确的索引")
             matcher.set_arg("index", Message(args[1]))
         else:
-            matcher.set_arg("index", Message("-1"))
+            matcher.set_arg("index", Message("0"))
 
 @c.got("pokemon_name", prompt="请输入要查询的 Pokémon")
 @c.got('index')
@@ -44,7 +44,7 @@ async def _(matcher: Matcher, pokemon_name: str = ArgPlainText(), index: str = A
     if index_num >= len(poke.spawn_details):
         await matcher.finish("索引超出最大数量")
 
-    if index_num < 0:
+    if index_num < -1:
         index_num = poke.spawn_details.index(max(poke.spawn_details, key=lambda x: x.weight))
 
     await matcher.finish(
